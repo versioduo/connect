@@ -1,0 +1,5513 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "7fe4f762-3137-4754-a883-fc9fc9ecb968")
+	(paper "A4")
+	(title_block
+		(title "DMX LED")
+		(date "2025-12-17")
+		(rev "1")
+		(company "Versio Duo")
+	)
+	(lib_symbols
+		(symbol "V2_LED:WS2812"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D3"
+				(at 0 10.414 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "WS2812"
+				(at 0 7.874 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "V2_LED:WS2812-2020"
+				(at 0 -9.906 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 2.54 -9.525 0)
+				(effects
+					(font
+						(size 1 1)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RGB LED with integrated controller"
+				(at 0 -6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Worldsemi"
+				(at 0 -15.494 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Product" "WS2812B-2020"
+				(at 0 -12.954 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C965555"
+				(at 0 -18.288 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "WS2812_0_0"
+				(text "RGB"
+					(at -1.27 -1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "WS2812_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy -2.032 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0.254) (xy -2.032 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 2.286) (xy -2.54 1.27) (xy -2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 1.27) (xy -2.54 0.254) (xy -2.54 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 2.794) (xy -0.127 0.254) (xy -0.127 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.889 2.286) (xy -1.143 2.286) (xy -0.127 0.254) (xy 0.889 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.889 0.254) (xy -1.143 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "WS2812_1_1"
+				(pin input line
+					(at -7.62 1.27 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 7.62 3.81 180)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 1.27 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 7.62 -1.27 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "V2_power:+5V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 -14.478 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "V2_power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(rectangle
+		(start 83.82 50.165)
+		(end 218.44 156.21)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid d6439fe7-f72e-403e-8489-2878b0db3bda)
+	)
+	(no_connect
+		(at 194.31 143.51)
+		(uuid "dbbc654c-483d-47f4-9f41-6653570b87cb")
+	)
+	(wire
+		(pts
+			(xy 147.32 123.19) (xy 156.21 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "066c62f1-6cb3-42e5-bbc2-264fab9f92ee")
+	)
+	(wire
+		(pts
+			(xy 171.45 104.14) (xy 179.07 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e7752db-ef35-490b-8e9b-b30c810dc329")
+	)
+	(wire
+		(pts
+			(xy 194.31 123.19) (xy 210.82 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "203bc56d-1121-4f6f-b801-45253420fa84")
+	)
+	(wire
+		(pts
+			(xy 171.45 123.19) (xy 179.07 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28a2feaf-1ab8-4579-8aa5-9db980fc5f2e")
+	)
+	(wire
+		(pts
+			(xy 124.46 104.14) (xy 132.08 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3be0884b-5ef1-4710-80ac-eb97e164f9fa")
+	)
+	(wire
+		(pts
+			(xy 124.46 67.31) (xy 132.08 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f56e65d-ff7d-4f8d-a606-0da3afa7eaa3")
+	)
+	(wire
+		(pts
+			(xy 147.32 67.31) (xy 156.21 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48c91e0f-0c28-4087-a147-e9cb72061bd9")
+	)
+	(wire
+		(pts
+			(xy 97.79 123.19) (xy 109.22 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b03566c-dfd2-484e-9cc3-47dc1bfd0451")
+	)
+	(wire
+		(pts
+			(xy 171.45 67.31) (xy 179.07 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f912997-6b11-44f8-8558-722c68858e27")
+	)
+	(wire
+		(pts
+			(xy 147.32 104.14) (xy 156.21 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55edc10e-da99-4f79-bd4b-8ad16bac87c6")
+	)
+	(wire
+		(pts
+			(xy 147.32 85.09) (xy 156.21 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58d183d2-f913-46a8-a501-994436aef4f0")
+	)
+	(wire
+		(pts
+			(xy 124.46 85.09) (xy 132.08 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66f0eb47-0266-44af-bd51-912e9b5165dd")
+	)
+	(wire
+		(pts
+			(xy 97.79 143.51) (xy 109.22 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81ade5d6-4691-4af0-b4fb-797f0e23bc06")
+	)
+	(wire
+		(pts
+			(xy 124.46 123.19) (xy 132.08 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a29153a1-32d3-4ec9-b956-4801fdb64249")
+	)
+	(wire
+		(pts
+			(xy 171.45 143.51) (xy 179.07 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a54d0eb0-d1ef-4e8d-9cca-e98f118b46f6")
+	)
+	(wire
+		(pts
+			(xy 124.46 143.51) (xy 132.08 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6565d25-1846-420f-85c2-3704e4e728e2")
+	)
+	(wire
+		(pts
+			(xy 83.82 67.31) (xy 109.22 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a94c7b2e-92c1-45d1-a40e-921af39ee72a")
+	)
+	(wire
+		(pts
+			(xy 97.79 85.09) (xy 109.22 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5f58848-2358-46d6-a28d-e6c35ee17146")
+	)
+	(wire
+		(pts
+			(xy 194.31 85.09) (xy 210.82 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b600f39d-d335-41ac-96c3-fa7fa51e9bd0")
+	)
+	(wire
+		(pts
+			(xy 147.32 143.51) (xy 156.21 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6251018-4c28-4a40-b138-cb1b9d571d06")
+	)
+	(wire
+		(pts
+			(xy 194.31 67.31) (xy 210.82 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c89aa3f8-0b22-48db-9879-d18dfa486053")
+	)
+	(wire
+		(pts
+			(xy 194.31 104.14) (xy 210.82 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e22a2e30-9050-41b5-bee1-a6bebba8a5e8")
+	)
+	(wire
+		(pts
+			(xy 171.45 85.09) (xy 179.07 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5e3b151-5e38-4d5a-8533-340b50eb0da2")
+	)
+	(wire
+		(pts
+			(xy 97.79 104.14) (xy 109.22 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb59c50f-0666-4d7e-bb14-3a5e88c5f139")
+	)
+	(label "LED-17"
+		(at 210.82 123.19 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "180915b3-5a5f-47e8-a31a-6a3adcae31ee")
+	)
+	(label "LED-9"
+		(at 97.79 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1cffd3c4-372d-4b77-a2ad-0cb7eb48c25f")
+	)
+	(label "LED-13"
+		(at 210.82 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6268d50b-fc95-42ce-8057-3d55d598d5c1")
+	)
+	(label "LED-5"
+		(at 97.79 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "70ce37dd-f6f3-48fc-81cf-e62774aabf34")
+	)
+	(label "LED-13"
+		(at 97.79 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "868c93be-3168-427c-954d-deb565cb9a48")
+	)
+	(label "LED-5"
+		(at 210.82 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9471a226-8a9e-4aa6-814d-6616427deb32")
+	)
+	(label "LED-9"
+		(at 210.82 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e3e715f0-00aa-4d46-8036-d2e140e71b8f")
+	)
+	(label "LED-17"
+		(at 97.79 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f559ccd0-00fb-4002-92b9-9243e2e16a1e")
+	)
+	(hierarchical_label "LED"
+		(shape input)
+		(at 83.82 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "49acdaef-2f9e-466d-a902-6a6708ca810e")
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 139.7 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0339aea2-ec1a-4108-b4cb-130c2e690e63")
+		(property "Reference" "D518"
+			(at 137.16 134.874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 138.43 137.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 139.7 148.59 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 154.305 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 139.7 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 139.7 160.274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 139.7 157.734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 139.7 163.068 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "82e9c88c-b6e1-4e44-a0c3-bc75ad06e198")
+		)
+		(pin "2"
+			(uuid "2df161c3-85da-42f1-86f4-83067d481cd4")
+		)
+		(pin "3"
+			(uuid "d1f75721-1aaa-4b6c-bcf6-77227a2ad931")
+		)
+		(pin "4"
+			(uuid "6ab966d1-cecb-46c8-8ed2-2277a51ba3a6")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D518")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 124.46 101.6 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0435574e-c268-4073-949c-c5d0e7f478f5")
+		(property "Reference" "#PWR0517"
+			(at 120.65 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 130.302 101.346 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 109.982 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "39b3dc3b-adce-45bc-b6ba-ce21f0b5d4b3")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0517")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 163.83 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0524f92f-afc7-43ae-b4b3-077484d540b0")
+		(property "Reference" "D515"
+			(at 161.29 114.554 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 162.56 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 163.83 128.27 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 133.985 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 163.83 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 163.83 139.954 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 163.83 137.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 163.83 142.748 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "db201cd0-f229-48df-b48e-f5e1a791ad38")
+		)
+		(pin "2"
+			(uuid "3d187872-1384-423c-b842-0b1bcb7226ed")
+		)
+		(pin "3"
+			(uuid "9fb971b0-9e82-44f7-bc87-7b3061db1370")
+		)
+		(pin "4"
+			(uuid "2b9dd347-5e41-423a-abc1-238dea0e575d")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D515")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 124.46 82.55 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "08085631-32f3-4744-9daa-c7e14328b053")
+		(property "Reference" "#PWR0509"
+			(at 120.65 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 130.302 82.296 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 109.982 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "420b33d7-9386-4e45-be76-791bc9d3c3a5")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0509")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 147.32 120.65 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "17044ff0-bd01-4961-b306-b9b502f198d4")
+		(property "Reference" "#PWR0526"
+			(at 143.51 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 153.162 120.396 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.842 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ff53d44f-5766-4ea6-934c-63b8cfd29042")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0526")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 139.7 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1994f9d7-7486-499e-bcff-4d372b291162")
+		(property "Reference" "D514"
+			(at 137.16 114.554 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 138.43 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 139.7 128.27 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 133.985 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 139.7 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 139.7 139.954 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 139.7 137.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 139.7 142.748 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "def58989-8f52-41f9-83aa-072c09f8a7a7")
+		)
+		(pin "2"
+			(uuid "3388f7bb-4de3-4988-a2d2-f0b9917db74b")
+		)
+		(pin "3"
+			(uuid "24fa5f1f-a102-497f-8451-9faaad1998d5")
+		)
+		(pin "4"
+			(uuid "c44d642d-1a1f-4a9c-8075-04449591d1a2")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D514")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 147.32 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b8386a6-9555-4f1f-b844-0a50e614a8a7")
+		(property "Reference" "#PWR0522"
+			(at 153.67 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 151.384 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.734 106.934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8496041f-5206-4cfd-b71e-f728a5e1138b")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0522")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 124.46 125.73 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2ad4b27c-e170-42e6-9adb-362316739a2b")
+		(property "Reference" "#PWR0529"
+			(at 130.81 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 128.524 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 134.874 125.984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ef6d45c-d6ef-4c81-b0d0-7dfe2f515260")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0529")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 116.84 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3bf92aeb-70f9-4460-a317-6c14f2f09e43")
+		(property "Reference" "D501"
+			(at 114.3 58.674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 115.57 61.214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 116.84 72.39 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 78.105 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 116.84 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 116.84 84.074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 116.84 81.534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 116.84 86.868 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a1037a4f-a4ee-4af0-99f7-4b634e844691")
+		)
+		(pin "2"
+			(uuid "6a119e2f-50cc-4695-8f97-9aa58f7ce32e")
+		)
+		(pin "3"
+			(uuid "6dff1bf7-d38b-4cb2-85b7-a59c3a6e5dd0")
+		)
+		(pin "4"
+			(uuid "efe41aaa-086c-4914-8a91-c6a2a9e4421c")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 139.7 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "45e19bc9-a3f4-452e-bda4-0ad02b96a2fe")
+		(property "Reference" "D502"
+			(at 137.16 58.674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 138.43 61.214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 139.7 72.39 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 78.105 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 139.7 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 139.7 84.074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 139.7 81.534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 139.7 86.868 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "453f6c22-4195-46f9-a94b-f5559752cfbb")
+		)
+		(pin "2"
+			(uuid "a136184a-1999-4050-aeec-bf45784cd3b5")
+		)
+		(pin "3"
+			(uuid "55d642b1-090d-4e72-bed7-1c14e8f0d446")
+		)
+		(pin "4"
+			(uuid "8d0dbc06-23d6-4812-8ca8-ba928d0d286b")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D502")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 116.84 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "45e98797-1767-4a4b-8f27-9e23dbcc48e1")
+		(property "Reference" "D513"
+			(at 114.3 114.554 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 115.57 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 116.84 128.27 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 133.985 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 116.84 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 116.84 139.954 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 116.84 137.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 116.84 142.748 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3527edc8-1489-40f5-915e-fd99092c4b06")
+		)
+		(pin "2"
+			(uuid "857c2f67-a454-4eaf-bc64-e7edc7b81909")
+		)
+		(pin "3"
+			(uuid "8cd80a7e-817f-4891-9be6-8e7115e5db0b")
+		)
+		(pin "4"
+			(uuid "332bc93f-c864-4dae-8d95-afdd0d7998ab")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D513")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 186.69 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "461a311c-7132-45df-93ad-9d52fe52e79c")
+		(property "Reference" "D508"
+			(at 184.15 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 185.42 78.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 186.69 90.17 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 95.885 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 186.69 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 186.69 101.854 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 186.69 99.314 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 186.69 104.648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f756cf29-5397-4974-a8cc-2e2fc051c4a3")
+		)
+		(pin "2"
+			(uuid "e0f74f47-deca-40d9-ad98-2a19a4c85bb4")
+		)
+		(pin "3"
+			(uuid "404344a1-8c04-4375-85b6-5f77f60d4b54")
+		)
+		(pin "4"
+			(uuid "da02ea31-4a11-43bd-9d7a-2028d8a3efb5")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D508")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 194.31 101.6 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4eb36245-9bea-40ff-a020-5c8b665981c4")
+		(property "Reference" "#PWR0520"
+			(at 190.5 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 200.152 101.346 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 179.832 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "10931be3-52dc-4060-aca0-b7dae595dc01")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0520")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 194.31 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4fa2f0fe-920f-4bc1-a275-c25fa213a15e")
+		(property "Reference" "#PWR0516"
+			(at 200.66 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 198.374 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 204.724 87.884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "30f3f883-1c71-4a37-a148-70f140cb5541")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0516")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 171.45 82.55 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "56b3bfdc-b95d-4a2e-8234-ce46e0d10756")
+		(property "Reference" "#PWR0511"
+			(at 167.64 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 177.292 82.296 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 156.972 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a53ba523-0ddf-4f6b-baf7-2bb5e558c1d3")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0511")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 124.46 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5bc38e98-6591-4e81-a8df-8450f482253c")
+		(property "Reference" "#PWR0521"
+			(at 130.81 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 128.524 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 134.874 106.934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f4040e47-52c3-4e3f-95f8-9bb1111605db")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0521")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 171.45 101.6 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5bd62e85-477d-4d82-bf01-c3458ae94729")
+		(property "Reference" "#PWR0519"
+			(at 167.64 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 177.292 101.346 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 156.972 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b7d074a-deae-4ad6-8523-d23a06f6fe76")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0519")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 124.46 120.65 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5f440318-c6d7-4b54-8116-4338bd164547")
+		(property "Reference" "#PWR0525"
+			(at 120.65 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 130.302 120.396 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 109.982 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "24e3bc6b-8391-4d9c-96e8-8d57b5134e33")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0525")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 139.7 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6028959b-dbc8-4e64-8f78-33b2bc864376")
+		(property "Reference" "D506"
+			(at 137.16 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 138.43 78.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 139.7 90.17 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 95.885 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 139.7 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 139.7 101.854 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 139.7 99.314 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 139.7 104.648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eab6639d-a21f-4e96-bd88-e94521341fb0")
+		)
+		(pin "2"
+			(uuid "eedc4b02-b800-4a92-a8d3-ea1f9ce4dbcd")
+		)
+		(pin "3"
+			(uuid "f5180c44-d19c-45a8-aa72-1cf1f6b7a0db")
+		)
+		(pin "4"
+			(uuid "11551c4a-14f3-45a8-a73f-123724bfa96a")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D506")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 147.32 82.55 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "611847d7-2c52-4bf9-abc3-7094a3ac6cd1")
+		(property "Reference" "#PWR0510"
+			(at 143.51 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 153.162 82.296 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.842 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "04cb47e0-eb78-400c-9fc1-885f37a932ec")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0510")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 171.45 140.97 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6162d106-b2a5-49c3-a147-ff4608d4425f")
+		(property "Reference" "#PWR0535"
+			(at 167.64 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 177.292 140.716 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 156.972 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2f23cc0e-17a5-46ee-b970-e7e02e09ea8d")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0535")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 124.46 140.97 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "683b354b-b274-44ec-8699-a090a3d28708")
+		(property "Reference" "#PWR0533"
+			(at 120.65 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 130.302 140.716 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 109.982 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b742cfa2-fb09-4e8c-b1a5-e3d7119246b8")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0533")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 147.32 125.73 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c2c87fa-79e4-4813-8844-32613817d189")
+		(property "Reference" "#PWR0530"
+			(at 153.67 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 151.384 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.734 125.984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ea5237c-0c91-4b41-b2d2-be8f99741ae7")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0530")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 124.46 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6dcdf668-f8e2-4840-854f-110b3cc5f6de")
+		(property "Reference" "#PWR0505"
+			(at 130.81 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 128.524 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 134.874 70.104 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab6f7ce9-e300-4fa1-afac-bf1ec0c7a645")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0505")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 171.45 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6e39c756-6a4a-4b5f-b412-a6a8fe81a40e")
+		(property "Reference" "#PWR0507"
+			(at 177.8 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 175.514 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 181.864 70.104 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9618aa99-c33a-4701-b643-23df621c1abf")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0507")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 186.69 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "78e958c3-83f9-4cc0-938a-b529378120ff")
+		(property "Reference" "D520"
+			(at 184.15 134.874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 185.42 137.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 186.69 148.59 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 154.305 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 186.69 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 186.69 160.274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 186.69 157.734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 186.69 163.068 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a106fb35-416b-4875-bfb6-35a24e18df05")
+		)
+		(pin "2"
+			(uuid "1fd0c7e2-e2dc-4908-9d2f-4c442d2c3f76")
+		)
+		(pin "3"
+			(uuid "b9f748bc-1384-4f15-9a30-f73950c44b10")
+		)
+		(pin "4"
+			(uuid "5a76d4b5-2075-4817-bfe8-73c5a453a126")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D520")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 186.69 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7a1cf7ce-0445-4c1e-aba9-9ca8bd1d96cc")
+		(property "Reference" "D512"
+			(at 184.15 95.504 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 185.42 98.044 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 186.69 109.22 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 114.935 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 186.69 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 186.69 120.904 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 186.69 118.364 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 186.69 123.698 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f6ef8674-4c48-4f2e-aa1f-85693ec798b7")
+		)
+		(pin "2"
+			(uuid "b62e6840-8dc0-405b-9af8-c334099881df")
+		)
+		(pin "3"
+			(uuid "db30083a-5ed8-4a5f-87e1-672413c26ad0")
+		)
+		(pin "4"
+			(uuid "58fd2fe7-a87a-4059-85fe-2f80a4538bdb")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D512")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 171.45 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7fdb8dec-e364-46b9-ace7-87253fbcb611")
+		(property "Reference" "#PWR0523"
+			(at 177.8 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 175.514 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 181.864 106.934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b68ea6e2-c4c9-473c-bbe3-4e9261797183")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0523")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 124.46 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "811a8a20-07f3-4f9b-8a3f-ebf90d1b7f25")
+		(property "Reference" "#PWR0513"
+			(at 130.81 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 128.524 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 134.874 87.884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d56c7d9-e59c-46e7-84d4-89ef78da26cc")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0513")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 139.7 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8ce7bec5-3d41-4621-953e-d72687ef244c")
+		(property "Reference" "D510"
+			(at 137.16 95.504 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 138.43 98.044 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 139.7 109.22 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 114.935 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 139.7 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 139.7 120.904 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 139.7 118.364 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 139.7 123.698 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f548eb4a-276b-451a-924d-5acb8dc83683")
+		)
+		(pin "2"
+			(uuid "91e614fb-262a-4f25-ac5d-6f6cebb021d0")
+		)
+		(pin "3"
+			(uuid "c216316a-a12f-4581-998d-246a493c218d")
+		)
+		(pin "4"
+			(uuid "b9f2bd86-aff1-4645-b91b-515715630406")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D510")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 171.45 64.77 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8e8025f9-5424-476d-9354-a20f7b5b8679")
+		(property "Reference" "#PWR0503"
+			(at 167.64 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 177.292 64.516 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 156.972 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1609e27d-91a0-4e02-92a6-736b8c83ffc0")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0503")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 147.32 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "933a3da4-a4fe-4043-b9b0-0740adaaa657")
+		(property "Reference" "#PWR0514"
+			(at 153.67 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 151.384 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.734 87.884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "602bb724-80b7-4602-8e85-b7894d1bee19")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0514")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 194.31 82.55 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a3eebe62-a1b1-4397-a291-9e38755b732e")
+		(property "Reference" "#PWR0512"
+			(at 190.5 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 200.152 82.296 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 179.832 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0aca506e-ae4a-471f-bdb1-fbcba192f8bc")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0512")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 147.32 101.6 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a5f8971a-460e-4162-ac12-7de72c372ec5")
+		(property "Reference" "#PWR0518"
+			(at 143.51 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 153.162 101.346 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.842 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4bd9f113-c84d-46a5-aac5-6915a93300df")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0518")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 194.31 146.05 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a7cad4b2-36b5-4bb4-935e-9e1f738572db")
+		(property "Reference" "#PWR0540"
+			(at 200.66 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 198.374 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 204.724 146.304 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0127adaf-58a9-4a0c-a42d-837c7cc5c012")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0540")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 163.83 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aa4c5688-1875-445d-be31-0b583e638816")
+		(property "Reference" "D511"
+			(at 161.29 95.504 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 162.56 98.044 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 163.83 109.22 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 114.935 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 163.83 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 163.83 120.904 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 163.83 118.364 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 163.83 123.698 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b23d2db-c1e2-4587-83e5-08eba95fe217")
+		)
+		(pin "2"
+			(uuid "f463e3db-f8e2-457e-b49f-aef919599848")
+		)
+		(pin "3"
+			(uuid "b1166ffe-85f1-445c-aa7f-b65e8e2023f1")
+		)
+		(pin "4"
+			(uuid "98e93cb4-e621-46dd-8ca5-2fca172140ff")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D511")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 171.45 125.73 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aa7a2ba0-ee42-40ed-b744-9bb9a53300d7")
+		(property "Reference" "#PWR0531"
+			(at 177.8 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 175.514 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 181.864 125.984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d4031bb-7be6-47ec-bb4a-513c4c64ae1c")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0531")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 171.45 120.65 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aa7afadd-31dd-40ec-b219-2b9ccfc22a3d")
+		(property "Reference" "#PWR0527"
+			(at 167.64 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 177.292 120.396 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 156.972 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4b3063e2-b266-4b45-ab8c-b89859f337c4")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0527")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 163.83 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b224f94f-c327-48be-97b2-24633415628e")
+		(property "Reference" "D519"
+			(at 161.29 134.874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 162.56 137.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 163.83 148.59 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 154.305 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 163.83 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 163.83 160.274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 163.83 157.734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 163.83 163.068 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "55022c05-247c-4ab0-a1bf-68bfc368ec4f")
+		)
+		(pin "2"
+			(uuid "33fbc99b-27d0-4638-a93d-7a5e2e0177fe")
+		)
+		(pin "3"
+			(uuid "f50cf9c8-0f15-4e7e-9af1-71ddac75f8fe")
+		)
+		(pin "4"
+			(uuid "0d26782a-854d-4bea-b617-8adbca0c4ab5")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D519")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 116.84 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b64befb6-6e8b-4263-b85a-183af0f501ba")
+		(property "Reference" "D505"
+			(at 114.3 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 115.57 78.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 116.84 90.17 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 95.885 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 116.84 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 116.84 101.854 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 116.84 99.314 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 116.84 104.648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b064e61-35a3-48ac-ba7e-97b1bab92fcb")
+		)
+		(pin "2"
+			(uuid "0e5f5d23-009c-4ccc-a2d6-d88394b6a237")
+		)
+		(pin "3"
+			(uuid "a666e573-0dd4-4ff6-8c84-a265b05deba4")
+		)
+		(pin "4"
+			(uuid "c725d6e4-3463-4bde-b533-08b8c12e2748")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D505")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 171.45 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b699eb4d-a5ad-4a7d-8a06-abf7b0c54ec4")
+		(property "Reference" "#PWR0515"
+			(at 177.8 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 175.514 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 181.864 87.884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "268f1515-bac1-47ad-9f58-51530d6e1f4e")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0515")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 171.45 146.05 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b97716bb-7c92-4c1f-95d5-259333b9b4b9")
+		(property "Reference" "#PWR0539"
+			(at 177.8 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 175.514 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 181.864 146.304 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "69887eba-bba6-4a10-89dd-0f40a595c3d5")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0539")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 194.31 64.77 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ba31e4e2-2190-48b6-a92e-14580afc883e")
+		(property "Reference" "#PWR0504"
+			(at 190.5 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 200.152 64.516 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 179.832 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b70bec74-fe77-484a-b4e1-2be46e03e15c")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0504")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 147.32 64.77 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "be076b51-faa6-4182-a377-92db6179025e")
+		(property "Reference" "#PWR0502"
+			(at 143.51 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 153.162 64.516 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.842 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "71a90674-f2fb-4b08-b6f8-00909c70306b")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0502")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 194.31 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "be97815f-cfc6-4c26-93d7-b3f86b80bb7f")
+		(property "Reference" "#PWR0524"
+			(at 200.66 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 198.374 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 204.724 106.934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7af335c-0736-4377-b70a-aa14b61338b2")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0524")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 163.83 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bec0c4f1-054b-4392-a4d7-4ca367903dbc")
+		(property "Reference" "D507"
+			(at 161.29 76.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 162.56 78.994 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 163.83 90.17 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 95.885 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 163.83 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 163.83 101.854 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 163.83 99.314 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 163.83 104.648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4cc754b-6875-4543-908c-09c4b1ce2e58")
+		)
+		(pin "2"
+			(uuid "06b18158-a230-4c27-aa78-eee3c8a73f0d")
+		)
+		(pin "3"
+			(uuid "1c903ecf-9acb-4eba-85ff-9aa747187bf3")
+		)
+		(pin "4"
+			(uuid "1e10c2d1-9018-417c-8e80-b540bb534f13")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D507")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 124.46 146.05 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c0700eb5-1908-4671-ba0a-62e0aa16f5eb")
+		(property "Reference" "#PWR0537"
+			(at 130.81 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 128.524 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 134.874 146.304 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06fc07f9-ce52-43f8-a3f2-dcdab9f3ad31")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0537")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 194.31 120.65 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c81875ab-cc14-4833-ba0c-963290eb3c14")
+		(property "Reference" "#PWR0528"
+			(at 190.5 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 200.152 120.396 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 179.832 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c2483f7f-10d2-4812-8282-3170b2901186")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0528")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 186.69 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ca667dae-c7fb-4b95-bc91-6dab8ddf3199")
+		(property "Reference" "D516"
+			(at 184.15 114.554 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 185.42 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 186.69 128.27 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 133.985 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 186.69 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 186.69 139.954 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 186.69 137.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 186.69 142.748 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dbf76901-a617-4f05-af41-4f0042e7591f")
+		)
+		(pin "2"
+			(uuid "1d37353b-8879-4045-ba86-a51071b9242b")
+		)
+		(pin "3"
+			(uuid "4b9d300d-f821-4d81-90bc-420e72df585c")
+		)
+		(pin "4"
+			(uuid "f7662b1b-ede5-4e26-b320-6d3d6c29be2b")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D516")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 194.31 125.73 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ca92be0e-f1ff-4192-ab57-03e9d248cf69")
+		(property "Reference" "#PWR0532"
+			(at 200.66 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 198.374 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 204.724 125.984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "967b031f-e662-4f9e-a062-1f16b52b24c3")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0532")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 163.83 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d1681549-efaf-4c04-801b-72fc53c9b89a")
+		(property "Reference" "D503"
+			(at 161.29 58.674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 162.56 61.214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 163.83 72.39 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 78.105 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 163.83 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 163.83 84.074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 163.83 81.534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 163.83 86.868 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "39369379-da2a-4b41-b802-84bbe586ab9b")
+		)
+		(pin "2"
+			(uuid "879cce81-15de-46ea-ac88-5671d81a6b29")
+		)
+		(pin "3"
+			(uuid "55faa0d9-1269-414c-ad1b-46b01a65dac4")
+		)
+		(pin "4"
+			(uuid "19ee91f1-a760-4552-9026-183b772b81a1")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D503")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 147.32 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d26594bf-73c1-4e46-8198-41806fc04720")
+		(property "Reference" "#PWR0506"
+			(at 153.67 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 151.384 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.734 70.104 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73cdb882-fd71-47f7-a1f2-38a8e02d9fb4")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0506")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 116.84 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d6719605-2120-4991-81ca-13bec0399a0c")
+		(property "Reference" "D517"
+			(at 114.3 134.874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 115.57 137.414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 116.84 148.59 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 154.305 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 116.84 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 116.84 160.274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 116.84 157.734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 116.84 163.068 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa37580b-127e-46c2-8d76-97c263859e8a")
+		)
+		(pin "2"
+			(uuid "42777ac4-d02c-4037-968f-bb9c21438504")
+		)
+		(pin "3"
+			(uuid "6a0bdeda-cdfc-4c3c-8416-9f02c51acb6a")
+		)
+		(pin "4"
+			(uuid "d292000f-dedc-4ef1-be1f-545928c9f5f0")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D517")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 194.31 140.97 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dea7c4cd-f1f3-44e0-8098-84be0382c7e2")
+		(property "Reference" "#PWR0536"
+			(at 190.5 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 200.152 140.716 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 179.832 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "969adbf6-9ce9-43d8-9878-9ddaf18cece7")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0536")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 147.32 146.05 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e042c276-f31c-439a-a272-60c441c8bbe5")
+		(property "Reference" "#PWR0538"
+			(at 153.67 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 151.384 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 157.734 146.304 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d06eae5a-cded-4059-8be5-60ecd0d9d90a")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0538")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 147.32 140.97 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e7b3629d-694f-47f5-8fe7-56134129a106")
+		(property "Reference" "#PWR0534"
+			(at 143.51 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 153.162 140.716 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.842 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8feaac4-94ee-4021-bb1a-789b6bdce6b8")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0534")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 186.69 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e9c1a52e-0211-43b8-b640-3db8d6ed6344")
+		(property "Reference" "D504"
+			(at 184.15 58.674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 185.42 61.214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 186.69 72.39 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 78.105 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 186.69 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 186.69 84.074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 186.69 81.534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 186.69 86.868 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e23f43c5-245c-4e06-b6e5-020dc1d56ba8")
+		)
+		(pin "2"
+			(uuid "873cdbc4-b1c6-4d8b-b7fc-d027a7f4c428")
+		)
+		(pin "3"
+			(uuid "beb77694-3374-4b94-864d-dec3e56993b4")
+		)
+		(pin "4"
+			(uuid "f701693f-4420-4fde-9c47-1a1c4c10b333")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D504")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_LED:WS2812")
+		(at 116.84 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ec2f4f17-29fd-404c-a559-36d68d185173")
+		(property "Reference" "D509"
+			(at 114.3 95.504 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812"
+			(at 115.57 98.044 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "V2_LED:WS2812-2020"
+			(at 116.84 109.22 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 114.935 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 116.84 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Worldsemi"
+			(at 116.84 120.904 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Product" "WS2812B-2020"
+			(at 116.84 118.364 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965555"
+			(at 116.84 123.698 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "32aa64b9-2b15-4555-9972-26a4a2be0ba4")
+		)
+		(pin "2"
+			(uuid "b229177c-829e-44ed-8c09-de5d807f4542")
+		)
+		(pin "3"
+			(uuid "302c6db9-1b0b-4c97-8c39-aee8df25a73b")
+		)
+		(pin "4"
+			(uuid "bb21c62d-62be-4283-9ca6-d6f7a2955bf7")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "D509")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:GND")
+		(at 194.31 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f2f687ef-bcf8-46ab-96d1-e575918c9cf2")
+		(property "Reference" "#PWR0508"
+			(at 200.66 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 198.374 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 204.724 70.104 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b3d3e1a7-4707-41d0-93c5-60c4fa71c9c4")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0508")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+5V")
+		(at 124.46 64.77 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f507374c-d10f-4577-a930-527d557a8e85")
+		(property "Reference" "#PWR0501"
+			(at 120.65 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 130.302 64.516 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 109.982 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bdbd1382-2327-4bed-923e-f1f2f93f6776")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
+					(reference "#PWR0501")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
