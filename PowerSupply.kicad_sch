@@ -11,7 +11,7 @@
 		(company "+5V")
 	)
 	(lib_symbols
-		(symbol "V2_Converter_DCDC:TPSM33625"
+		(symbol "V2_Converter_DCDC:TPSM365R6FRDNR"
 			(pin_names
 				(offset 0.254)
 			)
@@ -19,7 +19,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -7.62 15.24 0)
+				(at -11.43 15.24 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -27,8 +27,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "TPSM33625"
-				(at -7.62 12.7 0)
+			(property "Value" "TPSM365R6FRDNR"
+				(at -11.43 12.7 0)
 				(effects
 					(font
 						(size 1.524 1.524)
@@ -36,7 +36,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "V2_Converter_DCDC:TPSM33625"
+			(property "Footprint" "V2_Converter_DCDC:QFN-11"
 				(at 0 -38.1 0)
 				(effects
 					(font
@@ -46,7 +46,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpsm33625.pdf"
+			(property "Datasheet" ""
 				(at 0 -40.64 0)
 				(effects
 					(font
@@ -65,7 +65,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" "595-TPSM33625RDNR"
+			(property "Mouser" "595-TPSM365R6FRDNR"
 				(at 0 -48.26 0)
 				(show_name)
 				(effects
@@ -85,7 +85,7 @@
 					(hide yes)
 				)
 			)
-			(property "Product" "TPSM33625RDNR"
+			(property "Product" "TPSM365R6FRDNR"
 				(at 0 -45.72 0)
 				(show_name)
 				(effects
@@ -95,8 +95,9 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "TPSM33625RDNR"
-				(at 0 0 0)
+			(property "Rating" "600mA"
+				(at 0 -50.8 0)
+				(show_name)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -104,16 +105,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TPSM33625"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TPSM33625_0_1"
+			(symbol "TPSM365R6FRDNR_0_1"
 				(rectangle
 					(start -10.16 10.16)
 					(end 10.16 -10.16)
@@ -126,7 +118,7 @@
 					)
 				)
 			)
-			(symbol "TPSM33625_1_1"
+			(symbol "TPSM365R6FRDNR_1_1"
 				(pin power_in line
 					(at -12.7 7.62 0)
 					(length 2.54)
@@ -184,7 +176,7 @@
 				(pin input line
 					(at -12.7 -7.62 0)
 					(length 2.54)
-					(name "RT"
+					(name "MODE"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1741,7 +1733,7 @@
 		(uuid "701c1ae1-7ebc-4e84-9acc-9d780ce81a5c")
 	)
 	(symbol
-		(lib_id "V2_Converter_DCDC:TPSM33625")
+		(lib_id "V2_Converter_DCDC:TPSM365R6FRDNR")
 		(at 148.59 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1750,23 +1742,24 @@
 		(dnp no)
 		(uuid "1810c6ec-7176-4f6b-89cb-cc3c00a8361e")
 		(property "Reference" "U1201"
-			(at 141.986 87.63 0)
+			(at 141.986 87.122 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "TPSM33625"
-			(at 144.78 90.17 0)
+		(property "Value" "TPSM365R6FRDNR"
+			(at 138.43 90.17 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "V2_Converter_DCDC:TPSM33625"
-			(at 148.59 118.11 0)
+		(property "Footprint" "V2_Converter_DCDC:QFN-11"
+			(at 148.59 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1775,8 +1768,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpsm33625.pdf"
-			(at 153.67 118.11 0)
+		(property "Datasheet" ""
+			(at 148.59 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1794,8 +1787,9 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "595-TPSM33625RDNR"
+		(property "Mouser" "595-TPSM365R6FRDNR"
 			(at 148.59 151.13 0)
+			(show_name yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1805,6 +1799,7 @@
 		)
 		(property "Manufacturer" "Texas Instruments"
 			(at 148.59 146.05 0)
+			(show_name yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1812,8 +1807,18 @@
 				(hide yes)
 			)
 		)
-		(property "Product" "TPSM33625RDNR"
+		(property "Product" "TPSM365R6FRDNR"
 			(at 148.59 148.59 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "600mA"
+			(at 148.59 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
