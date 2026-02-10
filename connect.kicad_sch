@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "V2 connect")
-		(date "2026-01-27")
-		(rev "1")
+		(date "2026-02-10")
+		(rev "2026-02-10")
 		(company "Versio Duo")
 	)
 	(lib_symbols
@@ -13848,7 +13848,7 @@
 		(lib_id "V2_Artwork:V2-logo")
 		(at 171.45 154.94 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -13891,15 +13891,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 171.45 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 171.45 154.94 0)
 			(effects
 				(font
@@ -14252,18 +14243,18 @@
 		(file
 			(name "V2_A4.kicad_wks")
 			(type worksheet)
-			(data |KLUv/WBZBh0QAGbYTSEQtRsmZc5q276ayLS71D6kxbkmoTeIJM7lAHtEAMAAxQFFAD4ARAB5A7XX
-				+Feo6DSb854N+bVfoZpo+8iKL/InAACB8PMuzmkhNWk9175Qdsa/Zb++KSgopVSdtS+2YnYQARAQ
-				PSHN2zrrIQSbh56z34y7/3r2lJ4Of1z79/bbOd/e/eC8tey/DoK4q13bu46gXRX9eXtRynZwu995
-				BvE/5kL8nI3Nk/a1m00dpgRVsrLGQ7MuGHaRBs3w3x455zH7X+961NgXP52qNm2MterJcdykFCDw
-				F2toV7VFHEoq+0X+3FeTqmrPahTl7toPgcKhzs5+29sEzSaWRPZ4txDEjpmZNCoSioM0SEgak8yy
-				IJj3Ya4p2lMRya6MNJCe7XfnYFNgKAm8i6ITyoVdGMsCckudc06HV6DhQIQUUkMjWpgkwwFgRKZG
-				6xhi9rIXa5JR2G7VLaUWIyB3Y/esXA61A60cum1kagkjQBdbLFpK7bLTBUoaFoLeDQzVgRLQP8C7
-				IFgGOinFH4GJsIkkmr8A6mGAU+bM/Am8LCEJifgkOyfSKPhw4th7Qnfu2ssKvhkRwKHkEg1EDki1
-				zawEeEiIeQ9DuyHXCoZrb2RW4ja+gMkr8fEoLss8oo/dcdIqtN9gDfzh9Q7uaO0X9BOwREYTxRXv
-				f9ciZjvkDpB6gKkC|
+			(data |KLUv/WBhBk0QALbYTiEQtRsmZc5q276ayLS71D6kxbkmoTeIJM7lAHtEAMAAxQFGAD8ARQCbvIHa
+				a/wrVHSazXnPhvzar1BNtH1kxRf5EwCAQPh5F+e0kJq0nmtfKDvj37Jf3xQUlFKqztoXWzE7iAAI
+				iJ6Q5m2d9RAC9jcPPWe/GXf/9ewpPR3+uPbv7bdzvr37wXlr2X8dBHFXu7Z3HUG7Kvrz9qKU7eB2
+				v/MM4n/Mhfg5G5sn7WsDTS2mA1WyssZDsy4YdpEGzfD8Ny+85JzH7H+961FjX/x0qtq0MdaqJ8dx
+				k1KAwF+soV3VFnEoqewX+XNfTaqqPatRlLsbgcKhzs5+29sEzSaWRPZ4txDEjpmZNCoSiiMhaUwy
+				y4Jg3oe5pmhPRSS7MtJAerbfnYNNgaEkuCg6oVzYhbEsF1vRgtxS55zTIVig4URjFFJTI1qYFNIB
+				YESmRusYYvaiF0uSUdhu1Q2lFiOgdmN7VvaH2oWyw9MQXRuZtQQQoIsxFn2ldtnpQiUNa0HvDQCK
+				f/XTisCgEJQEXe/if4EJsakkqj8BMmGAU+ZM/AG8LSEJMfgkOKfSKPhw4rD3ZHfmNZYNfDMigEPJ
+				EBoIDghtm1kJ8BAQ8xyGdkOuFQy33sishFt8DZNX4uNRXJZ5hBy746RJaNtgbfyB613d0dov6Cdg
+				iUQT9BXkf9EiYDuODpB6gKkC|
 			)
-			(checksum "6817F89AF9F875B8ABB3EEDEC3A35A01")
+			(checksum "0A61268C685EAF945CA2EA8187370BD3")
 		)
 	)
 )
