@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "V2 Link")
-		(date "2026-01-18")
-		(rev "1")
+		(date "2026-02-12")
+		(rev "2026-02-12")
 		(company "Socket")
 	)
 	(lib_symbols

@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "MIDI In")
-		(date "2025-09-19")
-		(rev "3")
+		(date "2026-02-12")
+		(rev "2026-02-12")
 	)
 	(lib_symbols
 		(symbol "V2_Connector_Audio:SJ2-25404B-SMT-TR"
