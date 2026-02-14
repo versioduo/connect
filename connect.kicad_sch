@@ -7664,7 +7664,7 @@
 	)
 	(symbol
 		(lib_id "V2_Production:Layer_Numbers")
-		(at 232.41 154.94 0)
+		(at 237.49 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -7672,7 +7672,7 @@
 		(dnp no)
 		(uuid "0602ed14-d2c2-4e47-84cb-eec621139215")
 		(property "Reference" "INFO102"
-			(at 227.33 150.876 0)
+			(at 245.364 166.624 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7681,7 +7681,7 @@
 			)
 		)
 		(property "Value" "Layer_Numbers"
-			(at 227.33 151.1299 0)
+			(at 232.41 162.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7691,7 +7691,7 @@
 			)
 		)
 		(property "Footprint" "V2_Production:Layer_Numbers"
-			(at 232.41 161.29 0)
+			(at 237.49 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7700,7 +7700,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 232.41 157.48 0)
+			(at 237.49 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7709,7 +7709,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 232.41 154.94 0)
+			(at 237.49 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10309,7 +10309,7 @@
 	)
 	(symbol
 		(lib_id "V2_Production:Revision")
-		(at 204.47 154.94 0)
+		(at 237.49 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -10317,7 +10317,7 @@
 		(dnp no)
 		(uuid "7eb06b9d-d894-478a-bc35-8590f2ab48d6")
 		(property "Reference" "INFO101"
-			(at 204.47 150.876 0)
+			(at 249.428 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10325,7 +10325,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 204.47 157.48 0)
+			(at 237.49 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10334,7 +10334,7 @@
 			)
 		)
 		(property "Footprint" "V2_Production:Revision"
-			(at 204.47 160.02 0)
+			(at 237.49 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10343,7 +10343,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 204.47 154.94 0)
+			(at 237.49 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10352,7 +10352,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 204.47 154.94 0)
+			(at 237.49 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13836,7 +13836,7 @@
 	)
 	(symbol
 		(lib_id "V2_Artwork:V2-logo")
-		(at 171.45 154.94 0)
+		(at 237.49 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -13844,7 +13844,7 @@
 		(dnp no)
 		(uuid "ff5fa334-854e-4ca7-a359-9c419e0f5264")
 		(property "Reference" "ICON101"
-			(at 167.64 149.352 0)
+			(at 242.824 147.066 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13853,7 +13853,7 @@
 			)
 		)
 		(property "Value" "V2-logo"
-			(at 167.64 149.86 0)
+			(at 233.68 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13863,7 +13863,7 @@
 			)
 		)
 		(property "Footprint" "V2_Artwork:Logo_Small"
-			(at 171.45 162.56 0)
+			(at 237.49 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13872,7 +13872,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 154.94 0)
+			(at 237.49 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13881,7 +13881,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 171.45 154.94 0)
+			(at 237.49 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
