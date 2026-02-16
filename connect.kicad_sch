@@ -6638,7 +6638,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 146.05) (xy 71.12 146.05)
+			(xy 54.61 146.05) (xy 73.66 146.05)
 		)
 		(stroke
 			(width 0)
@@ -6867,7 +6867,7 @@
 		(uuid "08c395cf-b7ee-4577-9261-fd45e36ed996")
 	)
 	(label "+VLINK-Supply"
-		(at 71.12 146.05 180)
+		(at 73.66 146.05 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7096,7 +7096,7 @@
 		)
 		(uuid "9f2f902a-ad06-4d0b-a307-e51e9e19034b")
 	)
-	(label "VBUS"
+	(label "+VBUS"
 		(at 203.2 83.82 180)
 		(effects
 			(font
@@ -7196,7 +7196,7 @@
 		)
 		(uuid "c9c057ad-1c55-4101-bb7a-8d7160b2c763")
 	)
-	(label "VBUS"
+	(label "+VBUS"
 		(at 262.89 102.87 180)
 		(effects
 			(font
@@ -7256,7 +7256,7 @@
 		)
 		(uuid "dbb89f1d-5c8e-4936-845f-788bfa2fb59b")
 	)
-	(label "VBUS"
+	(label "+VBUS"
 		(at 259.08 80.01 180)
 		(effects
 			(font
