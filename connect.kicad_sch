@@ -6551,7 +6551,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 80.01) (xy 259.08 80.01)
+			(xy 250.19 80.01) (xy 260.35 80.01)
 		)
 		(stroke
 			(width 0)
@@ -7260,7 +7260,7 @@
 		(uuid "dbb89f1d-5c8e-4936-845f-788bfa2fb59b")
 	)
 	(label "+VBUS"
-		(at 259.08 80.01 180)
+		(at 260.35 80.01 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7551,12 +7551,12 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 194.31 35.56 0)
+			(at 198.12 35.306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(color 255 92 187 1)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7913,6 +7913,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(color 255 92 187 1)
 				)
 			)
 		)
@@ -8689,7 +8690,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "242e9c01-1954-4fac-9a0a-ebfe57518cb7")
 		(property "Reference" "#PWR117"
 			(at 246.38 72.39 0)
@@ -8701,12 +8701,12 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 254 72.3899 90)
+			(at 255.524 72.3899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(color 255 92 187 1)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -9318,12 +9318,12 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 49.53 45.72 90)
+			(at 46.736 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(color 255 92 187 1)
 				)
-				(justify left bottom)
 			)
 		)
 		(property "Footprint" ""
@@ -9587,10 +9587,11 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 173.99 35.56 0)
+			(at 173.99 35.306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(color 255 92 187 1)
 				)
 			)
 		)
@@ -9942,7 +9943,7 @@
 			)
 		)
 		(property "Value" "Shield"
-			(at 257.556 83.566 90)
+			(at 256.794 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10225,7 +10226,7 @@
 		(dnp no)
 		(uuid "7ab0d2fa-e406-45db-9231-2fb7f69d9786")
 		(property "Reference" "D104"
-			(at 74.676 157.734 0)
+			(at 74.422 158.242 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10234,7 +10235,7 @@
 			)
 		)
 		(property "Value" "PMEG6030AEXEX"
-			(at 77.724 160.02 0)
+			(at 77.216 160.528 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10380,7 +10381,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "819dcccb-fbf4-40dc-88e4-a3496c9ef425")
 		(property "Reference" "#PWR124"
 			(at 115.57 93.98 0)
@@ -10392,12 +10392,12 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 107.95 93.9799 90)
+			(at 104.394 93.9799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(color 255 92 187 1)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -10657,7 +10657,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8a76b789-5409-4cde-a653-bda486009bb3")
 		(property "Reference" "#PWR120"
 			(at 205.74 83.82 0)
@@ -10669,12 +10668,12 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 213.36 83.8199 90)
+			(at 215.138 83.8199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(color 255 92 187 1)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -11040,6 +11039,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(color 255 92 187 1)
 				)
 			)
 		)
@@ -12650,12 +12650,12 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 44.45 120.65 90)
+			(at 41.656 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(color 255 92 187 1)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -13326,7 +13326,7 @@
 		(dnp no)
 		(uuid "e3944e54-ba44-4ea2-8910-12a3c0d5d309")
 		(property "Reference" "D102"
-			(at 209.55 77.216 0)
+			(at 210.566 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13335,7 +13335,7 @@
 			)
 		)
 		(property "Value" "PMEG6030AEXEX"
-			(at 207.01 79.756 0)
+			(at 213.36 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
