@@ -1440,7 +1440,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "PoE Passive +24V\nIEEE 802.3af Mode B"
+	(text "PoE Passive +28V\nIEEE 802.3af Mode B"
 		(exclude_from_sim no)
 		(at 169.164 150.876 0)
 		(effects

@@ -5143,6 +5143,120 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "V2_power:+VBUS"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+VBUS"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(color 255 92 187 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "USB Power Delivery"
+				(at 0 -15.494 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+VBUS_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.27) (xy -0.762 1.27) (xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "+VBUS_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "V2_power:+VLINK"
 			(power)
 			(pin_numbers
@@ -6031,7 +6145,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 121.92) (xy 255.27 121.92)
+			(xy 242.57 125.73) (xy 255.27 125.73)
 		)
 		(stroke
 			(width 0)
@@ -6041,7 +6155,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 121.92) (xy 208.28 121.92)
+			(xy 226.06 125.73) (xy 208.28 125.73)
 		)
 		(stroke
 			(width 0)
@@ -6081,7 +6195,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 102.87) (xy 238.76 102.87)
+			(xy 245.11 92.71) (xy 252.73 92.71)
 		)
 		(stroke
 			(width 0)
@@ -6321,7 +6435,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 105.41) (xy 238.76 105.41)
+			(xy 245.11 95.25) (xy 252.73 95.25)
 		)
 		(stroke
 			(width 0)
@@ -6549,16 +6663,6 @@
 		)
 		(uuid "b55bbc43-3809-4552-b4ca-19d2520658f5")
 	)
-	(wire
-		(pts
-			(xy 250.19 80.01) (xy 260.35 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b61ced17-a6fd-484f-baab-2996f59c7882")
-	)
 	(polyline
 		(pts
 			(xy 212.09 12.7) (xy 212.09 63.5)
@@ -6628,16 +6732,6 @@
 			(type default)
 		)
 		(uuid "c9b7c012-6bd2-4032-a314-eac3186f974c")
-	)
-	(wire
-		(pts
-			(xy 193.04 83.82) (xy 204.47 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc56bce9-4e1e-4b89-8039-622a2e863516")
 	)
 	(wire
 		(pts
@@ -6771,7 +6865,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 102.87) (xy 262.89 102.87)
+			(xy 270.51 92.71) (xy 276.86 92.71)
 		)
 		(stroke
 			(width 0)
@@ -7090,7 +7184,7 @@
 		(uuid "98a48a06-9e13-47ee-8795-c7bb15be18c6")
 	)
 	(label "+5V-Link"
-		(at 254 121.92 180)
+		(at 254 125.73 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7098,16 +7192,6 @@
 			(justify right bottom)
 		)
 		(uuid "9f2f902a-ad06-4d0b-a307-e51e9e19034b")
-	)
-	(label "+VBUS"
-		(at 203.2 83.82 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a03fc083-bbba-441e-aa1c-7309b70fbc18")
 	)
 	(label "MIDI-In"
 		(at 31.75 52.07 0)
@@ -7130,7 +7214,7 @@
 		(uuid "aeb8cc01-ad75-4b70-9b42-97cca547371a")
 	)
 	(label "+VLINK-Supply"
-		(at 208.28 121.92 0)
+		(at 208.28 125.73 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7200,7 +7284,7 @@
 		(uuid "c9c057ad-1c55-4101-bb7a-8d7160b2c763")
 	)
 	(label "+VBUS"
-		(at 262.89 102.87 180)
+		(at 276.86 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7259,16 +7343,6 @@
 		)
 		(uuid "dbb89f1d-5c8e-4936-845f-788bfa2fb59b")
 	)
-	(label "+VBUS"
-		(at 260.35 80.01 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f15dd0e6-7fde-4f64-9013-088a730ce849")
-	)
 	(label "SWCLK"
 		(at 31.75 107.95 0)
 		(effects
@@ -7280,7 +7354,7 @@
 		(uuid "f5b56aae-6ad4-4558-a8d7-7c437a4b15a6")
 	)
 	(label "USB+"
-		(at 231.14 105.41 0)
+		(at 245.11 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7310,7 +7384,7 @@
 		(uuid "faa77dfb-8ee8-4dc9-a7ea-f20356db1e00")
 	)
 	(label "USB-"
-		(at 231.14 102.87 0)
+		(at 245.11 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7321,7 +7395,7 @@
 	)
 	(symbol
 		(lib_id "V2_ESD_Suppressor:RCLAMP0582N")
-		(at 247.65 102.87 0)
+		(at 261.62 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7329,7 +7403,7 @@
 		(dnp no)
 		(uuid "04efcacc-5cf4-4605-81ff-2960516efa9d")
 		(property "Reference" "ESD101"
-			(at 241.3 95.25 0)
+			(at 255.27 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7338,7 +7412,7 @@
 			)
 		)
 		(property "Value" "RCLAMP0582N"
-			(at 241.3 98.425 0)
+			(at 255.27 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7347,7 +7421,7 @@
 			)
 		)
 		(property "Footprint" "V2_ESD_Suppressor:SLP1210N6"
-			(at 247.65 118.11 0)
+			(at 261.62 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7356,7 +7430,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 247.65 102.87 0)
+			(at 261.62 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7365,7 +7439,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 247.65 102.87 0)
+			(at 261.62 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7374,7 +7448,7 @@
 			)
 		)
 		(property "Mouser" "947-RCLAMP0582N.TCT"
-			(at 247.65 128.27 0)
+			(at 261.62 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7383,7 +7457,7 @@
 			)
 		)
 		(property "Product" "RCLAMP0582N.TCT"
-			(at 247.65 125.73 0)
+			(at 261.62 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7392,7 +7466,7 @@
 			)
 		)
 		(property "Manufacturer" "Semtech"
-			(at 247.65 123.19 0)
+			(at 261.62 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7892,7 +7966,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:+5V")
-		(at 260.35 121.92 270)
+		(at 260.35 125.73 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7900,7 +7974,7 @@
 		(dnp no)
 		(uuid "0808a77e-ab0f-414e-9e79-38170f3944e1")
 		(property "Reference" "#PWR130"
-			(at 256.54 121.92 0)
+			(at 256.54 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7909,7 +7983,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 265.938 121.92 90)
+			(at 265.938 125.73 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7918,7 +7992,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 260.35 121.92 0)
+			(at 260.35 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7927,7 +8001,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 260.35 121.92 0)
+			(at 260.35 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7936,7 +8010,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 260.35 121.92 0)
+			(at 260.35 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8179,7 +8253,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:GND")
-		(at 250.19 76.2 90)
+		(at 238.76 69.85 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8187,7 +8261,7 @@
 		(dnp no)
 		(uuid "178b3e01-8d2e-4605-a8b5-a8a2bc0831ed")
 		(property "Reference" "#PWR119"
-			(at 256.54 76.2 0)
+			(at 245.11 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8196,7 +8270,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 257.81 76.2 90)
+			(at 246.38 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8206,7 +8280,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 250.19 76.2 0)
+			(at 238.76 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8215,7 +8289,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 250.19 76.2 0)
+			(at 238.76 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8224,7 +8298,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 250.19 76.2 0)
+			(at 238.76 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8246,7 +8320,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:PWR_FLAG")
-		(at 250.19 83.82 0)
+		(at 238.76 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8254,7 +8328,7 @@
 		(dnp no)
 		(uuid "1b13e303-389e-442f-bf80-330bff8cc3fd")
 		(property "Reference" "#FLG104"
-			(at 250.19 81.915 0)
+			(at 238.76 75.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8263,7 +8337,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 241.554 83.82 0)
+			(at 230.124 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8271,7 +8345,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 250.19 83.82 0)
+			(at 238.76 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8280,7 +8354,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 250.19 83.82 0)
+			(at 238.76 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8289,7 +8363,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 250.19 83.82 0)
+			(at 238.76 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8684,7 +8758,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:+5V")
-		(at 250.19 72.39 270)
+		(at 238.76 81.28 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8692,7 +8766,7 @@
 		(dnp no)
 		(uuid "242e9c01-1954-4fac-9a0a-ebfe57518cb7")
 		(property "Reference" "#PWR117"
-			(at 246.38 72.39 0)
+			(at 234.95 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8701,7 +8775,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 255.524 72.3899 90)
+			(at 244.094 81.2799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8710,7 +8784,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 250.19 72.39 0)
+			(at 238.76 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8719,7 +8793,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 250.19 72.39 0)
+			(at 238.76 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8728,7 +8802,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 250.19 72.39 0)
+			(at 238.76 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9236,7 +9310,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:PWR_FLAG")
-		(at 250.19 72.39 0)
+		(at 238.76 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9244,7 +9318,7 @@
 		(dnp no)
 		(uuid "55e453e2-960a-4bd2-a999-240881689924")
 		(property "Reference" "#FLG101"
-			(at 250.19 70.485 0)
+			(at 238.76 79.375 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9253,7 +9327,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 241.554 72.39 0)
+			(at 230.124 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9261,7 +9335,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 250.19 72.39 0)
+			(at 238.76 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9270,7 +9344,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 250.19 72.39 0)
+			(at 238.76 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9279,7 +9353,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 250.19 72.39 0)
+			(at 238.76 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9642,24 +9716,21 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "64df247b-ed4e-424b-867c-c9359ac249f3")
 		(property "Reference" "U102"
-			(at 74.4094 125.73 0)
+			(at 69.8374 77.216 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "ATSAMD51J"
-			(at 74.4094 128.27 0)
+			(at 69.8374 79.756 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "V2_Package_DFN_QFN:QFN-64-1EP_9x9mm_P0.5mm_EP4.8x4.8mm_ThermalVias"
@@ -9926,7 +9997,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:Shield")
-		(at 250.19 83.82 90)
+		(at 238.76 77.47 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9934,7 +10005,7 @@
 		(dnp no)
 		(uuid "69d74863-cbc6-49e5-9556-bf377830b9eb")
 		(property "Reference" "#PWR121"
-			(at 256.54 83.82 0)
+			(at 245.11 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9943,7 +10014,7 @@
 			)
 		)
 		(property "Value" "Shield"
-			(at 256.794 83.82 90)
+			(at 245.364 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9951,7 +10022,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 250.19 83.82 0)
+			(at 238.76 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9960,7 +10031,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 250.19 83.82 0)
+			(at 238.76 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9969,7 +10040,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 250.19 83.82 0)
+			(at 238.76 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10153,7 +10224,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:PWR_FLAG")
-		(at 250.19 80.01 0)
+		(at 238.76 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10161,7 +10232,7 @@
 		(dnp no)
 		(uuid "7a283faf-29ac-49ec-9068-0e2e01f423ce")
 		(property "Reference" "#FLG103"
-			(at 250.19 78.105 0)
+			(at 238.76 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10170,7 +10241,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 241.554 80.264 0)
+			(at 230.124 73.914 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10178,7 +10249,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 250.19 80.01 0)
+			(at 238.76 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10187,7 +10258,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 250.19 80.01 0)
+			(at 238.76 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10196,7 +10267,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 250.19 80.01 0)
+			(at 238.76 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10651,7 +10722,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:+5V")
-		(at 209.55 83.82 270)
+		(at 260.35 110.49 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10659,7 +10730,7 @@
 		(dnp no)
 		(uuid "8a76b789-5409-4cde-a653-bda486009bb3")
 		(property "Reference" "#PWR120"
-			(at 205.74 83.82 0)
+			(at 256.54 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10668,7 +10739,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 215.138 83.8199 90)
+			(at 265.938 110.4899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10677,7 +10748,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.55 83.82 0)
+			(at 260.35 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10686,7 +10757,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 83.82 0)
+			(at 260.35 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10695,7 +10766,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 209.55 83.82 0)
+			(at 260.35 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11106,6 +11177,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(color 255 92 187 1)
 				)
 				(justify left)
 			)
@@ -11151,7 +11223,7 @@
 	)
 	(symbol
 		(lib_id "V2_Diode:PMEG6030AEXEX")
-		(at 257.81 121.92 180)
+		(at 257.81 125.73 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11159,7 +11231,7 @@
 		(dnp no)
 		(uuid "a3ecec95-4e85-4e09-9e38-1f7d224a2702")
 		(property "Reference" "D103"
-			(at 260.858 125.984 0)
+			(at 261.112 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11168,7 +11240,7 @@
 			)
 		)
 		(property "Value" "PMEG6030AEXEX"
-			(at 263.906 129.286 0)
+			(at 263.906 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11176,7 +11248,7 @@
 			)
 		)
 		(property "Footprint" "V2_Diode_SMD:D_SOD-123HP"
-			(at 257.81 113.538 0)
+			(at 257.81 117.348 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11185,7 +11257,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 257.81 121.92 0)
+			(at 257.81 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11194,7 +11266,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 257.81 121.92 0)
+			(at 257.81 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11203,7 +11275,7 @@
 			)
 		)
 		(property "Mouser" "771-PMEG6030AEXEX"
-			(at 257.81 110.744 0)
+			(at 257.81 114.554 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11212,7 +11284,7 @@
 			)
 		)
 		(property "Manufacturer" "Nexperia"
-			(at 257.81 111.76 0)
+			(at 257.81 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11221,7 +11293,7 @@
 			)
 		)
 		(property "Product" "PMEG6030AEXEX"
-			(at 257.81 109.22 0)
+			(at 257.81 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11399,6 +11471,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(color 255 92 187 1)
 				)
 				(justify left)
 			)
@@ -11951,7 +12024,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:GND")
-		(at 256.54 105.41 90)
+		(at 270.51 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11960,7 +12033,7 @@
 		(fields_autoplaced yes)
 		(uuid "b8d72967-847b-4ae0-adf9-630b91aaf6ed")
 		(property "Reference" "#PWR126"
-			(at 262.89 105.41 0)
+			(at 276.86 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11969,7 +12042,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 260.35 105.4099 90)
+			(at 274.32 95.2499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11979,7 +12052,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 256.54 105.41 0)
+			(at 270.51 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11988,7 +12061,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 256.54 105.41 0)
+			(at 270.51 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11997,7 +12070,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 256.54 105.41 0)
+			(at 270.51 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12109,6 +12182,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(color 255 92 187 1)
 				)
 				(justify left)
 			)
@@ -12358,6 +12432,74 @@
 			(project "express"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
 					(reference "C102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+VBUS")
+		(at 255.27 110.49 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c33603a0-5963-4d32-844b-edd4d1d05132")
+		(property "Reference" "#PWR140"
+			(at 267.97 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+VBUS"
+			(at 251.46 110.4899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 255 92 187 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "USB Power Delivery"
+			(at 270.764 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ba450fea-676c-4669-9888-3cb403ee0757")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "#PWR140")
 					(unit 1)
 				)
 			)
@@ -12699,7 +12841,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:PWR_FLAG")
-		(at 250.19 76.2 0)
+		(at 238.76 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12707,7 +12849,7 @@
 		(dnp no)
 		(uuid "d336b985-c5d9-49ab-8c3f-f5170cab7c92")
 		(property "Reference" "#FLG102"
-			(at 250.19 74.295 0)
+			(at 238.76 67.945 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12716,7 +12858,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 241.554 76.2 0)
+			(at 230.124 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12724,7 +12866,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 250.19 76.2 0)
+			(at 238.76 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12733,7 +12875,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 250.19 76.2 0)
+			(at 238.76 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12742,7 +12884,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 250.19 76.2 0)
+			(at 238.76 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13318,7 +13460,7 @@
 	)
 	(symbol
 		(lib_id "V2_Diode:PMEG6030AEXEX")
-		(at 207.01 83.82 180)
+		(at 257.81 110.49 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13326,7 +13468,7 @@
 		(dnp no)
 		(uuid "e3944e54-ba44-4ea2-8910-12a3c0d5d309")
 		(property "Reference" "D102"
-			(at 210.566 77.47 0)
+			(at 261.112 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13335,7 +13477,7 @@
 			)
 		)
 		(property "Value" "PMEG6030AEXEX"
-			(at 213.36 80.01 0)
+			(at 263.906 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13343,7 +13485,7 @@
 			)
 		)
 		(property "Footprint" "V2_Diode_SMD:D_SOD-123HP"
-			(at 207.01 75.438 0)
+			(at 257.81 102.108 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13352,7 +13494,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 207.01 83.82 0)
+			(at 257.81 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13361,7 +13503,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 207.01 83.82 0)
+			(at 257.81 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13370,7 +13512,7 @@
 			)
 		)
 		(property "Mouser" "771-PMEG6030AEXEX"
-			(at 207.01 72.644 0)
+			(at 257.81 99.314 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13379,7 +13521,7 @@
 			)
 		)
 		(property "Manufacturer" "Nexperia"
-			(at 207.01 73.66 0)
+			(at 257.81 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13388,7 +13530,7 @@
 			)
 		)
 		(property "Product" "PMEG6030AEXEX"
-			(at 207.01 71.12 0)
+			(at 257.81 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13474,6 +13616,74 @@
 			(project "express"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
 					(reference "#PWR118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_power:+VBUS")
+		(at 238.76 73.66 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eba4b161-f46b-4fe1-aee4-865a180fcccf")
+		(property "Reference" "#PWR138"
+			(at 226.06 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+VBUS"
+			(at 242.57 73.6599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 255 92 187 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "USB Power Delivery"
+			(at 223.266 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23e27226-69ba-4670-a636-642619723f57")
+		)
+		(instances
+			(project ""
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "#PWR138")
 					(unit 1)
 				)
 			)
@@ -13744,6 +13954,74 @@
 		)
 	)
 	(symbol
+		(lib_id "V2_power:+VBUS")
+		(at 193.04 83.82 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8a31b3a-2547-4a00-b0e5-d9ccc53d1b36")
+		(property "Reference" "#PWR139"
+			(at 180.34 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+VBUS"
+			(at 196.85 83.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 255 92 187 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "USB Power Delivery"
+			(at 177.546 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f485b545-1ce5-4fe3-be91-25ed5c6bf6f4")
+		)
+		(instances
+			(project "connect"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "#PWR139")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "V2_Switch:SKSG")
 		(at 264.16 35.56 0)
 		(unit 1)
@@ -13902,7 +14180,7 @@
 		)
 	)
 	(sheet
-		(at 226.06 119.38)
+		(at 226.06 123.19)
 		(size 16.51 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13918,7 +14196,7 @@
 		)
 		(uuid "095cddf1-6522-4d3b-885d-b21acd91d0c6")
 		(property "Sheetname" "Power +5V"
-			(at 226.06 118.6684 0)
+			(at 226.06 122.4784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13927,7 +14205,7 @@
 			)
 		)
 		(property "Sheetfile" "PowerSupply.kicad_sch"
-			(at 226.06 125.0446 0)
+			(at 226.06 128.8546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13937,7 +14215,7 @@
 			)
 		)
 		(pin "Input" input
-			(at 226.06 121.92 180)
+			(at 226.06 125.73 180)
 			(uuid "bae3607d-ef44-4346-a2d2-1d23ef88421f")
 			(effects
 				(font
@@ -13947,7 +14225,7 @@
 			)
 		)
 		(pin "Output" output
-			(at 242.57 121.92 0)
+			(at 242.57 125.73 0)
 			(uuid "79d9af06-a7ca-43bc-9d18-a19c856914e3")
 			(effects
 				(font
