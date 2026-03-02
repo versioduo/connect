@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "V2 connect")
-		(date "2026-02-12")
+		(date "2026-03-02")
 		(rev "2026-02-12")
 		(company "Versio Duo")
 	)
@@ -503,7 +503,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" "603-CC603JRNPO9BN180"
+			(property "Mouser" "810-CGA3E2C0G1H180J"
 				(at 0 -23.368 0)
 				(show_name)
 				(effects
@@ -513,7 +513,7 @@
 					(hide yes)
 				)
 			)
-			(property "Product" "CC0603JRNPO9BN180"
+			(property "Product" "CGA3E2C0G1H180J080AA"
 				(at 0 -20.574 0)
 				(show_name)
 				(effects
@@ -523,7 +523,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer" "YAGEO"
+			(property "Manufacturer" "TDK"
 				(at 0 -17.78 0)
 				(show_name)
 				(effects
@@ -8876,7 +8876,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "603-CC603JRNPO9BN180"
+		(property "Mouser" "810-CGA3E2C0G1H180J"
 			(at 0.762 43.18 0)
 			(show_name yes)
 			(effects
@@ -8886,7 +8886,7 @@
 				(hide yes)
 			)
 		)
-		(property "Product" "CC0603JRNPO9BN180"
+		(property "Product" "CGA3E2C0G1H180J080AA"
 			(at 3.556 43.18 0)
 			(show_name yes)
 			(effects
@@ -8896,7 +8896,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "TDK"
 			(at 6.35 43.18 0)
 			(show_name yes)
 			(effects
@@ -11874,7 +11874,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "603-CC603JRNPO9BN180"
+		(property "Mouser" "810-CGA3E2C0G1H180J"
 			(at 0.762 38.1 0)
 			(show_name yes)
 			(effects
@@ -11884,7 +11884,7 @@
 				(hide yes)
 			)
 		)
-		(property "Product" "CC0603JRNPO9BN180"
+		(property "Product" "CGA3E2C0G1H180J080AA"
 			(at 3.556 38.1 0)
 			(show_name yes)
 			(effects
@@ -11894,7 +11894,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "TDK"
 			(at 6.35 38.1 0)
 			(show_name yes)
 			(effects
