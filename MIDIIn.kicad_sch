@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "MIDI In")
-		(date "2026-02-12")
-		(rev "2026-02-12")
+		(date "2026-03-12")
+		(rev "2026-03-12")
 	)
 	(lib_symbols
 		(symbol "V2_Capacitor:0603_0u1"
@@ -57,8 +57,8 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 -12.7 0)
+			(property "Description" ""
+				(at 0 -13.462 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -621,7 +621,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "V2_Diode:RB501SM"
+		(symbol "V2_Diode:PMEG2010EPK"
 			(pin_numbers
 				(hide yes)
 			)
@@ -632,23 +632,23 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "D"
-				(at 0 2.54 0)
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "RB501SM"
-				(at 0 -3.81 0)
+			(property "Value" "PMEG2010EPK"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "V2_Diode_SMD:D_SOD-523"
-				(at 0 -7.62 0)
+			(property "Footprint" "V2_Diode_SMD:D_SOD-1608"
+				(at 0 -4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -674,17 +674,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser" "755-RB501SM-30FHT2R"
-				(at 0 -15.24 0)
-				(show_name)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Product" "RB501SM-30FHT2R"
+			(property "Mouser" "771-PMEG2010EPK"
 				(at 0 -12.7 0)
 				(show_name)
 				(effects
@@ -694,7 +684,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer" "ROHM Semiconductor"
+			(property "Product" "PMEG2010EPK"
 				(at 0 -10.16 0)
 				(show_name)
 				(effects
@@ -704,7 +694,27 @@
 					(hide yes)
 				)
 			)
-			(symbol "RB501SM_0_1"
+			(property "Manufacturer" "Nexperia "
+				(at 0 -7.62 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Rating" "20V"
+				(at 0 -15.24 0)
+				(show_name)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PMEG2010EPK_0_1"
 				(polyline
 					(pts
 						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
@@ -742,7 +752,7 @@
 					)
 				)
 			)
-			(symbol "RB501SM_1_1"
+			(symbol "PMEG2010EPK_1_1"
 				(pin passive line
 					(at -2.54 0 0)
 					(length 1.27)
@@ -1318,8 +1328,8 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor, small symbol"
-				(at 0 -12.7 0)
+			(property "Description" ""
+				(at 0 -12.192 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2073,7 +2083,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" ""
 			(at 153.67 97.79 0)
 			(effects
 				(font
@@ -2284,7 +2294,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" ""
 			(at 193.04 107.95 0)
 			(effects
 				(font
@@ -2345,7 +2355,7 @@
 		)
 	)
 	(symbol
-		(lib_id "V2_Diode:RB501SM")
+		(lib_id "V2_Diode:PMEG2010EPK")
 		(at 167.64 113.03 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2362,7 +2372,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "RB501SM"
+		(property "Value" "PMEG2010EPK"
 			(at 163.83 105.0924 90)
 			(effects
 				(font
@@ -2371,7 +2381,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "V2_Diode_SMD:D_SOD-523"
+		(property "Footprint" "V2_Diode_SMD:D_SOD-1608"
 			(at 160.655 113.03 0)
 			(effects
 				(font
@@ -2398,7 +2408,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "755-RB501SM-30FHT2R"
+		(property "Mouser" "771-PMEG2010EPK"
 			(at 152.4 113.03 0)
 			(effects
 				(font
@@ -2407,7 +2417,7 @@
 				(hide yes)
 			)
 		)
-		(property "Product" "RB501SM-30FHT2R"
+		(property "Product" "PMEG2010EPK"
 			(at 154.94 113.03 0)
 			(effects
 				(font
@@ -2416,8 +2426,17 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "ROHM Semiconductor"
+		(property "Manufacturer" "Nexperia "
 			(at 157.48 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "20V"
+			(at 152.4 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2549,7 +2568,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
+		(property "Description" ""
 			(at 168.91 107.95 0)
 			(effects
 				(font
