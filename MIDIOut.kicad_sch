@@ -1423,6 +1423,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 99.06) (xy 186.69 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bd4ae6d-58c2-45ef-bfed-638ce3059646")
+	)
+	(wire
+		(pts
 			(xy 144.78 109.22) (xy 186.69 109.22)
 		)
 		(stroke
@@ -1440,16 +1450,6 @@
 			(type default)
 		)
 		(uuid "291fb6f1-78ef-438f-a36e-38d490c67f51")
-	)
-	(wire
-		(pts
-			(xy 154.94 99.06) (xy 186.69 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ca665dd-ef25-4ad2-a761-1c36ffdbd808")
 	)
 	(polyline
 		(pts
@@ -1540,6 +1540,16 @@
 			(type dash)
 		)
 		(uuid "f32126ef-420b-40a5-aac7-a58b32ec53ef")
+	)
+	(wire
+		(pts
+			(xy 156.21 95.25) (xy 156.21 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f72bc4d4-6dc8-4e8e-8665-0f4b8a0d501b")
 	)
 	(label "Ring"
 		(at 171.45 99.06 0)
@@ -1878,7 +1888,7 @@
 	)
 	(symbol
 		(lib_id "V2_Resistor:0603_220R")
-		(at 154.94 91.44 180)
+		(at 156.21 87.63 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1886,7 +1896,7 @@
 		(dnp no)
 		(uuid "596eda00-e3a4-45db-a1dd-18fd1f45f982")
 		(property "Reference" "R401"
-			(at 161.29 90.17 0)
+			(at 162.56 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1894,7 +1904,7 @@
 			)
 		)
 		(property "Value" "220R"
-			(at 150.876 90.17 0)
+			(at 152.146 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1902,7 +1912,7 @@
 			)
 		)
 		(property "Footprint" "V2_Resistor_SMD:R_0603"
-			(at 154.94 75.692 0)
+			(at 156.21 71.882 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1911,7 +1921,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 91.44 0)
+			(at 156.21 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1920,7 +1930,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 154.94 78.74 0)
+			(at 156.21 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1929,7 +1939,7 @@
 			)
 		)
 		(property "Mouser" "71-CRCW0603220RFKEAH"
-			(at 154.94 68.58 0)
+			(at 156.21 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1938,7 +1948,7 @@
 			)
 		)
 		(property "Product" "CRCW0603220RFKEAHP"
-			(at 154.94 73.66 0)
+			(at 156.21 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1947,7 +1957,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay"
-			(at 154.94 76.2 0)
+			(at 156.21 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1956,7 +1966,7 @@
 			)
 		)
 		(property "Rating" "330mW"
-			(at 154.94 71.12 0)
+			(at 156.21 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2116,7 +2126,7 @@
 	)
 	(symbol
 		(lib_id "V2_Diode:PMEG2010EPK")
-		(at 154.94 96.52 90)
+		(at 156.21 92.71 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2124,7 +2134,7 @@
 		(dnp no)
 		(uuid "aaeda754-d611-45ae-83e4-da00f71803e8")
 		(property "Reference" "D401"
-			(at 163.83 97.79 90)
+			(at 165.1 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2133,7 +2143,7 @@
 			)
 		)
 		(property "Value" "PMEG2010EPK"
-			(at 172.466 95.5676 90)
+			(at 173.736 91.7576 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2142,7 +2152,7 @@
 			)
 		)
 		(property "Footprint" "V2_Diode_SMD:D_SOD-1608"
-			(at 161.925 96.52 0)
+			(at 163.195 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2151,7 +2161,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 96.52 0)
+			(at 156.21 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2160,7 +2170,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 154.94 96.52 0)
+			(at 156.21 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2169,7 +2179,7 @@
 			)
 		)
 		(property "Mouser" "771-PMEG2010EPK"
-			(at 170.18 96.52 0)
+			(at 171.45 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2178,7 +2188,7 @@
 			)
 		)
 		(property "Product" "PMEG2010EPK"
-			(at 167.64 96.52 0)
+			(at 168.91 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2187,7 +2197,7 @@
 			)
 		)
 		(property "Manufacturer" "Nexperia "
-			(at 165.1 96.52 0)
+			(at 166.37 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2196,7 +2206,7 @@
 			)
 		)
 		(property "Rating" "20V"
-			(at 170.18 96.52 0)
+			(at 171.45 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2324,7 +2334,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:+5V")
-		(at 154.94 88.9 0)
+		(at 156.21 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2333,7 +2343,7 @@
 		(fields_autoplaced yes)
 		(uuid "d50cacbe-2f64-4455-9c8e-2a931f1c8aad")
 		(property "Reference" "#PWR401"
-			(at 154.94 92.71 0)
+			(at 156.21 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2342,7 +2352,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 154.94 83.82 0)
+			(at 156.21 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2351,7 +2361,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 154.94 88.9 0)
+			(at 156.21 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2360,7 +2370,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 88.9 0)
+			(at 156.21 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2369,7 +2379,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 154.94 88.9 0)
+			(at 156.21 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
