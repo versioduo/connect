@@ -5884,6 +5884,12 @@
 		(uuid "0b51a557-1b5b-4034-9abe-48ce59094040")
 	)
 	(junction
+		(at 175.26 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1236c7fb-ded3-4317-a230-07351c1e137c")
+	)
+	(junction
 		(at 46.99 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5948,6 +5954,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d6deaad-4032-4b26-a061-ea985150beb8")
+	)
+	(junction
+		(at 175.26 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f348470-e301-40bb-a9ff-8260db02cccd")
 	)
 	(junction
 		(at 78.74 29.21)
@@ -6116,10 +6128,6 @@
 		(uuid "b9666ba4-cd54-45dc-8e1b-0867cb59b689")
 	)
 	(no_connect
-		(at 175.26 147.32)
-		(uuid "b98f1979-800f-447a-ae20-151b7adffd00")
-	)
-	(no_connect
 		(at 64.77 31.75)
 		(uuid "bc02e6f3-43f3-4ea9-b76b-5f1cd4291c35")
 	)
@@ -6140,10 +6148,6 @@
 		(uuid "e402ec81-d6bc-426c-a062-ff6ab27b8fb7")
 	)
 	(no_connect
-		(at 175.26 139.7)
-		(uuid "ebd21427-7c33-426f-a963-d11d3609b591")
-	)
-	(no_connect
 		(at 86.36 72.39)
 		(uuid "f7acd05d-3224-4758-a0f9-db6bba7abf90")
 	)
@@ -6161,7 +6165,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 146.05) (xy 259.08 146.05)
+			(xy 247.65 137.16) (xy 260.35 137.16)
 		)
 		(stroke
 			(width 0)
@@ -6171,7 +6175,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 146.05) (xy 212.09 146.05)
+			(xy 231.14 137.16) (xy 213.36 137.16)
 		)
 		(stroke
 			(width 0)
@@ -6218,6 +6222,16 @@
 			(type default)
 		)
 		(uuid "0cccab91-b3b2-42f7-8058-afb853425501")
+	)
+	(wire
+		(pts
+			(xy 175.26 137.16) (xy 175.26 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f270094-d049-40f5-890e-cbfe93339c9b")
 	)
 	(wire
 		(pts
@@ -6871,6 +6885,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 144.78) (xy 175.26 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea737f49-2120-4c61-9331-818eb862baca")
+	)
+	(wire
+		(pts
 			(xy 137.16 96.52) (xy 144.78 96.52)
 		)
 		(stroke
@@ -7210,7 +7234,7 @@
 		(uuid "98a48a06-9e13-47ee-8795-c7bb15be18c6")
 	)
 	(label "+5V-Link"
-		(at 257.81 146.05 180)
+		(at 259.08 137.16 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7250,7 +7274,7 @@
 		(uuid "aeb8cc01-ad75-4b70-9b42-97cca547371a")
 	)
 	(label "+VLINK-Supply"
-		(at 212.09 146.05 0)
+		(at 213.36 137.16 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7972,7 +7996,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:+5V")
-		(at 264.16 146.05 270)
+		(at 265.43 137.16 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7980,7 +8004,7 @@
 		(dnp no)
 		(uuid "0808a77e-ab0f-414e-9e79-38170f3944e1")
 		(property "Reference" "#PWR130"
-			(at 260.35 146.05 0)
+			(at 261.62 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7989,7 +8013,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 269.748 146.05 90)
+			(at 271.018 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7998,7 +8022,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 264.16 146.05 0)
+			(at 265.43 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8007,7 +8031,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 264.16 146.05 0)
+			(at 265.43 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8016,7 +8040,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 264.16 146.05 0)
+			(at 265.43 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10737,7 +10761,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:+5V")
-		(at 264.16 128.27 270)
+		(at 265.43 119.38 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10745,7 +10769,7 @@
 		(dnp no)
 		(uuid "8a76b789-5409-4cde-a653-bda486009bb3")
 		(property "Reference" "#PWR120"
-			(at 260.35 128.27 0)
+			(at 261.62 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10754,7 +10778,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 269.748 128.2699 90)
+			(at 271.018 119.3799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10763,7 +10787,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 264.16 128.27 0)
+			(at 265.43 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10772,7 +10796,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 264.16 128.27 0)
+			(at 265.43 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10781,7 +10805,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 264.16 128.27 0)
+			(at 265.43 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11238,7 +11262,7 @@
 	)
 	(symbol
 		(lib_id "V2_Diode:PMEG6030AEXEX")
-		(at 261.62 146.05 180)
+		(at 262.89 137.16 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11246,7 +11270,7 @@
 		(dnp no)
 		(uuid "a3ecec95-4e85-4e09-9e38-1f7d224a2702")
 		(property "Reference" "D103"
-			(at 264.922 139.7 0)
+			(at 266.192 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11255,7 +11279,7 @@
 			)
 		)
 		(property "Value" "PMEG6030AEXEX"
-			(at 267.716 142.24 0)
+			(at 268.986 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11263,7 +11287,7 @@
 			)
 		)
 		(property "Footprint" "V2_Diode_SMD:D_SOD-123HP"
-			(at 261.62 137.668 0)
+			(at 262.89 128.778 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11272,7 +11296,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 146.05 0)
+			(at 262.89 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11281,7 +11305,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 261.62 146.05 0)
+			(at 262.89 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11290,7 +11314,7 @@
 			)
 		)
 		(property "Mouser" "771-PMEG6030AEXEX"
-			(at 261.62 134.874 0)
+			(at 262.89 125.984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11299,7 +11323,7 @@
 			)
 		)
 		(property "Manufacturer" "Nexperia"
-			(at 261.62 135.89 0)
+			(at 262.89 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11308,7 +11332,7 @@
 			)
 		)
 		(property "Product" "PMEG6030AEXEX"
-			(at 261.62 133.35 0)
+			(at 262.89 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11317,7 +11341,7 @@
 			)
 		)
 		(property "Rating" "60V"
-			(at 261.62 128.27 0)
+			(at 262.89 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12531,7 +12555,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:+VBUS")
-		(at 259.08 128.27 90)
+		(at 260.35 119.38 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12540,7 +12564,7 @@
 		(fields_autoplaced yes)
 		(uuid "c33603a0-5963-4d32-844b-edd4d1d05132")
 		(property "Reference" "#PWR140"
-			(at 271.78 128.27 0)
+			(at 273.05 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12549,7 +12573,7 @@
 			)
 		)
 		(property "Value" "+VBUS"
-			(at 255.27 128.2699 90)
+			(at 256.54 119.3799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12559,7 +12583,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 259.08 128.27 0)
+			(at 260.35 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12568,7 +12592,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 259.08 128.27 0)
+			(at 260.35 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12577,7 +12601,7 @@
 			)
 		)
 		(property "Description" "USB Power Delivery"
-			(at 274.574 128.27 0)
+			(at 275.844 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13552,7 +13576,7 @@
 	)
 	(symbol
 		(lib_id "V2_Diode:PMEG6030AEXEX")
-		(at 261.62 128.27 180)
+		(at 262.89 119.38 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13560,7 +13584,7 @@
 		(dnp no)
 		(uuid "e3944e54-ba44-4ea2-8910-12a3c0d5d309")
 		(property "Reference" "D102"
-			(at 264.922 121.92 0)
+			(at 266.192 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13569,7 +13593,7 @@
 			)
 		)
 		(property "Value" "PMEG6030AEXEX"
-			(at 267.716 124.46 0)
+			(at 268.986 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13577,7 +13601,7 @@
 			)
 		)
 		(property "Footprint" "V2_Diode_SMD:D_SOD-123HP"
-			(at 261.62 119.888 0)
+			(at 262.89 110.998 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13586,7 +13610,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 128.27 0)
+			(at 262.89 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13595,7 +13619,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 261.62 128.27 0)
+			(at 262.89 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13604,7 +13628,7 @@
 			)
 		)
 		(property "Mouser" "771-PMEG6030AEXEX"
-			(at 261.62 117.094 0)
+			(at 262.89 108.204 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13613,7 +13637,7 @@
 			)
 		)
 		(property "Manufacturer" "Nexperia"
-			(at 261.62 118.11 0)
+			(at 262.89 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13622,7 +13646,7 @@
 			)
 		)
 		(property "Product" "PMEG6030AEXEX"
-			(at 261.62 115.57 0)
+			(at 262.89 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13631,7 +13655,7 @@
 			)
 		)
 		(property "Rating" "60V"
-			(at 261.62 110.49 0)
+			(at 262.89 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14281,7 +14305,7 @@
 		)
 	)
 	(sheet
-		(at 229.87 143.51)
+		(at 231.14 134.62)
 		(size 16.51 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14297,7 +14321,7 @@
 		)
 		(uuid "095cddf1-6522-4d3b-885d-b21acd91d0c6")
 		(property "Sheetname" "Power +5V"
-			(at 229.87 142.7984 0)
+			(at 231.14 133.9084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14306,7 +14330,7 @@
 			)
 		)
 		(property "Sheetfile" "PowerSupply.kicad_sch"
-			(at 229.87 149.1746 0)
+			(at 231.14 140.2846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14316,7 +14340,7 @@
 			)
 		)
 		(pin "Input" input
-			(at 229.87 146.05 180)
+			(at 231.14 137.16 180)
 			(uuid "bae3607d-ef44-4346-a2d2-1d23ef88421f")
 			(effects
 				(font
@@ -14326,7 +14350,7 @@
 			)
 		)
 		(pin "Output" output
-			(at 246.38 146.05 0)
+			(at 247.65 137.16 0)
 			(uuid "79d9af06-a7ca-43bc-9d18-a19c856914e3")
 			(effects
 				(font
