@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "MIDI Out")
-		(date "2026-03-20")
+		(date "2026-03-24")
 		(rev "2026-03-14")
 		(company "Versio Duo")
 	)
@@ -1322,7 +1322,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_keywords" "power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1462,7 +1462,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_keywords" "power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)

@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "V2 connect")
-		(date "2026-03-20")
+		(date "2026-03-24")
 		(rev "2026-03-14")
 		(company "Versio Duo")
 	)
@@ -568,7 +568,7 @@
 				)
 			)
 			(property "Mouser" "810-CGA3E2C0G1H180J"
-				(at 0 -23.368 0)
+				(at 0 -22.86 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -579,7 +579,7 @@
 				)
 			)
 			(property "Product" "CGA3E2C0G1H180J080AA"
-				(at 0 -20.574 0)
+				(at 0 -20.32 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -591,6 +591,17 @@
 			)
 			(property "Manufacturer" "TDK"
 				(at 0 -17.78 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Rating" "50V"
+				(at 0 -25.4 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -5322,7 +5333,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_keywords" "power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5462,7 +5473,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_keywords" "power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5534,7 +5545,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "V2_power:+VBUS"
-			(power global)
+			(power local)
 			(pin_numbers
 				(hide yes)
 			)
@@ -5542,10 +5553,10 @@
 				(offset 0)
 				(hide yes)
 			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board no)
+			(in_pos_files no)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -12.7 0)
@@ -5602,7 +5613,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_keywords" "power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5662,7 +5673,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "V2_power:+VLINK"
-			(power global)
+			(power local)
 			(pin_numbers
 				(hide yes)
 			)
@@ -5670,10 +5681,10 @@
 				(offset 0)
 				(hide yes)
 			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board no)
+			(in_pos_files no)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -12.7 0)
@@ -5730,7 +5741,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_keywords" "power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5858,7 +5869,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_keywords" "power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6021,7 +6032,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "V2_power:Shield"
-			(power global)
+			(power local)
 			(pin_numbers
 				(hide yes)
 			)
@@ -6029,10 +6040,10 @@
 				(offset 0)
 				(hide yes)
 			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board no)
+			(in_pos_files no)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -7.62 0)
@@ -6088,7 +6099,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global ground"
+			(property "ki_keywords" "power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7207,7 +7218,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 146.05) (xy 73.66 146.05)
+			(xy 54.61 146.05) (xy 74.93 146.05)
 		)
 		(stroke
 			(width 0)
@@ -7456,7 +7467,7 @@
 		(uuid "08c395cf-b7ee-4577-9261-fd45e36ed996")
 	)
 	(label "+VLINK-Supply"
-		(at 73.66 146.05 180)
+		(at 74.93 146.05 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10915,9 +10926,9 @@
 		(at 254 86.36 90)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "69d74863-cbc6-49e5-9556-bf377830b9eb")
@@ -10933,7 +10944,7 @@
 			)
 		)
 		(property "Value" "Shield"
-			(at 260.604 86.36 90)
+			(at 261.62 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12300,12 +12311,11 @@
 		(at 54.61 142.24 270)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9bb60cf5-aae0-4884-822a-b85905fd0149")
 		(property "Reference" "#PWR132"
 			(at 41.91 142.24 0)
@@ -12319,7 +12329,7 @@
 			)
 		)
 		(property "Value" "+VLINK"
-			(at 58.42 142.2399 90)
+			(at 59.944 142.2399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12582,9 +12592,9 @@
 		(at 168.91 120.65 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a6e02ade-126a-40d1-976c-41182b6097e9")
@@ -12659,9 +12669,9 @@
 		(at 54.61 189.23 90)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -13214,12 +13224,11 @@
 		(at 193.04 137.16 270)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "afe312d5-3913-4cb1-98e0-687b7753557d")
 		(property "Reference" "#PWR141"
 			(at 180.34 137.16 0)
@@ -13233,7 +13242,7 @@
 			)
 		)
 		(property "Value" "+VBUS"
-			(at 196.85 137.1599 90)
+			(at 198.12 137.1599 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13577,9 +13586,9 @@
 		(at 36.83 154.94 90)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -13908,9 +13917,9 @@
 		(at 260.35 119.38 90)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -15317,12 +15326,11 @@
 		(at 254 82.55 270)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "eba4b161-f46b-4fe1-aee4-865a180fcccf")
 		(property "Reference" "#PWR138"
 			(at 241.3 82.55 0)
@@ -15336,7 +15344,7 @@
 			)
 		)
 		(property "Value" "+VBUS"
-			(at 257.81 82.5499 90)
+			(at 258.572 82.5499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15711,12 +15719,11 @@
 		(at 189.23 85.09 270)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f8a31b3a-2547-4a00-b0e5-d9ccc53d1b36")
 		(property "Reference" "#PWR139"
 			(at 176.53 85.09 0)
@@ -15730,7 +15737,7 @@
 			)
 		)
 		(property "Value" "+VBUS"
-			(at 193.04 85.0899 90)
+			(at 194.31 85.0899 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
