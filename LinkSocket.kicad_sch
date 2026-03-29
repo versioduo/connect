@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "V2 connect")
-		(date "2026-03-26")
-		(rev "2026-03-14")
+		(date "2026-03-28")
+		(rev "2026-03-28")
 		(company "Versio Duo")
 	)
 	(lib_symbols
