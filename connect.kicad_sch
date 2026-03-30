@@ -5167,6 +5167,17 @@
 					)
 				)
 			)
+			(property "Rating" "1.6N"
+				(at 0 -20.32 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "switch normally-open pushbutton push-button"
 				(at 0 0 0)
 				(show_name no)
@@ -8437,6 +8448,17 @@
 				)
 			)
 		)
+		(property "Rating" "1.6N"
+			(at 264.16 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6873bfd1-5fab-4224-ae2a-5706d644f65d")
 		)
@@ -9637,6 +9659,17 @@
 			(at 6.35 43.18 0)
 			(hide yes)
 			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "50V"
+			(at -1.27 43.18 0)
+			(hide yes)
+			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
@@ -11056,6 +11089,17 @@
 		)
 		(property "Product" "SKSGACE010"
 			(at 264.16 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1.6N"
+			(at 264.16 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13174,6 +13218,17 @@
 				)
 			)
 		)
+		(property "Rating" "50V"
+			(at -1.27 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f7d314ad-4788-4537-99bd-df52f2542c69")
 		)
@@ -14682,6 +14737,17 @@
 				)
 			)
 		)
+		(property "Rating" "1.6N"
+			(at 133.35 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "accfb89e-4554-412c-b526-afa48735151e")
 		)
@@ -15466,6 +15532,17 @@
 				)
 			)
 		)
+		(property "Rating" "1.6N"
+			(at 264.16 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c983b2dd-5e23-4be2-98ac-10cb234e3f1d")
 		)
@@ -15850,6 +15927,17 @@
 		)
 		(property "Product" "SKSGACE010"
 			(at 264.16 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1.6N"
+			(at 264.16 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
