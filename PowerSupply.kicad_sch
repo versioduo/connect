@@ -1008,7 +1008,7 @@
 					)
 				)
 				(pin no_connect line
-					(at 0 -30.48 180)
+					(at 0 -27.94 180)
 					(length 2.54)
 					(hide yes)
 					(name "SW"
@@ -1027,7 +1027,7 @@
 					)
 				)
 				(pin no_connect line
-					(at 0 -33.02 180)
+					(at 0 -30.48 180)
 					(length 2.54)
 					(hide yes)
 					(name "SW"
@@ -1046,7 +1046,7 @@
 					)
 				)
 				(pin no_connect line
-					(at 0 -27.94 180)
+					(at 0 -33.02 180)
 					(length 2.54)
 					(hide yes)
 					(name "BOOT"
@@ -2512,7 +2512,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ad5e1164-8f65-4fcc-b61f-6ec0963a0ede")
-		(property "Reference" "#PWR01208"
+		(property "Reference" "#PWR1208"
 			(at 129.54 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -2573,7 +2573,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/095cddf1-6522-4d3b-885d-b21acd91d0c6"
-					(reference "#PWR01208")
+					(reference "#PWR1208")
 					(unit 1)
 				)
 			)
