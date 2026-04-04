@@ -47,7 +47,7 @@
 				)
 			)
 			(property "Footprint" "V2_Capacitor_SMD:C_0603"
-				(at 0 -17.018 0)
+				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -81,6 +81,17 @@
 			)
 			(property "Mouser" "810-CGA3E2X7R1H104MA"
 				(at 0 -20.32 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Id" "Capacitor:${SYMBOL_NAME}"
+				(at 0 -15.24 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -301,6 +312,17 @@
 			)
 			(property "Manufacturer" "Same Sky"
 				(at 0 -33.02 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Id" "Audio:${SYMBOL_NAME}"
+				(at 0 -27.94 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -733,6 +755,17 @@
 					)
 				)
 			)
+			(property "Id" "Diode:${SYMBOL_NAME}"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "Product" "PMEG2010EPK"
 				(at 0 -10.16 0)
 				(show_name yes)
@@ -913,6 +946,17 @@
 			)
 			(property "Mouser" "757-TLP2361TPRE"
 				(at 0 -35.56 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Id" "Optocoupler:${SYMBOL_NAME}"
+				(at 0 -24.13 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1384,7 +1428,7 @@
 				)
 			)
 			(property "Footprint" "V2_Resistor_SMD:R_0603"
-				(at 0 -15.748 0)
+				(at 0 -16.51 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1418,6 +1462,17 @@
 			)
 			(property "Mouser" "71-CRCW0603220RFKEAH"
 				(at 0 -22.86 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Id" "Resistor:${SYMBOL_NAME}"
+				(at 0 -13.97 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2081,6 +2136,17 @@
 				)
 			)
 		)
+		(property "Id" "Audio:${SYMBOL_NAME}"
+			(at 116.84 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "25a4bc5c-e9af-4bb6-acdf-7a10cd19ddca")
 		)
@@ -2293,6 +2359,17 @@
 				)
 			)
 		)
+		(property "Id" "Capacitor:${SYMBOL_NAME}"
+			(at 156.21 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "02fbfc14-0d8f-4c29-bd9f-65cda230c96d")
 		)
@@ -2399,6 +2476,17 @@
 		)
 		(property "Manufacturer" "Toshiba"
 			(at 187.96 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "Optocoupler:${SYMBOL_NAME}"
+			(at 187.96 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2542,6 +2630,17 @@
 				)
 			)
 		)
+		(property "Id" "Capacitor:${SYMBOL_NAME}"
+			(at 193.04 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "be283d90-2cc0-4128-8061-8f31576beede")
 		)
@@ -2658,6 +2757,17 @@
 		)
 		(property "Rating" "20V"
 			(at 152.4 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "Diode:${SYMBOL_NAME}"
+			(at 158.75 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2859,6 +2969,17 @@
 		)
 		(property "Rating" "330mW"
 			(at 176.53 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "Resistor:${SYMBOL_NAME}"
+			(at 170.18 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

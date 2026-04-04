@@ -41,7 +41,7 @@
 				)
 			)
 			(property "Footprint" "V2_LED:WS2812-2020"
-				(at 0 -9.906 0)
+				(at 0 -13.97 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -64,7 +64,7 @@
 				)
 			)
 			(property "Description" "RGB LED with integrated controller"
-				(at 0 -6.858 0)
+				(at 0 -11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -75,7 +75,7 @@
 				)
 			)
 			(property "Manufacturer" "Worldsemi"
-				(at 0 -15.494 0)
+				(at 0 -16.51 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -86,7 +86,7 @@
 				)
 			)
 			(property "Product" "WS2812B-2020"
-				(at 0 -12.954 0)
+				(at 0 -19.05 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -97,8 +97,19 @@
 				)
 			)
 			(property "LCSC" "C965555"
-				(at 0 -18.288 0)
+				(at 0 -21.59 0)
 				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Id" "LED:${SYMBOL_NAME}"
+				(at 0 -8.89 0)
+				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
@@ -993,6 +1004,17 @@
 				)
 			)
 		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 139.7 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "82e9c88c-b6e1-4e44-a0c3-bc75ad06e198")
 		)
@@ -1182,6 +1204,17 @@
 		)
 		(property "LCSC" "C965555"
 			(at 163.83 142.748 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 163.83 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1467,6 +1500,17 @@
 				)
 			)
 		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 139.7 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "def58989-8f52-41f9-83aa-072c09f8a7a7")
 		)
@@ -1743,6 +1787,17 @@
 				)
 			)
 		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 116.84 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a1037a4f-a4ee-4af0-99f7-4b634e844691")
 		)
@@ -1854,6 +1909,17 @@
 		)
 		(property "LCSC" "C965555"
 			(at 139.7 86.868 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 139.7 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1983,6 +2049,17 @@
 				)
 			)
 		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 116.84 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3527edc8-1489-40f5-915e-fd99092c4b06")
 		)
@@ -2094,6 +2171,17 @@
 		)
 		(property "LCSC" "C965555"
 			(at 186.69 104.648 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 186.69 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2691,6 +2779,17 @@
 				)
 			)
 		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 139.7 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "eab6639d-a21f-4e96-bd88-e94521341fb0")
 		)
@@ -3279,6 +3378,17 @@
 				)
 			)
 		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 186.69 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a106fb35-416b-4875-bfb6-35a24e18df05")
 		)
@@ -3390,6 +3500,17 @@
 		)
 		(property "LCSC" "C965555"
 			(at 186.69 123.698 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 186.69 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3666,6 +3787,17 @@
 		)
 		(property "LCSC" "C965555"
 			(at 139.7 123.698 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 139.7 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4185,6 +4317,17 @@
 				)
 			)
 		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 163.83 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7b23d2db-c1e2-4587-83e5-08eba95fe217")
 		)
@@ -4461,6 +4604,17 @@
 				)
 			)
 		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 163.83 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "55022c05-247c-4ab0-a1bf-68bfc368ec4f")
 		)
@@ -4572,6 +4726,17 @@
 		)
 		(property "LCSC" "C965555"
 			(at 116.84 104.648 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 116.84 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5091,6 +5256,17 @@
 				)
 			)
 		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 163.83 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c4cc754b-6875-4543-908c-09c4b1ce2e58")
 		)
@@ -5367,6 +5543,17 @@
 				)
 			)
 		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 186.69 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dbf76901-a617-4f05-af41-4f0042e7591f")
 		)
@@ -5565,6 +5752,17 @@
 				)
 			)
 		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 163.83 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "39369379-da2a-4b41-b802-84bbe586ab9b")
 		)
@@ -5754,6 +5952,17 @@
 		)
 		(property "LCSC" "C965555"
 			(at 116.84 163.068 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 116.84 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6117,6 +6326,17 @@
 				)
 			)
 		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 186.69 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e23f43c5-245c-4e06-b6e5-020dc1d56ba8")
 		)
@@ -6228,6 +6448,17 @@
 		)
 		(property "LCSC" "C965555"
 			(at 116.84 123.698 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "LED:${SYMBOL_NAME}"
+			(at 116.84 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

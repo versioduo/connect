@@ -47,7 +47,7 @@
 				)
 			)
 			(property "Footprint" "V2_Capacitor_SMD:C_0603"
-				(at 0 -17.018 0)
+				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -81,6 +81,17 @@
 			)
 			(property "Mouser" "810-CGA3E2X7R1H104MA"
 				(at 0 -20.32 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Id" "Capacitor:${SYMBOL_NAME}"
+				(at 0 -15.24 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -247,7 +258,7 @@
 				)
 			)
 			(property "Footprint" "V2_Capacitor_SMD:C_0603"
-				(at 0 -17.018 0)
+				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -281,6 +292,17 @@
 			)
 			(property "Mouser" "810-CGA3E3X7R1H105K0"
 				(at 0 -20.32 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Id" "Capacitor:${SYMBOL_NAME}"
+				(at 0 -15.24 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -447,7 +469,7 @@
 				)
 			)
 			(property "Footprint" "V2_Capacitor_SMD:C_1210"
-				(at 0 -17.018 0)
+				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -481,6 +503,17 @@
 			)
 			(property "Mouser" "810-CNC6P1X7R1H106K2"
 				(at 0 -22.86 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Id" "Capacitor:${SYMBOL_NAME}"
+				(at 0 -15.24 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -647,7 +680,7 @@
 				)
 			)
 			(property "Footprint" "V2_Capacitor_SMD:C_1210"
-				(at 0 -17.018 0)
+				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -681,6 +714,17 @@
 			)
 			(property "Mouser" "810-CGA6P3X7R1E226M5"
 				(at 0 -22.86 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Id" "Capacitor:${SYMBOL_NAME}"
+				(at 0 -15.24 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -843,7 +887,7 @@
 				)
 			)
 			(property "Footprint" "V2_Converter_DCDC:QFN-11"
-				(at 0 -38.1 0)
+				(at 0 -46.99 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -880,6 +924,17 @@
 			(property "Mouser" "595-SM33620S5QRDNRQ1"
 				(at 0 -48.26 0)
 				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Id" "DCDC:${SYMBOL_NAME}"
+				(at 0 -44.45 0)
+				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
@@ -1569,6 +1624,17 @@
 				)
 			)
 		)
+		(property "Id" "DCDC:${SYMBOL_NAME}"
+			(at 148.59 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cdeb4c88-51c1-4ea5-9e94-8fdb2dd807ff")
 		)
@@ -1721,6 +1787,17 @@
 				)
 			)
 		)
+		(property "Id" "Capacitor:${SYMBOL_NAME}"
+			(at 109.22 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "932f1e0e-fa6e-47a6-8c49-00af21359783")
 		)
@@ -1837,6 +1914,17 @@
 		)
 		(property "Rating" "25V"
 			(at 195.58 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "Capacitor:${SYMBOL_NAME}"
+			(at 195.58 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2283,6 +2371,17 @@
 				)
 			)
 		)
+		(property "Id" "Capacitor:${SYMBOL_NAME}"
+			(at 140.97 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2610b0f9-5de1-439b-b57d-d80f6c448594")
 		)
@@ -2399,6 +2498,17 @@
 		)
 		(property "Rating" "25V"
 			(at 185.42 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "Capacitor:${SYMBOL_NAME}"
+			(at 185.42 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2758,6 +2868,17 @@
 		)
 		(property "Rating" "50V"
 			(at 97.79 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "Capacitor:${SYMBOL_NAME}"
+			(at 97.79 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

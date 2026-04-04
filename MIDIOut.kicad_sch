@@ -106,6 +106,17 @@
 					)
 				)
 			)
+			(property "Id" "74xGxx:${SYMBOL_NAME}"
+				(at 0 -12.7 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "Single Gate Buff Tri-State LVC CMOS"
 				(at 0 0 0)
 				(show_name no)
@@ -326,6 +337,17 @@
 			)
 			(property "Manufacturer" "Same Sky"
 				(at 0 -33.02 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Id" "Audio:${SYMBOL_NAME}"
+				(at 0 -27.94 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -758,6 +780,17 @@
 					)
 				)
 			)
+			(property "Id" "Diode:${SYMBOL_NAME}"
+				(at 0 -6.35 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "Product" "CG0603MLC-05LE"
 				(at 0 -12.954 0)
 				(show_name yes)
@@ -957,6 +990,17 @@
 					)
 				)
 			)
+			(property "Id" "Diode:${SYMBOL_NAME}"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "Product" "PMEG2010EPK"
 				(at 0 -10.16 0)
 				(show_name yes)
@@ -1102,7 +1146,7 @@
 				)
 			)
 			(property "Footprint" "V2_Resistor_SMD:R_0603"
-				(at 0 -15.748 0)
+				(at 0 -16.51 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1136,6 +1180,17 @@
 			)
 			(property "Mouser" "71-CRCW0603220RFKEAH"
 				(at 0 -22.86 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Id" "Resistor:${SYMBOL_NAME}"
+				(at 0 -13.97 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1963,6 +2018,17 @@
 				)
 			)
 		)
+		(property "Id" "Resistor:${SYMBOL_NAME}"
+			(at 156.21 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3a5e412b-8fae-4796-8d65-434934d07e7b")
 		)
@@ -2156,6 +2222,17 @@
 		)
 		(property "Rating" "330mW"
 			(at 156.21 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "Resistor:${SYMBOL_NAME}"
+			(at 156.21 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2449,6 +2526,17 @@
 				)
 			)
 		)
+		(property "Id" "Diode:${SYMBOL_NAME}"
+			(at 165.1 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3897e1f2-8b19-4343-8e05-c8a2c7a54ae9")
 		)
@@ -2552,6 +2640,17 @@
 		)
 		(property "Manufacturer" "Texas Instruments"
 			(at 105.41 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "74xGxx:${SYMBOL_NAME}"
+			(at 105.41 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2765,6 +2864,17 @@
 				)
 			)
 		)
+		(property "Id" "Audio:${SYMBOL_NAME}"
+			(at 199.39 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "64a9d5eb-7dd7-45e9-bca9-82bca2e62824")
 		)
@@ -2890,6 +3000,17 @@
 		)
 		(property "Rating" "5V"
 			(at 130.81 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "Diode:${SYMBOL_NAME}"
+			(at 121.92 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
