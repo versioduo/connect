@@ -254,7 +254,7 @@
 				)
 			)
 			(property "Footprint" "V2_Connector_EtherCon:NE8FAH"
-				(at 0 -25.4 0)
+				(at 0 -31.75 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -287,7 +287,7 @@
 				)
 			)
 			(property "Mouser" "568-NE8FAH"
-				(at 0 -33.02 0)
+				(at 0 -39.37 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -298,7 +298,7 @@
 				)
 			)
 			(property "Manufacturer" "Neutrik"
-				(at 0 -27.94 0)
+				(at 0 -34.29 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -309,7 +309,29 @@
 				)
 			)
 			(property "Product" "NE8FAH"
-				(at 0 -30.48 0)
+				(at 0 -36.83 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Id" "EtherCon:${SYMBOL_NAME}"
+				(at 0 -29.21 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Rating" "CAT5e"
+				(at 0 -41.91 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -670,7 +692,29 @@
 				)
 			)
 			(property "Mouser" "595-THVD2442DRCR"
-				(at 0 -35.56 0)
+				(at 0 -36.83 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Product" "THVD2442DRCR "
+				(at 0 -34.29 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Texas Instruments"
+				(at 0 -29.21 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -691,19 +735,8 @@
 					)
 				)
 			)
-			(property "Product" "THVD2442DRCR "
-				(at 0 -33.02 0)
-				(show_name yes)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "Texas Instruments"
-				(at 0 -30.48 0)
+			(property "Rating" "20Mbps"
+				(at 1.27 -39.37 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2196,6 +2229,17 @@
 				)
 			)
 		)
+		(property "Rating" "20Mbps"
+			(at 156.21 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "26188972-ed01-4fe4-ae5a-542d84d8499c")
 		)
@@ -2332,6 +2376,28 @@
 			(at 154.94 156.21 0)
 			(hide yes)
 			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Id" "EtherCon:${SYMBOL_NAME}"
+			(at 154.94 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "CAT5e"
+			(at 154.94 170.18 0)
+			(hide yes)
+			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font

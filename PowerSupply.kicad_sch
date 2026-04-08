@@ -502,7 +502,7 @@
 				)
 			)
 			(property "Mouser" "810-CNC6P1X7R1H106K2"
-				(at 0 -22.86 0)
+				(at 0 -20.32 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -524,7 +524,7 @@
 				)
 			)
 			(property "Rating" "50V"
-				(at 0 -20.32 0)
+				(at 0 -22.86 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -713,7 +713,7 @@
 				)
 			)
 			(property "Mouser" "810-CGA6P3X7R1E226M5"
-				(at 0 -22.86 0)
+				(at 0 -20.32 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -735,7 +735,7 @@
 				)
 			)
 			(property "Rating" "25V"
-				(at 0 -20.32 0)
+				(at 0 -22.86 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)

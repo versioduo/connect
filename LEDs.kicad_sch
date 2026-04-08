@@ -118,6 +118,17 @@
 					)
 				)
 			)
+			(property "Rating" "15mA"
+				(at 0 -24.13 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "WS2812_0_0"
 				(text "RGB"
 					(at -1.27 -1.27 0)
@@ -1015,6 +1026,17 @@
 				)
 			)
 		)
+		(property "Rating" "15mA"
+			(at 139.7 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "82e9c88c-b6e1-4e44-a0c3-bc75ad06e198")
 		)
@@ -1215,6 +1237,17 @@
 		)
 		(property "Id" "LED:${SYMBOL_NAME}"
 			(at 163.83 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "15mA"
+			(at 163.83 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1511,6 +1544,17 @@
 				)
 			)
 		)
+		(property "Rating" "15mA"
+			(at 139.7 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "def58989-8f52-41f9-83aa-072c09f8a7a7")
 		)
@@ -1798,6 +1842,17 @@
 				)
 			)
 		)
+		(property "Rating" "15mA"
+			(at 116.84 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a1037a4f-a4ee-4af0-99f7-4b634e844691")
 		)
@@ -1920,6 +1975,17 @@
 		)
 		(property "Id" "LED:${SYMBOL_NAME}"
 			(at 139.7 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "15mA"
+			(at 139.7 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2060,6 +2126,17 @@
 				)
 			)
 		)
+		(property "Rating" "15mA"
+			(at 116.84 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3527edc8-1489-40f5-915e-fd99092c4b06")
 		)
@@ -2182,6 +2259,17 @@
 		)
 		(property "Id" "LED:${SYMBOL_NAME}"
 			(at 186.69 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "15mA"
+			(at 186.69 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2790,6 +2878,17 @@
 				)
 			)
 		)
+		(property "Rating" "15mA"
+			(at 139.7 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "eab6639d-a21f-4e96-bd88-e94521341fb0")
 		)
@@ -3389,6 +3488,17 @@
 				)
 			)
 		)
+		(property "Rating" "15mA"
+			(at 186.69 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a106fb35-416b-4875-bfb6-35a24e18df05")
 		)
@@ -3511,6 +3621,17 @@
 		)
 		(property "Id" "LED:${SYMBOL_NAME}"
 			(at 186.69 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "15mA"
+			(at 186.69 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3798,6 +3919,17 @@
 		)
 		(property "Id" "LED:${SYMBOL_NAME}"
 			(at 139.7 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "15mA"
+			(at 139.7 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4328,6 +4460,17 @@
 				)
 			)
 		)
+		(property "Rating" "15mA"
+			(at 163.83 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7b23d2db-c1e2-4587-83e5-08eba95fe217")
 		)
@@ -4615,6 +4758,17 @@
 				)
 			)
 		)
+		(property "Rating" "15mA"
+			(at 163.83 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "55022c05-247c-4ab0-a1bf-68bfc368ec4f")
 		)
@@ -4737,6 +4891,17 @@
 		)
 		(property "Id" "LED:${SYMBOL_NAME}"
 			(at 116.84 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "15mA"
+			(at 116.84 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5267,6 +5432,17 @@
 				)
 			)
 		)
+		(property "Rating" "15mA"
+			(at 163.83 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c4cc754b-6875-4543-908c-09c4b1ce2e58")
 		)
@@ -5554,6 +5730,17 @@
 				)
 			)
 		)
+		(property "Rating" "15mA"
+			(at 186.69 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dbf76901-a617-4f05-af41-4f0042e7591f")
 		)
@@ -5763,6 +5950,17 @@
 				)
 			)
 		)
+		(property "Rating" "15mA"
+			(at 163.83 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "39369379-da2a-4b41-b802-84bbe586ab9b")
 		)
@@ -5963,6 +6161,17 @@
 		)
 		(property "Id" "LED:${SYMBOL_NAME}"
 			(at 116.84 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "15mA"
+			(at 116.84 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6337,6 +6546,17 @@
 				)
 			)
 		)
+		(property "Rating" "15mA"
+			(at 186.69 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e23f43c5-245c-4e06-b6e5-020dc1d56ba8")
 		)
@@ -6459,6 +6679,17 @@
 		)
 		(property "Id" "LED:${SYMBOL_NAME}"
 			(at 116.84 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "15mA"
+			(at 116.84 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
