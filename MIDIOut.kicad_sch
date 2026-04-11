@@ -9,6 +9,7 @@
 		(date "2026-03-28")
 		(rev "2026-03-28")
 		(company "Versio Duo")
+		(comment 1 "V2 Link Connector")
 	)
 	(lib_symbols
 		(symbol "V2_74xGxx:74AHC1G125"
@@ -717,23 +718,25 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "TVS"
-				(at -1.27 3.81 0)
+				(at -3.81 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "CG0603MLC-05LE"
-				(at 0 -3.81 0)
+				(at -3.81 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" "V2_Diode_SMD:D_0603"
@@ -770,7 +773,7 @@
 				)
 			)
 			(property "Mouser" "652-CG0603MLC-05LE"
-				(at 0 -17.78 0)
+				(at 0 -20.32 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -781,7 +784,7 @@
 				)
 			)
 			(property "Id" "Diode:${SYMBOL_NAME}"
-				(at 0 -6.35 0)
+				(at 0 -11.43 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -792,7 +795,7 @@
 				)
 			)
 			(property "Product" "CG0603MLC-05LE"
-				(at 0 -12.954 0)
+				(at 0 -15.24 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -803,7 +806,7 @@
 				)
 			)
 			(property "Manufacturer" "Bourns"
-				(at 0 -10.16 0)
+				(at 0 -12.7 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -814,7 +817,7 @@
 				)
 			)
 			(property "Rating" "5V"
-				(at 0 -15.24 0)
+				(at 0 -17.78 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -927,27 +930,29 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "D"
-				(at 0 7.62 0)
+				(at -2.54 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "PMEG2010EPK"
-				(at 0 5.08 0)
+				(at -2.54 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" "V2_Diode_SMD:D_SOD-1608"
-				(at 0 -4.445 0)
+				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -980,7 +985,7 @@
 				)
 			)
 			(property "Mouser" "771-PMEG2010EPK"
-				(at 0 -12.7 0)
+				(at 0 -20.32 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -991,7 +996,7 @@
 				)
 			)
 			(property "Id" "Diode:${SYMBOL_NAME}"
-				(at 0 -8.89 0)
+				(at 0 -11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1002,7 +1007,7 @@
 				)
 			)
 			(property "Product" "PMEG2010EPK"
-				(at 0 -10.16 0)
+				(at 0 -17.78 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1013,7 +1018,7 @@
 				)
 			)
 			(property "Manufacturer" "Nexperia "
-				(at 0 -7.62 0)
+				(at 0 -15.24 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1024,7 +1029,7 @@
 				)
 			)
 			(property "Rating" "20V"
-				(at 0 -15.24 0)
+				(at 0 -22.86 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1126,23 +1131,25 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
-				(at 2.032 1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Value" "220R"
-				(at 4.064 -1.27 0)
+				(at 1.27 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
+				)
+			)
+			(property "Value" "220R"
+				(at 1.27 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
 				)
 			)
 			(property "Footprint" "V2_Resistor_SMD:R_0603"
@@ -1763,7 +1770,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1f61fc49-4b3c-47aa-ae6d-bd2672583d5c")
-		(property "Reference" "#PWR404"
+		(property "Reference" "#PWR0401"
 			(at 97.79 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -1825,7 +1832,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/8f187542-ab0c-4216-b848-93c409b6d3f4"
-					(reference "#PWR404")
+					(reference "#PWR0401")
 					(unit 1)
 				)
 			)
@@ -1842,7 +1849,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3a26de94-e8f9-48f1-81a5-311110084ba6")
-		(property "Reference" "#PWR406"
+		(property "Reference" "#PWR0404"
 			(at 115.57 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -1904,7 +1911,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/8f187542-ab0c-4216-b848-93c409b6d3f4"
-					(reference "#PWR406")
+					(reference "#PWR0404")
 					(unit 1)
 				)
 			)
@@ -1921,7 +1928,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5032212f-d852-40b1-8b09-65abd10e79fd")
-		(property "Reference" "R402"
+		(property "Reference" "R401"
 			(at 142.24 113.03 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2038,7 +2045,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/8f187542-ab0c-4216-b848-93c409b6d3f4"
-					(reference "R402")
+					(reference "R401")
 					(unit 1)
 				)
 			)
@@ -2056,7 +2063,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "57f5924a-ab5a-4945-ac3a-62c8254fd81a")
-		(property "Reference" "#PWR403"
+		(property "Reference" "#PWR0402"
 			(at 106.68 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -2117,7 +2124,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/8f187542-ab0c-4216-b848-93c409b6d3f4"
-					(reference "#PWR403")
+					(reference "#PWR0402")
 					(unit 1)
 				)
 			)
@@ -2134,7 +2141,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "596eda00-e3a4-45db-a1dd-18fd1f45f982")
-		(property "Reference" "R401"
+		(property "Reference" "R402"
 			(at 162.56 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2251,7 +2258,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/8f187542-ab0c-4216-b848-93c409b6d3f4"
-					(reference "R401")
+					(reference "R402")
 					(unit 1)
 				)
 			)
@@ -2269,7 +2276,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6c4dd1f6-2dbc-46b1-96ac-19be2abeba71")
-		(property "Reference" "#PWR402"
+		(property "Reference" "#PWR0406"
 			(at 180.34 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -2331,7 +2338,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/8f187542-ab0c-4216-b848-93c409b6d3f4"
-					(reference "#PWR402")
+					(reference "#PWR0406")
 					(unit 1)
 				)
 			)
@@ -2348,7 +2355,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a875a484-5b0e-44d5-90ba-a73cc62106ef")
-		(property "Reference" "#PWR405"
+		(property "Reference" "#PWR0403"
 			(at 106.68 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -2410,7 +2417,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/8f187542-ab0c-4216-b848-93c409b6d3f4"
-					(reference "#PWR405")
+					(reference "#PWR0403")
 					(unit 1)
 				)
 			)
@@ -2696,7 +2703,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d50cacbe-2f64-4455-9c8e-2a931f1c8aad")
-		(property "Reference" "#PWR401"
+		(property "Reference" "#PWR0405"
 			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -2757,7 +2764,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/8f187542-ab0c-4216-b848-93c409b6d3f4"
-					(reference "#PWR401")
+					(reference "#PWR0405")
 					(unit 1)
 				)
 			)

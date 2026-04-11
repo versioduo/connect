@@ -9,6 +9,7 @@
 		(date "2026-03-28")
 		(rev "2026-03-28")
 		(company "Versio Duo")
+		(comment 1 "V2 Link Connector")
 	)
 	(lib_symbols
 		(symbol "V2_Capacitor:0603_0u1"
@@ -25,7 +26,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "C"
-				(at 1.778 1.524 0)
+				(at 2.54 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -36,7 +37,7 @@
 				)
 			)
 			(property "Value" "0u1"
-				(at 1.778 -2.032 0)
+				(at 2.54 -1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1165,23 +1166,25 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
-				(at 2.032 1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Value" "100R"
-				(at 3.81 -1.27 0)
+				(at 1.27 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
+				)
+			)
+			(property "Value" "100R"
+				(at 1.27 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
 				)
 			)
 			(property "Footprint" "V2_Resistor_SMD:R_0603"
@@ -1362,7 +1365,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
-				(at 0 -12.192 0)
+				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2052,7 +2055,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "013134c2-c495-4752-a9f3-dcc418142145")
-		(property "Reference" "#PWR201"
+		(property "Reference" "#PWR0202"
 			(at 154.94 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -2113,7 +2116,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/a64f4585-dd42-4120-8007-516d9ffa6e9b"
-					(reference "#PWR201")
+					(reference "#PWR0202")
 					(unit 1)
 				)
 			)
@@ -2452,7 +2455,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6cd5c335-1966-4dfd-b071-991164f7d6fd")
-		(property "Reference" "#PWR203"
+		(property "Reference" "#PWR0203"
 			(at 154.94 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -2513,7 +2516,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/a64f4585-dd42-4120-8007-516d9ffa6e9b"
-					(reference "#PWR203")
+					(reference "#PWR0203")
 					(unit 1)
 				)
 			)
@@ -2530,7 +2533,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "787831d5-b5ee-4f7d-9a05-eca8315877e8")
-		(property "Reference" "#PWR202"
+		(property "Reference" "#PWR0204"
 			(at 176.53 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -2591,7 +2594,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/a64f4585-dd42-4120-8007-516d9ffa6e9b"
-					(reference "#PWR202")
+					(reference "#PWR0204")
 					(unit 1)
 				)
 			)
@@ -2743,7 +2746,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba7c5977-14ad-4df4-afa5-e58c0af35656")
-		(property "Reference" "#PWR204"
+		(property "Reference" "#PWR0201"
 			(at 138.43 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -2804,7 +2807,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/a64f4585-dd42-4120-8007-516d9ffa6e9b"
-					(reference "#PWR204")
+					(reference "#PWR0201")
 					(unit 1)
 				)
 			)
