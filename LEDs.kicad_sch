@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "V2 connect")
-		(date "2026-03-28")
-		(rev "2026-03-28")
+		(date "2026-04-14")
+		(rev "2026-04-14")
 		(company "Versio Duo")
 		(comment 1 "V2 Link Connector")
 	)
@@ -1072,7 +1072,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0435574e-c268-4073-949c-c5d0e7f478f5")
-		(property "Reference" "#PWR0505"
+		(property "Reference" "#PWR505"
 			(at 120.65 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1133,7 +1133,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0505")
+					(reference "#PWR505")
 					(unit 1)
 				)
 			)
@@ -1292,7 +1292,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "08085631-32f3-4744-9daa-c7e14328b053")
-		(property "Reference" "#PWR0503"
+		(property "Reference" "#PWR503"
 			(at 120.65 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -1353,7 +1353,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0503")
+					(reference "#PWR503")
 					(unit 1)
 				)
 			)
@@ -1370,7 +1370,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "17044ff0-bd01-4961-b306-b9b502f198d4")
-		(property "Reference" "#PWR0517"
+		(property "Reference" "#PWR517"
 			(at 143.51 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -1431,7 +1431,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0517")
+					(reference "#PWR517")
 					(unit 1)
 				)
 			)
@@ -1590,7 +1590,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1b8386a6-9555-4f1f-b844-0a50e614a8a7")
-		(property "Reference" "#PWR0516"
+		(property "Reference" "#PWR516"
 			(at 153.67 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -1651,7 +1651,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0516")
+					(reference "#PWR516")
 					(unit 1)
 				)
 			)
@@ -1668,7 +1668,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2ad4b27c-e170-42e6-9adb-362316739a2b")
-		(property "Reference" "#PWR0508"
+		(property "Reference" "#PWR508"
 			(at 130.81 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -1729,7 +1729,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0508")
+					(reference "#PWR508")
 					(unit 1)
 				)
 			)
@@ -2314,7 +2314,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4eb36245-9bea-40ff-a020-5c8b665981c4")
-		(property "Reference" "#PWR0535"
+		(property "Reference" "#PWR535"
 			(at 190.5 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2375,7 +2375,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0535")
+					(reference "#PWR535")
 					(unit 1)
 				)
 			)
@@ -2392,7 +2392,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4fa2f0fe-920f-4bc1-a275-c25fa213a15e")
-		(property "Reference" "#PWR0534"
+		(property "Reference" "#PWR534"
 			(at 200.66 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2453,7 +2453,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0534")
+					(reference "#PWR534")
 					(unit 1)
 				)
 			)
@@ -2470,7 +2470,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "56b3bfdc-b95d-4a2e-8234-ce46e0d10756")
-		(property "Reference" "#PWR0523"
+		(property "Reference" "#PWR523"
 			(at 167.64 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -2531,7 +2531,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0523")
+					(reference "#PWR523")
 					(unit 1)
 				)
 			)
@@ -2548,7 +2548,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5bc38e98-6591-4e81-a8df-8450f482253c")
-		(property "Reference" "#PWR0506"
+		(property "Reference" "#PWR506"
 			(at 130.81 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -2609,7 +2609,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0506")
+					(reference "#PWR506")
 					(unit 1)
 				)
 			)
@@ -2626,7 +2626,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5bd62e85-477d-4d82-bf01-c3458ae94729")
-		(property "Reference" "#PWR0525"
+		(property "Reference" "#PWR525"
 			(at 167.64 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2687,7 +2687,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0525")
+					(reference "#PWR525")
 					(unit 1)
 				)
 			)
@@ -2704,7 +2704,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5f440318-c6d7-4b54-8116-4338bd164547")
-		(property "Reference" "#PWR0507"
+		(property "Reference" "#PWR507"
 			(at 120.65 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -2765,7 +2765,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0507")
+					(reference "#PWR507")
 					(unit 1)
 				)
 			)
@@ -2924,7 +2924,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "611847d7-2c52-4bf9-abc3-7094a3ac6cd1")
-		(property "Reference" "#PWR0513"
+		(property "Reference" "#PWR513"
 			(at 143.51 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -2985,7 +2985,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0513")
+					(reference "#PWR513")
 					(unit 1)
 				)
 			)
@@ -3002,7 +3002,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6162d106-b2a5-49c3-a147-ff4608d4425f")
-		(property "Reference" "#PWR0529"
+		(property "Reference" "#PWR529"
 			(at 167.64 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -3063,7 +3063,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0529")
+					(reference "#PWR529")
 					(unit 1)
 				)
 			)
@@ -3080,7 +3080,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "683b354b-b274-44ec-8699-a090a3d28708")
-		(property "Reference" "#PWR0509"
+		(property "Reference" "#PWR509"
 			(at 120.65 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -3141,7 +3141,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0509")
+					(reference "#PWR509")
 					(unit 1)
 				)
 			)
@@ -3158,7 +3158,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6c2c87fa-79e4-4813-8844-32613817d189")
-		(property "Reference" "#PWR0518"
+		(property "Reference" "#PWR518"
 			(at 153.67 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -3219,7 +3219,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0518")
+					(reference "#PWR518")
 					(unit 1)
 				)
 			)
@@ -3236,7 +3236,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6dcdf668-f8e2-4840-854f-110b3cc5f6de")
-		(property "Reference" "#PWR0502"
+		(property "Reference" "#PWR502"
 			(at 130.81 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -3297,7 +3297,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0502")
+					(reference "#PWR502")
 					(unit 1)
 				)
 			)
@@ -3314,7 +3314,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6e39c756-6a4a-4b5f-b412-a6a8fe81a40e")
-		(property "Reference" "#PWR0522"
+		(property "Reference" "#PWR522"
 			(at 177.8 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -3375,7 +3375,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0522")
+					(reference "#PWR522")
 					(unit 1)
 				)
 			)
@@ -3676,7 +3676,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7fdb8dec-e364-46b9-ace7-87253fbcb611")
-		(property "Reference" "#PWR0526"
+		(property "Reference" "#PWR526"
 			(at 177.8 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -3737,7 +3737,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0526")
+					(reference "#PWR526")
 					(unit 1)
 				)
 			)
@@ -3754,7 +3754,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "811a8a20-07f3-4f9b-8a3f-ebf90d1b7f25")
-		(property "Reference" "#PWR0504"
+		(property "Reference" "#PWR504"
 			(at 130.81 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3815,7 +3815,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0504")
+					(reference "#PWR504")
 					(unit 1)
 				)
 			)
@@ -3974,7 +3974,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8e8025f9-5424-476d-9354-a20f7b5b8679")
-		(property "Reference" "#PWR0521"
+		(property "Reference" "#PWR521"
 			(at 167.64 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -4035,7 +4035,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0521")
+					(reference "#PWR521")
 					(unit 1)
 				)
 			)
@@ -4052,7 +4052,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "933a3da4-a4fe-4043-b9b0-0740adaaa657")
-		(property "Reference" "#PWR0514"
+		(property "Reference" "#PWR514"
 			(at 153.67 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -4113,7 +4113,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0514")
+					(reference "#PWR514")
 					(unit 1)
 				)
 			)
@@ -4130,7 +4130,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a3eebe62-a1b1-4397-a291-9e38755b732e")
-		(property "Reference" "#PWR0533"
+		(property "Reference" "#PWR533"
 			(at 190.5 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -4191,7 +4191,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0533")
+					(reference "#PWR533")
 					(unit 1)
 				)
 			)
@@ -4208,7 +4208,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a5f8971a-460e-4162-ac12-7de72c372ec5")
-		(property "Reference" "#PWR0515"
+		(property "Reference" "#PWR515"
 			(at 143.51 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -4269,7 +4269,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0515")
+					(reference "#PWR515")
 					(unit 1)
 				)
 			)
@@ -4286,7 +4286,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a7cad4b2-36b5-4bb4-935e-9e1f738572db")
-		(property "Reference" "#PWR0540"
+		(property "Reference" "#PWR540"
 			(at 200.66 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -4347,7 +4347,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0540")
+					(reference "#PWR540")
 					(unit 1)
 				)
 			)
@@ -4506,7 +4506,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aa7a2ba0-ee42-40ed-b744-9bb9a53300d7")
-		(property "Reference" "#PWR0528"
+		(property "Reference" "#PWR528"
 			(at 177.8 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -4567,7 +4567,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0528")
+					(reference "#PWR528")
 					(unit 1)
 				)
 			)
@@ -4584,7 +4584,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aa7afadd-31dd-40ec-b219-2b9ccfc22a3d")
-		(property "Reference" "#PWR0527"
+		(property "Reference" "#PWR527"
 			(at 167.64 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -4645,7 +4645,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0527")
+					(reference "#PWR527")
 					(unit 1)
 				)
 			)
@@ -4946,7 +4946,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b699eb4d-a5ad-4a7d-8a06-abf7b0c54ec4")
-		(property "Reference" "#PWR0524"
+		(property "Reference" "#PWR524"
 			(at 177.8 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -5007,7 +5007,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0524")
+					(reference "#PWR524")
 					(unit 1)
 				)
 			)
@@ -5024,7 +5024,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b97716bb-7c92-4c1f-95d5-259333b9b4b9")
-		(property "Reference" "#PWR0530"
+		(property "Reference" "#PWR530"
 			(at 177.8 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -5085,7 +5085,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0530")
+					(reference "#PWR530")
 					(unit 1)
 				)
 			)
@@ -5102,7 +5102,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba31e4e2-2190-48b6-a92e-14580afc883e")
-		(property "Reference" "#PWR0531"
+		(property "Reference" "#PWR531"
 			(at 190.5 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -5163,7 +5163,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0531")
+					(reference "#PWR531")
 					(unit 1)
 				)
 			)
@@ -5180,7 +5180,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "be076b51-faa6-4182-a377-92db6179025e")
-		(property "Reference" "#PWR0511"
+		(property "Reference" "#PWR511"
 			(at 143.51 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -5241,7 +5241,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0511")
+					(reference "#PWR511")
 					(unit 1)
 				)
 			)
@@ -5258,7 +5258,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "be97815f-cfc6-4c26-93d7-b3f86b80bb7f")
-		(property "Reference" "#PWR0536"
+		(property "Reference" "#PWR536"
 			(at 200.66 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -5319,7 +5319,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0536")
+					(reference "#PWR536")
 					(unit 1)
 				)
 			)
@@ -5478,7 +5478,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c0700eb5-1908-4671-ba0a-62e0aa16f5eb")
-		(property "Reference" "#PWR0510"
+		(property "Reference" "#PWR510"
 			(at 130.81 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -5539,7 +5539,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0510")
+					(reference "#PWR510")
 					(unit 1)
 				)
 			)
@@ -5556,7 +5556,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c81875ab-cc14-4833-ba0c-963290eb3c14")
-		(property "Reference" "#PWR0537"
+		(property "Reference" "#PWR537"
 			(at 190.5 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -5617,7 +5617,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0537")
+					(reference "#PWR537")
 					(unit 1)
 				)
 			)
@@ -5776,7 +5776,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ca92be0e-f1ff-4192-ab57-03e9d248cf69")
-		(property "Reference" "#PWR0538"
+		(property "Reference" "#PWR538"
 			(at 200.66 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -5837,7 +5837,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0538")
+					(reference "#PWR538")
 					(unit 1)
 				)
 			)
@@ -5996,7 +5996,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d26594bf-73c1-4e46-8198-41806fc04720")
-		(property "Reference" "#PWR0512"
+		(property "Reference" "#PWR512"
 			(at 153.67 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6057,7 +6057,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0512")
+					(reference "#PWR512")
 					(unit 1)
 				)
 			)
@@ -6216,7 +6216,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dea7c4cd-f1f3-44e0-8098-84be0382c7e2")
-		(property "Reference" "#PWR0539"
+		(property "Reference" "#PWR539"
 			(at 190.5 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -6277,7 +6277,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0539")
+					(reference "#PWR539")
 					(unit 1)
 				)
 			)
@@ -6294,7 +6294,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e042c276-f31c-439a-a272-60c441c8bbe5")
-		(property "Reference" "#PWR0520"
+		(property "Reference" "#PWR520"
 			(at 153.67 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -6355,7 +6355,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0520")
+					(reference "#PWR520")
 					(unit 1)
 				)
 			)
@@ -6372,7 +6372,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e7b3629d-694f-47f5-8fe7-56134129a106")
-		(property "Reference" "#PWR0519"
+		(property "Reference" "#PWR519"
 			(at 143.51 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -6433,7 +6433,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0519")
+					(reference "#PWR519")
 					(unit 1)
 				)
 			)
@@ -6734,7 +6734,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f2f687ef-bcf8-46ab-96d1-e575918c9cf2")
-		(property "Reference" "#PWR0532"
+		(property "Reference" "#PWR532"
 			(at 200.66 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6795,7 +6795,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0532")
+					(reference "#PWR532")
 					(unit 1)
 				)
 			)
@@ -6812,7 +6812,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f507374c-d10f-4577-a930-527d557a8e85")
-		(property "Reference" "#PWR0501"
+		(property "Reference" "#PWR501"
 			(at 120.65 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -6873,7 +6873,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/12e95e62-017b-424d-95ef-a2368733f4e7"
-					(reference "#PWR0501")
+					(reference "#PWR501")
 					(unit 1)
 				)
 			)

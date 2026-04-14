@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "V2 connect")
-		(date "2026-03-28")
-		(rev "2026-03-28")
+		(date "2026-04-14")
+		(rev "2026-04-14")
 		(company "Versio Duo")
 		(comment 1 "V2 Link Connector")
 	)
@@ -324,6 +324,17 @@
 			)
 			(property "Id" "Audio:${SYMBOL_NAME}"
 				(at 0 -27.94 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Rating" "2.5mm"
+				(at 0 -40.64 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -958,17 +969,6 @@
 					)
 				)
 			)
-			(property "Id" "Optocoupler:${SYMBOL_NAME}"
-				(at 0 -24.13 0)
-				(show_name yes)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(property "Product" "TLP2361(TPR,E"
 				(at 0 -33.02 0)
 				(show_name yes)
@@ -982,6 +982,28 @@
 			)
 			(property "Manufacturer" "Toshiba"
 				(at 0 -30.48 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Id" "Optocoupler:${SYMBOL_NAME}"
+				(at 0 -25.4 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Rating" "15Mbps"
+				(at 0 -38.1 0)
 				(show_name yes)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2152,6 +2174,17 @@
 				)
 			)
 		)
+		(property "Rating" "2.5mm"
+			(at 116.84 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "25a4bc5c-e9af-4bb6-acdf-7a10cd19ddca")
 		)
@@ -2187,7 +2220,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "59de0765-f7da-444e-b4e0-ed2ee7a891c8")
-		(property "Reference" "#PWR0301"
+		(property "Reference" "#PWR301"
 			(at 149.86 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -2248,7 +2281,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/b3c42dce-2379-4efd-9d46-72d1b5ac9acb"
-					(reference "#PWR0301")
+					(reference "#PWR301")
 					(unit 1)
 				)
 			)
@@ -2492,6 +2525,17 @@
 		)
 		(property "Id" "Optocoupler:${SYMBOL_NAME}"
 			(at 187.96 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "15Mbps"
+			(at 187.96 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2808,7 +2852,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e2011c25-d512-4702-8fbd-d3790f2141e4")
-		(property "Reference" "#PWR0303"
+		(property "Reference" "#PWR303"
 			(at 187.96 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -2869,7 +2913,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/b3c42dce-2379-4efd-9d46-72d1b5ac9acb"
-					(reference "#PWR0303")
+					(reference "#PWR303")
 					(unit 1)
 				)
 			)
@@ -3020,7 +3064,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f9caf35a-0e4b-4d90-885e-46c9c749e0c2")
-		(property "Reference" "#PWR0302"
+		(property "Reference" "#PWR302"
 			(at 187.96 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -3081,7 +3125,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/b3c42dce-2379-4efd-9d46-72d1b5ac9acb"
-					(reference "#PWR0302")
+					(reference "#PWR302")
 					(unit 1)
 				)
 			)
@@ -3098,7 +3142,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fd2fa09d-e317-4510-a889-31de0e16c925")
-		(property "Reference" "#PWR0304"
+		(property "Reference" "#PWR304"
 			(at 193.04 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -3159,7 +3203,7 @@
 		(instances
 			(project "connect"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/b3c42dce-2379-4efd-9d46-72d1b5ac9acb"
-					(reference "#PWR0304")
+					(reference "#PWR304")
 					(unit 1)
 				)
 			)
