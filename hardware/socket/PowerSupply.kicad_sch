@@ -5,9 +5,9 @@
 	(uuid "e59850ba-c521-495e-8a68-4242da6626f9")
 	(paper "A4")
 	(title_block
-		(title "V2 connect")
-		(date "2026-04-14")
-		(rev "2026-04-14")
+		(title "V2 connect-socket")
+		(date "2026-04-23")
+		(rev "2026-04-23")
 		(company "Versio Duo")
 		(comment 1 "V2 Link Connector")
 	)
@@ -1670,7 +1670,7 @@
 			(uuid "f73a46dd-aa0d-49c4-a0d8-8db1823ad776")
 		)
 		(instances
-			(project "connect"
+			(project "socket"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/095cddf1-6522-4d3b-885d-b21acd91d0c6"
 					(reference "U601")
 					(unit 1)
@@ -1806,7 +1806,7 @@
 			(uuid "e3a15b34-3cd1-486f-9c61-662ba5a5aa64")
 		)
 		(instances
-			(project "connect"
+			(project "socket"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/095cddf1-6522-4d3b-885d-b21acd91d0c6"
 					(reference "C602")
 					(unit 1)
@@ -1942,7 +1942,7 @@
 			(uuid "e35c5577-19ea-4e4a-a04f-5b2ffa10dc31")
 		)
 		(instances
-			(project "connect"
+			(project "socket"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/095cddf1-6522-4d3b-885d-b21acd91d0c6"
 					(reference "C605")
 					(unit 1)
@@ -1961,7 +1961,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "375e8848-8eea-41f8-a7f3-9a19bee252db")
-		(property "Reference" "#PWR606"
+		(property "Reference" "#PWR0606"
 			(at 185.42 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -2020,9 +2020,9 @@
 			(uuid "b28cdad5-2e8a-4432-b71f-8209fd358eb1")
 		)
 		(instances
-			(project "connect"
+			(project "socket"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/095cddf1-6522-4d3b-885d-b21acd91d0c6"
-					(reference "#PWR606")
+					(reference "#PWR0606")
 					(unit 1)
 				)
 			)
@@ -2039,7 +2039,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "478902d6-4aff-4fcb-a385-fca8f35709c1")
-		(property "Reference" "#PWR607"
+		(property "Reference" "#PWR0607"
 			(at 195.58 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -2098,9 +2098,9 @@
 			(uuid "4304f283-54f0-4a2c-91a8-c8d245282b1f")
 		)
 		(instances
-			(project "connect"
+			(project "socket"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/095cddf1-6522-4d3b-885d-b21acd91d0c6"
-					(reference "#PWR607")
+					(reference "#PWR0607")
 					(unit 1)
 				)
 			)
@@ -2117,7 +2117,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "531fc383-fb58-423a-a382-5ec2d1a20e95")
-		(property "Reference" "#PWR601"
+		(property "Reference" "#PWR0601"
 			(at 97.79 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -2176,9 +2176,9 @@
 			(uuid "6a5b633f-cd3e-479f-81ff-7b0b9277535d")
 		)
 		(instances
-			(project "connect"
+			(project "socket"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/095cddf1-6522-4d3b-885d-b21acd91d0c6"
-					(reference "#PWR601")
+					(reference "#PWR0601")
 					(unit 1)
 				)
 			)
@@ -2195,7 +2195,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5c63cc8b-cfef-42fe-ba54-7d6431ef620a")
-		(property "Reference" "#PWR602"
+		(property "Reference" "#PWR0602"
 			(at 109.22 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -2254,9 +2254,9 @@
 			(uuid "1f83195f-70e8-4f1a-aa06-a2b8c8dfa24a")
 		)
 		(instances
-			(project "connect"
+			(project "socket"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/095cddf1-6522-4d3b-885d-b21acd91d0c6"
-					(reference "#PWR602")
+					(reference "#PWR0602")
 					(unit 1)
 				)
 			)
@@ -2390,7 +2390,7 @@
 			(uuid "40634745-4ffc-49ee-b8fd-b98cc0568d64")
 		)
 		(instances
-			(project "connect"
+			(project "socket"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/095cddf1-6522-4d3b-885d-b21acd91d0c6"
 					(reference "C603")
 					(unit 1)
@@ -2526,7 +2526,7 @@
 			(uuid "ce32c17c-220e-4115-9f4b-5da0c44a201e")
 		)
 		(instances
-			(project "connect"
+			(project "socket"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/095cddf1-6522-4d3b-885d-b21acd91d0c6"
 					(reference "C604")
 					(unit 1)
@@ -2545,7 +2545,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "77fc86a4-b71b-42cd-a914-f7257b900b65")
-		(property "Reference" "#PWR603"
+		(property "Reference" "#PWR0603"
 			(at 116.84 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -2604,9 +2604,9 @@
 			(uuid "14438b1c-392c-44d1-8af4-b8b10b9f2f00")
 		)
 		(instances
-			(project "connect"
+			(project "socket"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/095cddf1-6522-4d3b-885d-b21acd91d0c6"
-					(reference "#PWR603")
+					(reference "#PWR0603")
 					(unit 1)
 				)
 			)
@@ -2623,7 +2623,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ad5e1164-8f65-4fcc-b61f-6ec0963a0ede")
-		(property "Reference" "#PWR604"
+		(property "Reference" "#PWR0604"
 			(at 129.54 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -2682,9 +2682,9 @@
 			(uuid "3925f839-9436-4141-bdd3-ce511bd37a69")
 		)
 		(instances
-			(project "connect"
+			(project "socket"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/095cddf1-6522-4d3b-885d-b21acd91d0c6"
-					(reference "#PWR604")
+					(reference "#PWR0604")
 					(unit 1)
 				)
 			)
@@ -2701,7 +2701,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b70ec11c-33cd-448a-81a6-e35714977a9a")
-		(property "Reference" "#PWR605"
+		(property "Reference" "#PWR0605"
 			(at 148.59 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -2760,9 +2760,9 @@
 			(uuid "5410cfa6-7845-4bec-95f9-aa1448178f23")
 		)
 		(instances
-			(project "connect"
+			(project "socket"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/095cddf1-6522-4d3b-885d-b21acd91d0c6"
-					(reference "#PWR605")
+					(reference "#PWR0605")
 					(unit 1)
 				)
 			)
@@ -2896,7 +2896,7 @@
 			(uuid "68c40281-c46f-4788-8521-633a503648ba")
 		)
 		(instances
-			(project "connect"
+			(project "socket"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/095cddf1-6522-4d3b-885d-b21acd91d0c6"
 					(reference "C601")
 					(unit 1)

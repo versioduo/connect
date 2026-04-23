@@ -8,8 +8,8 @@
 	)
 	(paper "A4")
 	(title_block
-		(date "2026-04-14")
-		(rev "2026-04-14")
+		(date "2026-04-23")
+		(rev "2026-04-23")
 	)
 	(layers
 		(0 "F.Cu" signal "Front")
@@ -264,12 +264,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/45e98797-1767-4a4b-8f27-9e23dbcc48e1")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -513,12 +507,6 @@
 		(path "/095cddf1-6522-4d3b-885d-b21acd91d0c6/6f72d12b-3fd7-4fef-b38d-6a1a01607885")
 		(sheetname "/Power +5V/")
 		(sheetfile "PowerSupply.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -745,13 +733,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/afdd74f8-a1a6-4820-a09c-ce22bb27451d")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -980,13 +962,7 @@
 		)
 		(path "/0676cd79-b280-49f0-bb2b-642706e7858b")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1219,12 +1195,6 @@
 		(path "/b3c42dce-2379-4efd-9d46-72d1b5ac9acb/60509237-0c50-404e-9d94-da81e9d83bf3")
 		(sheetname "/MIDI In/")
 		(sheetfile "MIDIIn.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1451,13 +1421,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/3c91b1d6-c415-4bcd-96d0-59c8acc2dcfd")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1686,12 +1650,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/b224f94f-c327-48be-97b2-24633415628e")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1934,13 +1892,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/168cfd35-ee65-4fd7-944b-407c5ead6b9b")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2168,13 +2120,7 @@
 		)
 		(path "/e26cd7e8-e2c0-4ed6-a5a4-72dbf23c703c")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "S" "G" "V" "A5" "B5" "A7" "B7" "A6" "B6" "A8" "B8")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
 			(pts
@@ -2815,18 +2761,7 @@
 		)
 		(path "/64df247b-ed4e-424b-867c-c9359ac249f3")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "13" "14" "15" "16" "17" "18" "19" "20" "29" "30"
-					"31" "32" "35" "36" "37" "38" "41" "42" "43" "44" "45" "46" "51" "57"
-					"58" "52" "55" "53" "22" "47" "54" "33" "7" "21" "48" "34" "56" "65"
-					"8" "61" "62" "63" "64" "5" "6" "9" "10" "11" "12" "23" "24" "25" "26"
-					"27" "28" "39" "40" "49" "50" "59" "60"
-				)
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4572,12 +4507,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/6028959b-dbc8-4e64-8f78-33b2bc864376")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4757,13 +4686,7 @@
 		(property ki_fp_filters "Fiducial*")
 		(path "/f3ebfb05-17be-488d-b5c3-e4a62e3009d2")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -4919,12 +4842,6 @@
 		(path "/8f187542-ab0c-4216-b848-93c409b6d3f4/deb727d0-a593-442b-a15f-f69790ca13c0")
 		(sheetname "/MIDI Out/")
 		(sheetfile "MIDIOut.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "4" "3" "10" "2")
-			)
-		)
 		(attr allow_missing_courtyard)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5446,12 +5363,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/0339aea2-ec1a-4108-b4cb-130c2e690e63")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5631,13 +5542,7 @@
 		(property ki_fp_filters "Fiducial*")
 		(path "/977377c2-2f87-473b-87b3-55cb2215e7cb")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -5796,12 +5701,6 @@
 		(path "/8f187542-ab0c-4216-b848-93c409b6d3f4/b5873c05-d0e1-4526-8a45-b0454bbb6e5a")
 		(sheetname "/MIDI Out/")
 		(sheetfile "MIDIOut.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "1" "5" "3" "4")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6287,12 +6186,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/45e19bc9-a3f4-452e-bda4-0ad02b96a2fe")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6472,14 +6365,8 @@
 		)
 		(path "/4cc11ea8-fcc3-4f81-a9b7-809c1c7ae0b6")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "5" "2" "4" "10")
-			)
-		)
-		(attr exclude_from_bom)
+		(sheetfile "socket.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 2.9972 -0.7112)
@@ -6828,12 +6715,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/78e958c3-83f9-4cc0-938a-b529378120ff")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7076,12 +6957,6 @@
 		(path "/b3c42dce-2379-4efd-9d46-72d1b5ac9acb/b612171c-51c9-4d61-ae59-88034e9c0c4b")
 		(sheetname "/MIDI In/")
 		(sheetfile "MIDIIn.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "3" "6" "4" "5")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7530,12 +7405,6 @@
 		(path "/a64f4585-dd42-4120-8007-516d9ffa6e9b/d6d86372-3cc0-4059-a968-9a78901fd202")
 		(sheetname "/Link Socket/")
 		(sheetfile "LinkSocket.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7761,13 +7630,7 @@
 		)
 		(path "/e3944e54-ba44-4ea2-8910-12a3c0d5d309")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8020,13 +7883,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/bb27fb7a-76c7-4d16-aaf6-8d6b39ccdc8c")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8189,14 +8046,8 @@
 		)
 		(path "/7eb06b9d-d894-478a-bc35-8590f2ab48d6")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
-		(attr exclude_from_bom allow_missing_courtyard)
+		(sheetfile "socket.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_text user "${REVISION} @{if(${REVISION} !=  ${ISSUE_DATE}, \"(${ISSUE_DATE})\", \"\")}"
 			(at 0 0 0)
@@ -8348,12 +8199,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/ec2f4f17-29fd-404c-a559-36d68d185173")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8597,12 +8442,6 @@
 		(path "/a64f4585-dd42-4120-8007-516d9ffa6e9b/3eb19088-3b08-4e96-8938-3d11fa73e612")
 		(sheetname "/Link Socket/")
 		(sheetfile "LinkSocket.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "10" "5" "11" "9" "8" "7" "6")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9194,14 +9033,8 @@
 		)
 		(path "/ff5fa334-854e-4ca7-a359-9c419e0f5264")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
-		(attr exclude_from_bom allow_missing_courtyard)
+		(sheetfile "socket.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
 			(pts
@@ -9461,13 +9294,7 @@
 		)
 		(path "/a3ecec95-4e85-4e09-9e38-1f7d224a2702")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9722,13 +9549,7 @@
 		)
 		(path "/db2e7cd7-d581-4e59-b8cc-804cecf82db8")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9962,13 +9783,7 @@
 		)
 		(path "/fd8d34c2-2563-4e05-883b-e8ff4090c00b")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10202,12 +10017,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/aa4c5688-1875-445d-be31-0b583e638816")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10450,13 +10259,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/2495ddf9-7297-4ae8-8cbb-f2025c4b1c4f")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10685,12 +10488,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/8ce7bec5-3d41-4621-953e-d72687ef244c")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10934,12 +10731,6 @@
 		(path "/095cddf1-6522-4d3b-885d-b21acd91d0c6/cac3c346-4365-4436-a009-c85b94d5cc1e")
 		(sheetname "/Power +5V/")
 		(sheetfile "PowerSupply.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11169,12 +10960,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/1994f9d7-7486-499e-bcff-4d372b291162")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11419,13 +11204,7 @@
 		(property ki_fp_filters "Crystal*")
 		(path "/1ca7d65c-415b-499a-82f4-bfed31190332")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11710,12 +11489,6 @@
 		(path "/b3c42dce-2379-4efd-9d46-72d1b5ac9acb/26f11186-2aaa-4ffa-b21b-2ff740643d48")
 		(sheetname "/MIDI In/")
 		(sheetfile "MIDIIn.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "4" "3" "10" "2")
-			)
-		)
 		(attr allow_missing_courtyard)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12236,12 +12009,6 @@
 		(path "/b3c42dce-2379-4efd-9d46-72d1b5ac9acb/f27dc3fb-3639-475a-a1f9-21b6aae30738")
 		(sheetname "/MIDI In/")
 		(sheetfile "MIDIIn.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12468,13 +12235,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/f83ede28-574b-4197-be28-29b45cfdcba9")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12701,13 +12462,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/90b71090-0d52-4bfb-981a-1de961585b66")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12935,12 +12690,6 @@
 		(path "/b3c42dce-2379-4efd-9d46-72d1b5ac9acb/be905a13-54ce-4015-b726-7b49a1ec6f7e")
 		(sheetname "/MIDI In/")
 		(sheetfile "MIDIIn.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13169,12 +12918,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/bec0c4f1-054b-4392-a4d7-4ca367903dbc")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13417,13 +13160,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/233cdbb6-ca85-45bd-988c-70e3f4e5e8ac")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13650,13 +13387,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/05279405-586b-4558-9105-0a1380aa6516")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13883,12 +13614,6 @@
 		(path "/8f187542-ab0c-4216-b848-93c409b6d3f4/aaeda754-d611-45ae-83e4-da00f71803e8")
 		(sheetname "/MIDI Out/")
 		(sheetfile "MIDIOut.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14130,13 +13855,7 @@
 		)
 		(path "/ed02a983-3173-4b00-be64-e464ef81d89f")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14367,13 +14086,7 @@
 		)
 		(path "/7ab0d2fa-e406-45db-9231-2fb7f69d9786")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14628,12 +14341,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/7a1cf7ce-0445-4c1e-aba9-9ca8bd1d96cc")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14878,12 +14585,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/0524f92f-afc7-43ae-b4b3-077484d540b0")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15128,12 +14829,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/d1681549-efaf-4c04-801b-72fc53c9b89a")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15378,12 +15073,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/e9c1a52e-0211-43b8-b640-3db8d6ed6344")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15628,12 +15317,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/d6719605-2120-4991-81ca-13bec0399a0c")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15877,12 +15560,6 @@
 		(path "/a64f4585-dd42-4120-8007-516d9ffa6e9b/8be78d92-c52c-403a-8e36-88157418b91c")
 		(sheetname "/Link Socket/")
 		(sheetfile "LinkSocket.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16109,13 +15786,7 @@
 		)
 		(path "/17088c35-fdd8-4f32-82ac-561c53628a48")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "8" "7" "5" "9" "2" "3" "4" "6" "1")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16594,14 +16265,8 @@
 		)
 		(path "/0602ed14-d2c2-4e47-84cb-eec621139215")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
-		(attr exclude_from_bom allow_missing_courtyard)
+		(sheetfile "socket.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(stackup
 			(layer "F.Cu")
 			(layer "B.Cu")
@@ -16960,12 +16625,6 @@
 		(path "/8f187542-ab0c-4216-b848-93c409b6d3f4/596eda00-e3a4-45db-a1dd-18fd1f45f982")
 		(sheetname "/MIDI Out/")
 		(sheetfile "MIDIOut.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17193,12 +16852,6 @@
 		(path "/8f187542-ab0c-4216-b848-93c409b6d3f4/5032212f-d852-40b1-8b09-65abd10e79fd")
 		(sheetname "/MIDI Out/")
 		(sheetfile "MIDIOut.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17427,12 +17080,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/ca667dae-c7fb-4b95-bc91-6dab8ddf3199")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17675,13 +17322,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/b3b0c6e8-2d4f-44f3-863f-e6c1387584b1")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17908,12 +17549,6 @@
 		(path "/b3c42dce-2379-4efd-9d46-72d1b5ac9acb/d237257b-664e-4c23-997e-b95035870c4f")
 		(sheetname "/MIDI In/")
 		(sheetfile "MIDIIn.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18155,12 +17790,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/3bf92aeb-70f9-4460-a317-6c14f2f09e43")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18404,13 +18033,7 @@
 		)
 		(path "/e2c80722-29db-404d-9f79-2efdb9ec3a5e")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18663,13 +18286,7 @@
 		)
 		(path "/6b386c0e-7738-4538-8e4a-8c86e8be638c")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18902,12 +18519,6 @@
 		(path "/095cddf1-6522-4d3b-885d-b21acd91d0c6/32e0962d-2870-40f1-961f-e0a8436f4ae1")
 		(sheetname "/Power +5V/")
 		(sheetfile "PowerSupply.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19137,12 +18748,6 @@
 		(path "/095cddf1-6522-4d3b-885d-b21acd91d0c6/1810c6ec-7176-4f6b-89cb-cc3c00a8361e")
 		(sheetname "/Power +5V/")
 		(sheetfile "PowerSupply.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "2" "8" "11" "10" "5" "6" "7" "4" "9" "1")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
@@ -19785,13 +19390,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/1ded23bb-9e01-4b5c-b1b4-6483eb39a60c")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20069,13 +19668,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/be8385f8-6d1b-4c72-8b5d-f5af9d53adbb")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20302,13 +19895,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/8850007b-9c0b-4fb0-8b75-ea64eb340df1")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20535,13 +20122,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/86b706b9-6d90-4020-b4f0-e395502cc830")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20768,13 +20349,7 @@
 		)
 		(path "/04efcacc-5cf4-4605-81ff-2960516efa9d")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "4" "3" "5" "2" "6" "1")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21119,12 +20694,6 @@
 		(path "/095cddf1-6522-4d3b-885d-b21acd91d0c6/77be58e3-6c00-45da-9843-6a2883e3b059")
 		(sheetname "/Power +5V/")
 		(sheetfile "PowerSupply.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21354,12 +20923,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/461a311c-7132-45df-93ad-9d52fe52e79c")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21603,12 +21166,6 @@
 		(path "/095cddf1-6522-4d3b-885d-b21acd91d0c6/2984d9f9-0bb1-4243-bafb-064221e4b94f")
 		(sheetname "/Power +5V/")
 		(sheetfile "PowerSupply.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21835,13 +21392,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/de1cee4a-4f0d-488d-b9ca-795c3005fab3")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22005,13 +21556,7 @@
 		(property ki_fp_filters "Fiducial*")
 		(path "/d70eefe3-c463-42c7-ad37-0fcb53cb0f3d")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins)
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -22169,12 +21714,6 @@
 		(path "/8f187542-ab0c-4216-b848-93c409b6d3f4/f5b0cd24-0f8c-4a33-8807-62f25fbfd459")
 		(sheetname "/MIDI Out/")
 		(sheetfile "MIDIOut.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22415,12 +21954,6 @@
 		(path "/12e95e62-017b-424d-95ef-a2368733f4e7/b64befb6-6e8b-4263-b85a-183af0f501ba")
 		(sheetname "/LEDs/")
 		(sheetfile "LEDs.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "3" "4" "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22664,12 +22197,6 @@
 		(path "/8f187542-ab0c-4216-b848-93c409b6d3f4/1bc076a5-b60a-4275-a98b-4e80705f873b")
 		(sheetname "/MIDI Out/")
 		(sheetfile "MIDIOut.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22896,13 +22423,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/adef8336-e1cc-4abb-818b-1f8e0f614fc7")
 		(sheetname "/")
-		(sheetfile "connect.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
+		(sheetfile "socket.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23140,12 +22661,6 @@
 		(path "/a64f4585-dd42-4120-8007-516d9ffa6e9b/6952a615-12fb-48d0-b7e4-acd68a0fd71d")
 		(sheetname "/Link Socket/")
 		(sheetfile "LinkSocket.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "S" "8" "7" "6" "5" "4" "3" "2" "1")
-			)
-		)
 		(attr through_hole allow_missing_courtyard)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -33354,24 +32869,25 @@
 		)
 		(polygon
 			(pts
-				(xy 135.342123 93.4) (xy 135.29924 93.395195) (xy 135.270438 93.381561) (xy 135.244105 93.339289)
-				(xy 135.234244 93.279925) (xy 135.221932 93.204796) (xy 135.187081 93.124997) (xy 134.930042 93.406042)
-				(xy 134.956105 93.470677) (xy 135.079114 93.511062) (xy 135.13321 93.541546) (xy 135.214821 93.582453)
-				(xy 135.26931 93.595247) (xy 135.342123 93.6)
+				(xy 135.342123 93.4) (xy 135.320711 93.429289) (xy 135.282303 93.384339) (xy 135.260202 93.344727)
+				(xy 135.24268 93.273686) (xy 135.228339 93.207719) (xy 135.187081 93.124997) (xy 134.996236 93.246236)
+				(xy 134.874997 93.437081) (xy 134.926731 93.466277) (xy 134.970937 93.482269) (xy 135.023686 93.49268)
+				(xy 135.095771 93.510644) (xy 135.134918 93.53271) (xy 135.179289 93.570711) (xy 135.25 93.6) (xy 135.342123 93.6)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 135.19146 93.137544) (xy 135.194286 93.141495) (xy 135.221345 93.203452) (xy 135.222169 93.206243)
-				(xy 135.234242 93.279913) (xy 135.244105 93.339288) (xy 135.244106 93.339292) (xy 135.270437 93.38156)
-				(xy 135.270438 93.381561) (xy 135.29924 93.395195) (xy 135.331726 93.398835) (xy 135.339566 93.403162)
-				(xy 135.342123 93.410462) (xy 135.342123 93.587511) (xy 135.338696 93.595784) (xy 135.330423 93.599211)
-				(xy 135.329661 93.599186) (xy 135.270277 93.59531) (xy 135.268365 93.595025) (xy 135.216163 93.582768)
-				(xy 135.213594 93.581838) (xy 135.133456 93.541669) (xy 135.132955 93.541402) (xy 135.079119 93.511064)
-				(xy 135.07911 93.51106) (xy 134.961272 93.472373) (xy 134.954481 93.466537) (xy 134.954071 93.465633)
-				(xy 134.932797 93.412874) (xy 134.932881 93.403921) (xy 134.93501 93.400609) (xy 135.174931 93.138281)
-				(xy 135.183043 93.13449)
+				(xy 135.192278 93.135556) (xy 135.192872 93.136608) (xy 135.227686 93.206411) (xy 135.228649 93.209147)
+				(xy 135.24268 93.273686) (xy 135.260202 93.344727) (xy 135.260203 93.34473) (xy 135.282302 93.384338)
+				(xy 135.282303 93.384339) (xy 135.320711 93.429289) (xy 135.320978 93.428924) (xy 135.328626 93.424268)
+				(xy 135.337328 93.426384) (xy 135.341984 93.434032) (xy 135.342123 93.435829) (xy 135.342123 93.5883)
+				(xy 135.338696 93.596573) (xy 135.330423 93.6) (xy 135.252326 93.6) (xy 135.247849 93.599109) (xy 135.18101 93.571423)
+				(xy 135.177876 93.5695) (xy 135.134918 93.53271) (xy 135.095774 93.510645) (xy 135.095771 93.510644)
+				(xy 135.023696 93.492682) (xy 135.023688 93.49268) (xy 135.023686 93.49268) (xy 135.012409 93.490454)
+				(xy 134.971807 93.48244) (xy 134.970093 93.481963) (xy 134.927648 93.466608) (xy 134.925878 93.465795)
+				(xy 134.885732 93.443139) (xy 134.880211 93.436089) (xy 134.881293 93.4272) (xy 134.881589 93.426703)
+				(xy 134.994839 93.248434) (xy 134.998434 93.244839) (xy 135.17613 93.131953) (xy 135.184949 93.130411)
 			)
 		)
 	)
@@ -33416,7 +32932,7 @@
 		(net "/MIDI-In")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30023)
+		(priority 30018)
 		(attr
 			(teardrop
 				(type padvia)
@@ -33440,14 +32956,19 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 91.708531 101.291186) (xy 91.71586 101.296331) (xy 91.717403 101.305152) (xy 91.717225 101.30585)
-				(xy 91.689634 101.401416) (xy 91.688945 101.403224) (xy 91.654363 101.475438) (xy 91.617132 101.55908)
-				(xy 91.604642 101.617376) (xy 91.604641 101.617388) (xy 91.600652 101.68467) (xy 91.596742 101.692725)
-				(xy 91.588973 101.695677) (xy 91.411048 101.695677) (xy 91.402775 101.69225) (xy 91.399367 101.684647)
-				(xy 91.399209 101.681896) (xy 91.395622 101.619394) (xy 91.383795 101.562149) (xy 91.382444 101.55908)
-				(xy 91.372884 101.537357) (xy 91.345646 101.475461) (xy 91.321785 101.428142) (xy 91.321074 101.426391)
-				(xy 91.283154 101.306054) (xy 91.283936 101.297134) (xy 91.290797 101.291379) (xy 91.291748 101.291123)
-				(xy 91.497453 101.245245) (xy 91.502547 101.245245)
+				(xy 91.503806 101.245525) (xy 91.70626 101.290679) (xy 91.71043 101.292519) (xy 91.711891 101.293544)
+				(xy 91.711893 101.293548) (xy 91.711898 101.293549) (xy 91.711899 101.29355) (xy 91.714043 101.29693)
+				(xy 91.716694 101.3011) (xy 91.716696 101.301112) (xy 91.716946 101.302546) (xy 91.716661 101.3078)
+				(xy 91.689768 101.40095) (xy 91.68946 101.401873) (xy 91.689115 101.402778) (xy 91.688734 101.403663)
+				(xy 91.654372 101.475415) (xy 91.617132 101.55908) (xy 91.604642 101.617371) (xy 91.604639 101.617401)
+				(xy 91.600789 101.682347) (xy 91.599637 101.686761) (xy 91.598772 101.688544) (xy 91.592404 101.694373)
+				(xy 91.590984 101.694913) (xy 91.586825 101.695677) (xy 91.413375 101.695677) (xy 91.408898 101.694786)
+				(xy 91.407068 101.694028) (xy 91.400872 101.688005) (xy 91.400244 101.686605) (xy 91.399243 101.682487)
+				(xy 91.399209 101.681894) (xy 91.399209 101.681895) (xy 91.395622 101.619394) (xy 91.383795 101.562149)
+				(xy 91.382444 101.55908) (xy 91.372884 101.537357) (xy 91.345646 101.475461) (xy 91.321994 101.428557)
+				(xy 91.32161 101.427712) (xy 91.321244 101.42681) (xy 91.320936 101.425953) (xy 91.283852 101.308271)
+				(xy 91.283356 101.303743) (xy 91.283512 101.301961) (xy 91.287643 101.294024) (xy 91.288685 101.29315)
+				(xy 91.29365 101.290698) (xy 91.496193 101.245525) (xy 91.49874 101.245245) (xy 91.50126 101.245245)
 			)
 		)
 	)
@@ -33455,7 +32976,7 @@
 		(net "+3V3")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30009)
+		(priority 30008)
 		(attr
 			(teardrop
 				(type padvia)
@@ -33493,7 +33014,7 @@
 		(net "/Socket-TX-Enable")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30025)
+		(priority 30019)
 		(attr
 			(teardrop
 				(type padvia)
@@ -33531,7 +33052,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30017)
+		(priority 30010)
 		(attr
 			(teardrop
 				(type padvia)
@@ -33570,7 +33091,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30004)
+		(priority 30003)
 		(attr
 			(teardrop
 				(type padvia)
@@ -33685,7 +33206,7 @@
 		(net "/MIDI-Out")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30019)
+		(priority 30020)
 		(attr
 			(teardrop
 				(type padvia)
@@ -33709,19 +33230,14 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 92.003806 101.745525) (xy 92.20626 101.790679) (xy 92.21043 101.792519) (xy 92.211891 101.793544)
-				(xy 92.211893 101.793548) (xy 92.211898 101.793549) (xy 92.211899 101.79355) (xy 92.214043 101.79693)
-				(xy 92.216694 101.8011) (xy 92.216696 101.801112) (xy 92.216946 101.802546) (xy 92.216661 101.8078)
-				(xy 92.189768 101.90095) (xy 92.18946 101.901873) (xy 92.189115 101.902778) (xy 92.188734 101.903663)
-				(xy 92.154372 101.975415) (xy 92.117132 102.05908) (xy 92.104642 102.117371) (xy 92.104639 102.117401)
-				(xy 92.100789 102.182347) (xy 92.099637 102.186761) (xy 92.098772 102.188544) (xy 92.092404 102.194373)
-				(xy 92.090984 102.194913) (xy 92.086825 102.195677) (xy 91.913375 102.195677) (xy 91.908898 102.194786)
-				(xy 91.907068 102.194028) (xy 91.900872 102.188005) (xy 91.900244 102.186605) (xy 91.899243 102.182487)
-				(xy 91.899209 102.181894) (xy 91.899209 102.181895) (xy 91.895622 102.119394) (xy 91.883795 102.062149)
-				(xy 91.882444 102.05908) (xy 91.872884 102.037357) (xy 91.845646 101.975461) (xy 91.821994 101.928557)
-				(xy 91.82161 101.927712) (xy 91.821244 101.92681) (xy 91.820936 101.925953) (xy 91.783852 101.808271)
-				(xy 91.783356 101.803743) (xy 91.783512 101.801961) (xy 91.787643 101.794024) (xy 91.788685 101.79315)
-				(xy 91.79365 101.790698) (xy 91.996193 101.745525) (xy 91.99874 101.745245) (xy 92.00126 101.745245)
+				(xy 92.208531 101.791186) (xy 92.21586 101.796331) (xy 92.217403 101.805152) (xy 92.217225 101.80585)
+				(xy 92.189634 101.901416) (xy 92.188945 101.903224) (xy 92.154363 101.975438) (xy 92.117132 102.05908)
+				(xy 92.104642 102.117376) (xy 92.104641 102.117388) (xy 92.100652 102.18467) (xy 92.096742 102.192725)
+				(xy 92.088973 102.195677) (xy 91.911048 102.195677) (xy 91.902775 102.19225) (xy 91.899367 102.184647)
+				(xy 91.899209 102.181896) (xy 91.895622 102.119394) (xy 91.883795 102.062149) (xy 91.882444 102.05908)
+				(xy 91.872884 102.037357) (xy 91.845646 101.975461) (xy 91.821785 101.928142) (xy 91.821074 101.926391)
+				(xy 91.783154 101.806054) (xy 91.783936 101.797134) (xy 91.790797 101.791379) (xy 91.791748 101.791123)
+				(xy 91.997453 101.745245) (xy 92.002547 101.745245)
 			)
 		)
 	)
@@ -33818,7 +33334,7 @@
 		(net "/Socket-TX")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30026)
+		(priority 30021)
 		(attr
 			(teardrop
 				(type padvia)
@@ -33857,7 +33373,7 @@
 		(net "/USB-CC1")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30021)
+		(priority 30022)
 		(attr
 			(teardrop
 				(type padvia)
@@ -33896,7 +33412,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30030)
+		(priority 30023)
 		(attr
 			(teardrop
 				(type padvia)
@@ -33935,7 +33451,7 @@
 		(net "/Link Socket/TX-Y")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30022)
+		(priority 30024)
 		(attr
 			(teardrop
 				(type padvia)
@@ -33974,7 +33490,7 @@
 		(net "/Socket-RX")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30027)
+		(priority 30025)
 		(attr
 			(teardrop
 				(type padvia)
@@ -34013,7 +33529,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30016)
+		(priority 30011)
 		(attr
 			(teardrop
 				(type padvia)
@@ -34112,7 +33628,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30035)
+		(priority 30040)
 		(attr
 			(teardrop
 				(type padvia)
@@ -34151,7 +33667,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30003)
+		(priority 30004)
 		(attr
 			(teardrop
 				(type padvia)
@@ -34281,7 +33797,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30024)
+		(priority 30026)
 		(attr
 			(teardrop
 				(type padvia)
@@ -34443,7 +33959,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30014)
+		(priority 30012)
 		(attr
 			(teardrop
 				(type padvia)
@@ -34482,7 +33998,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30029)
+		(priority 30027)
 		(attr
 			(teardrop
 				(type padvia)
@@ -34521,7 +34037,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30011)
+		(priority 30013)
 		(attr
 			(teardrop
 				(type padvia)
@@ -34560,7 +34076,7 @@
 		(net "/USB-CC2")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30015)
+		(priority 30014)
 		(attr
 			(teardrop
 				(type padvia)
@@ -35122,7 +34638,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30013)
+		(priority 30015)
 		(attr
 			(teardrop
 				(type padvia)
@@ -35161,7 +34677,7 @@
 		(net "/Socket-TX")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30008)
+		(priority 30009)
 		(attr
 			(teardrop
 				(type padvia)
@@ -35204,7 +34720,7 @@
 		(net "/Socket-RX")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30036)
+		(priority 30035)
 		(attr
 			(teardrop
 				(type padvia)
@@ -35219,30 +34735,32 @@
 		)
 		(polygon
 			(pts
-				(xy 84.907877 96.1) (xy 84.95076 96.104805) (xy 84.979562 96.118439) (xy 85.005894 96.160712) (xy 85.015755 96.220074)
-				(xy 85.028068 96.295203) (xy 85.062919 96.375003) (xy 85.319958 96.093958) (xy 85.293895 96.029323)
-				(xy 85.170885 95.988938) (xy 85.116789 95.958454) (xy 85.035179 95.917547) (xy 84.980689 95.904753)
-				(xy 84.907877 95.9)
+				(xy 84.907877 96.1) (xy 84.929289 96.070711) (xy 84.967696 96.11566) (xy 84.989797 96.155273) (xy 85.007319 96.226312)
+				(xy 85.02166 96.29228) (xy 85.062919 96.375003) (xy 85.253764 96.253764) (xy 85.375003 96.062919)
+				(xy 85.323269 96.033722) (xy 85.279062 96.01773) (xy 85.226312 96.007319) (xy 85.154228 95.989356)
+				(xy 85.115081 95.96729) (xy 85.070711 95.929289) (xy 85 95.9) (xy 84.907877 95.9)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 84.97924 95.904658) (xy 84.98019 95.904759) (xy 84.980825 95.904853) (xy 84.981149 95.904901)
-				(xy 84.982088 95.90508) (xy 85.033177 95.917076) (xy 85.034474 95.917461) (xy 85.035758 95.917926)
-				(xy 85.037008 95.918463) (xy 85.116448 95.958283) (xy 85.116666 95.958396) (xy 85.116938 95.958541)
-				(xy 85.117136 95.958649) (xy 85.170514 95.988729) (xy 85.17073 95.988862) (xy 85.170863 95.988926)
-				(xy 85.170879 95.988935) (xy 85.170882 95.988936) (xy 85.170885 95.988938) (xy 85.286513 96.026899)
-				(xy 85.29049 96.029142) (xy 85.293427 96.031666) (xy 85.296652 96.036163) (xy 85.316332 96.084965)
-				(xy 85.31718 96.089453) (xy 85.31715 96.092594) (xy 85.314085 96.100378) (xy 85.076639 96.36) (xy 85.072957 96.362704)
-				(xy 85.071343 96.363458) (xy 85.062397 96.363855) (xy 85.061943 96.36369) (xy 85.05534 96.357641)
-				(xy 85.055221 96.357378) (xy 85.028946 96.297215) (xy 85.028447 96.295844) (xy 85.028037 96.294455)
-				(xy 85.027712 96.293035) (xy 85.015757 96.220086) (xy 85.015692 96.219696) (xy 85.005894 96.160712)
-				(xy 84.979562 96.118439) (xy 84.95077 96.104809) (xy 84.950767 96.104807) (xy 84.950763 96.104806)
-				(xy 84.950758 96.104804) (xy 84.950757 96.104803) (xy 84.950754 96.104802) (xy 84.920585 96.101422)
-				(xy 84.916237 96.10004) (xy 84.914346 96.098996) (xy 84.908956 96.092617) (xy 84.908534 96.091411)
-				(xy 84.907877 96.087547) (xy 84.907877 95.914815) (xy 84.908766 95.910342) (xy 84.9088 95.910257)
-				(xy 84.909448 95.908694) (xy 84.915773 95.902363) (xy 84.917115 95.901807) (xy 84.922347 95.900944)
+				(xy 84.998797 95.900223) (xy 85.001031 95.900668) (xy 85.003212 95.90133) (xy 85.068137 95.928223)
+				(xy 85.069775 95.929058) (xy 85.071333 95.930014) (xy 85.072825 95.9311) (xy 85.107616 95.960896)
+				(xy 85.115079 95.967288) (xy 85.115082 95.967291) (xy 85.154224 95.989354) (xy 85.154228 95.989356)
+				(xy 85.226312 96.007319) (xy 85.277777 96.017476) (xy 85.27862 96.017676) (xy 85.279486 96.017917)
+				(xy 85.280308 96.018181) (xy 85.312744 96.029914) (xy 85.321891 96.033223) (xy 85.322784 96.033589)
+				(xy 85.32363 96.033977) (xy 85.323689 96.034005) (xy 85.324548 96.034445) (xy 85.362238 96.055715)
+				(xy 85.365698 96.058688) (xy 85.366798 96.060092) (xy 85.369203 96.068718) (xy 85.369202 96.068721)
+				(xy 85.369021 96.070209) (xy 85.367283 96.07507) (xy 85.255852 96.250475) (xy 85.254249 96.252474)
+				(xy 85.252474 96.254249) (xy 85.250475 96.255852) (xy 85.075835 96.366797) (xy 85.071577 96.368446)
+				(xy 85.069822 96.368753) (xy 85.061084 96.366804) (xy 85.060037 96.366069) (xy 85.056292 96.361717)
+				(xy 85.022635 96.294234) (xy 85.022074 96.292912) (xy 85.021586 96.291524) (xy 85.021197 96.290155)
+				(xy 85.007319 96.226312) (xy 84.989797 96.155273) (xy 84.967696 96.11566) (xy 84.92929 96.070711)
+				(xy 84.929289 96.070711) (xy 84.929288 96.070711) (xy 84.929287 96.070711) (xy 84.928067 96.071332)
+				(xy 84.927028 96.072288) (xy 84.925959 96.072939) (xy 84.917111 96.074315) (xy 84.909882 96.069031)
+				(xy 84.90957 96.06852) (xy 84.907877 96.062456) (xy 84.907877 95.914027) (xy 84.908766 95.909554)
+				(xy 84.9088 95.909469) (xy 84.909452 95.907896) (xy 84.912614 95.904737) (xy 84.915773 95.901575)
+				(xy 84.917431 95.900889) (xy 84.921904 95.9) (xy 84.996521 95.9)
 			)
 		)
 	)
@@ -35250,7 +34768,7 @@
 		(net "/MIDI-Out")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30012)
+		(priority 30016)
 		(attr
 			(teardrop
 				(type padvia)
@@ -35288,7 +34806,7 @@
 		(net "/Socket-TX-Enable")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30040)
+		(priority 30036)
 		(attr
 			(teardrop
 				(type padvia)
@@ -35303,23 +34821,25 @@
 		)
 		(polygon
 			(pts
-				(xy 84.907877 95.1) (xy 84.97995 95.095354) (xy 85.034051 95.082831) (xy 85.116789 95.041546) (xy 85.187459 95.003304)
-				(xy 85.293895 94.970677) (xy 85.319958 94.906042) (xy 85.062919 94.624997) (xy 85.027553 94.706844)
-				(xy 85.015755 94.779926) (xy 85.008775 94.827808) (xy 84.99411 94.865848) (xy 84.963298 94.890945)
-				(xy 84.907877 94.9)
+				(xy 84.907877 95.1) (xy 85 95.1) (xy 85.070711 95.070711) (xy 85.11566 95.032303) (xy 85.155273 95.010202)
+				(xy 85.226313 94.99268) (xy 85.29228 94.978339) (xy 85.375003 94.937081) (xy 85.253764 94.746236)
+				(xy 85.062919 94.624997) (xy 85.033722 94.676731) (xy 85.01773 94.720937) (xy 85.007319 94.773687)
+				(xy 84.989356 94.845772) (xy 84.96729 94.884918) (xy 84.929289 94.929289) (xy 84.907877 94.9)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 85.071128 94.635495) (xy 85.075122 94.638339) (xy 85.314985 94.900604) (xy 85.318039 94.909021)
-				(xy 85.317202 94.912876) (xy 85.295981 94.965502) (xy 85.289709 94.971893) (xy 85.288559 94.972312)
-				(xy 85.187463 95.003302) (xy 85.187454 95.003306) (xy 85.116963 95.041451) (xy 85.116619 95.04163)
-				(xy 85.035289 95.082212) (xy 85.032704 95.083142) (xy 84.980882 95.095138) (xy 84.978996 95.095415)
-				(xy 84.92033 95.099197) (xy 84.911853 95.096309) (xy 84.907901 95.088274) (xy 84.907877 95.087521)
-				(xy 84.907877 94.909943) (xy 84.911304 94.90167) (xy 84.917688 94.898397) (xy 84.963298 94.890945)
-				(xy 84.99411 94.865848) (xy 85.008775 94.827808) (xy 85.015755 94.779926) (xy 85.027321 94.708277)
-				(xy 85.028128 94.705512) (xy 85.055747 94.641593) (xy 85.062174 94.635359)
+				(xy 85.072799 94.631293) (xy 85.073312 94.631599) (xy 85.251562 94.744837) (xy 85.255162 94.748437)
+				(xy 85.351446 94.9) (xy 85.368045 94.926128) (xy 85.369588 94.934949) (xy 85.364443 94.942278) (xy 85.363391 94.942872)
+				(xy 85.293587 94.977686) (xy 85.290851 94.978649) (xy 85.25035 94.987454) (xy 85.226313 94.99268)
+				(xy 85.155273 95.010202) (xy 85.155269 95.010203) (xy 85.11566 95.032302) (xy 85.072119 95.069507)
+				(xy 85.068995 95.071421) (xy 85.002151 95.099109) (xy 84.997674 95.1) (xy 84.919577 95.1) (xy 84.911304 95.096573)
+				(xy 84.907877 95.0883) (xy 84.907877 94.935829) (xy 84.911304 94.927556) (xy 84.919577 94.924129)
+				(xy 84.92785 94.927556) (xy 84.929022 94.928924) (xy 84.929289 94.929289) (xy 84.96729 94.884918)
+				(xy 84.989356 94.845772) (xy 85.007319 94.773687) (xy 85.01756 94.721797) (xy 85.01803 94.720105)
+				(xy 85.033389 94.677649) (xy 85.034202 94.675881) (xy 85.042344 94.661453) (xy 85.05686 94.635731)
+				(xy 85.06391 94.630211)
 			)
 		)
 	)
@@ -35327,7 +34847,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30020)
+		(priority 30028)
 		(attr
 			(teardrop
 				(type padvia)
@@ -35366,7 +34886,7 @@
 		(net "/USB-CC2")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30037)
+		(priority 30039)
 		(attr
 			(teardrop
 				(type padvia)
@@ -35381,24 +34901,25 @@
 		)
 		(polygon
 			(pts
-				(xy 135.342123 90.4) (xy 135.29924 90.395195) (xy 135.270438 90.381561) (xy 135.244105 90.339289)
-				(xy 135.234244 90.279925) (xy 135.221932 90.204796) (xy 135.187081 90.124997) (xy 134.930042 90.406042)
-				(xy 134.956105 90.470677) (xy 135.079114 90.511062) (xy 135.13321 90.541546) (xy 135.214821 90.582453)
-				(xy 135.26931 90.595247) (xy 135.342123 90.6)
+				(xy 135.342123 90.4) (xy 135.320711 90.429289) (xy 135.282303 90.384339) (xy 135.260202 90.344727)
+				(xy 135.24268 90.273686) (xy 135.228339 90.207719) (xy 135.187081 90.124997) (xy 134.996236 90.246236)
+				(xy 134.874997 90.437081) (xy 134.926731 90.466277) (xy 134.970937 90.482269) (xy 135.023686 90.49268)
+				(xy 135.095771 90.510644) (xy 135.134918 90.53271) (xy 135.179289 90.570711) (xy 135.25 90.6) (xy 135.342123 90.6)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 135.19146 90.137544) (xy 135.194286 90.141495) (xy 135.221345 90.203452) (xy 135.222169 90.206243)
-				(xy 135.234242 90.279913) (xy 135.244105 90.339288) (xy 135.244106 90.339292) (xy 135.270437 90.38156)
-				(xy 135.270438 90.381561) (xy 135.29924 90.395195) (xy 135.331726 90.398835) (xy 135.339566 90.403162)
-				(xy 135.342123 90.410462) (xy 135.342123 90.587511) (xy 135.338696 90.595784) (xy 135.330423 90.599211)
-				(xy 135.329661 90.599186) (xy 135.270277 90.59531) (xy 135.268365 90.595025) (xy 135.216163 90.582768)
-				(xy 135.213594 90.581838) (xy 135.133456 90.541669) (xy 135.132955 90.541402) (xy 135.079119 90.511064)
-				(xy 135.07911 90.51106) (xy 134.961272 90.472373) (xy 134.954481 90.466537) (xy 134.954071 90.465633)
-				(xy 134.932797 90.412874) (xy 134.932881 90.403921) (xy 134.93501 90.400609) (xy 135.174931 90.138281)
-				(xy 135.183043 90.13449)
+				(xy 135.192278 90.135556) (xy 135.192872 90.136608) (xy 135.227686 90.206411) (xy 135.228649 90.209147)
+				(xy 135.24268 90.273686) (xy 135.260202 90.344727) (xy 135.260203 90.34473) (xy 135.282302 90.384338)
+				(xy 135.282303 90.384339) (xy 135.320711 90.429289) (xy 135.320978 90.428924) (xy 135.328626 90.424268)
+				(xy 135.337328 90.426384) (xy 135.341984 90.434032) (xy 135.342123 90.435829) (xy 135.342123 90.5883)
+				(xy 135.338696 90.596573) (xy 135.330423 90.6) (xy 135.252326 90.6) (xy 135.247849 90.599109) (xy 135.18101 90.571423)
+				(xy 135.177876 90.5695) (xy 135.134918 90.53271) (xy 135.095774 90.510645) (xy 135.095771 90.510644)
+				(xy 135.023696 90.492682) (xy 135.023688 90.49268) (xy 135.023686 90.49268) (xy 135.012409 90.490454)
+				(xy 134.971807 90.48244) (xy 134.970093 90.481963) (xy 134.927648 90.466608) (xy 134.925878 90.465795)
+				(xy 134.885732 90.443139) (xy 134.880211 90.436089) (xy 134.881293 90.4272) (xy 134.881589 90.426703)
+				(xy 134.994839 90.248434) (xy 134.998434 90.244839) (xy 135.17613 90.131953) (xy 135.184949 90.130411)
 			)
 		)
 	)
@@ -35406,7 +34927,7 @@
 		(net "/LEDs")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30018)
+		(priority 30029)
 		(attr
 			(teardrop
 				(type padvia)
@@ -35484,7 +35005,7 @@
 		(net "/LEDs")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30039)
+		(priority 30037)
 		(attr
 			(teardrop
 				(type padvia)
@@ -35499,24 +35020,25 @@
 		)
 		(polygon
 			(pts
-				(xy 86.6 89.342123) (xy 86.604805 89.29924) (xy 86.618439 89.270437) (xy 86.660711 89.244105) (xy 86.720074 89.234244)
-				(xy 86.795204 89.221932) (xy 86.875003 89.187081) (xy 86.593958 88.930042) (xy 86.529323 88.956105)
-				(xy 86.488938 89.079114) (xy 86.458454 89.13321) (xy 86.417547 89.21482) (xy 86.404753 89.26931)
-				(xy 86.4 89.342123)
+				(xy 86.6 89.342123) (xy 86.570711 89.320711) (xy 86.61566 89.282303) (xy 86.655273 89.260202) (xy 86.726313 89.24268)
+				(xy 86.79228 89.228339) (xy 86.875003 89.187081) (xy 86.753764 88.996236) (xy 86.562919 88.874997)
+				(xy 86.533722 88.926731) (xy 86.51773 88.970937) (xy 86.507319 89.023687) (xy 86.489356 89.095772)
+				(xy 86.46729 89.134918) (xy 86.429289 89.179289) (xy 86.4 89.25) (xy 86.4 89.342123)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 86.596078 88.932881) (xy 86.599392 88.935012) (xy 86.756958 89.079119) (xy 86.861717 89.17493)
-				(xy 86.865509 89.183043) (xy 86.862455 89.19146) (xy 86.858504 89.194286) (xy 86.796547 89.221345)
-				(xy 86.793756 89.222169) (xy 86.720085 89.234241) (xy 86.720086 89.234242) (xy 86.660711 89.244105)
-				(xy 86.660707 89.244106) (xy 86.618439 89.270436) (xy 86.604806 89.299236) (xy 86.604804 89.299241)
-				(xy 86.601165 89.331726) (xy 86.596838 89.339566) (xy 86.589538 89.342123) (xy 86.412488 89.342123)
-				(xy 86.404215 89.338696) (xy 86.400788 89.330423) (xy 86.400813 89.329661) (xy 86.402799 89.29924)
-				(xy 86.40469 89.270266) (xy 86.404972 89.268375) (xy 86.417233 89.216154) (xy 86.418158 89.2136)
-				(xy 86.458341 89.133434) (xy 86.458584 89.132977) (xy 86.488938 89.079114) (xy 86.527627 88.96127)
-				(xy 86.533462 88.954481) (xy 86.534356 88.954075) (xy 86.587125 88.932797)
+				(xy 86.572799 88.881293) (xy 86.573312 88.881599) (xy 86.751562 88.994837) (xy 86.755163 88.998438)
+				(xy 86.868045 89.176128) (xy 86.869588 89.184949) (xy 86.864443 89.192278) (xy 86.863391 89.192872)
+				(xy 86.793587 89.227686) (xy 86.790851 89.228649) (xy 86.75035 89.237454) (xy 86.726313 89.24268)
+				(xy 86.655273 89.260202) (xy 86.655269 89.260203) (xy 86.61566 89.282302) (xy 86.570711 89.32071)
+				(xy 86.570711 89.320711) (xy 86.571076 89.320978) (xy 86.575732 89.328626) (xy 86.573616 89.337328)
+				(xy 86.565968 89.341984) (xy 86.564171 89.342123) (xy 86.4117 89.342123) (xy 86.403427 89.338696)
+				(xy 86.4 89.330423) (xy 86.4 89.252325) (xy 86.400891 89.247848) (xy 86.403033 89.242678) (xy 86.428576 89.181009)
+				(xy 86.430499 89.177876) (xy 86.431996 89.176128) (xy 86.46729 89.134918) (xy 86.489356 89.095772)
+				(xy 86.507319 89.023687) (xy 86.51756 88.971797) (xy 86.51803 88.970105) (xy 86.533389 88.927649)
+				(xy 86.534202 88.925881) (xy 86.542344 88.911453) (xy 86.55686 88.885731) (xy 86.56391 88.880211)
 			)
 		)
 	)
@@ -35524,7 +35046,7 @@
 		(net "/MIDI-In")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30010)
+		(priority 30017)
 		(attr
 			(teardrop
 				(type padvia)
@@ -35562,7 +35084,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30028)
+		(priority 30030)
 		(attr
 			(teardrop
 				(type padvia)
@@ -35643,7 +35165,7 @@
 		(net "/Link Socket/TX-Y")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30010)
+		(priority 30002)
 		(attr
 			(teardrop
 				(type padvia)
@@ -35727,7 +35249,7 @@
 		(net "/USB-CC1")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30008)
+		(priority 30004)
 		(attr
 			(teardrop
 				(type padvia)
@@ -35843,7 +35365,7 @@
 		(net "/Socket-RX")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30009)
+		(priority 30006)
 		(attr
 			(teardrop
 				(type padvia)
@@ -35882,7 +35404,7 @@
 		(net "/LEDs")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30004)
+		(priority 30007)
 		(attr
 			(teardrop
 				(type padvia)
@@ -35921,7 +35443,7 @@
 		(net "/USB+")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30007)
+		(priority 30008)
 		(attr
 			(teardrop
 				(type padvia)
@@ -35945,14 +35467,20 @@
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 81.347225 94.30775) (xy 81.350633 94.315353) (xy 81.354378 94.380611) (xy 81.366205 94.437851)
-				(xy 81.366205 94.437853) (xy 81.404356 94.524542) (xy 81.428212 94.571855) (xy 81.428924 94.573607)
-				(xy 81.466845 94.693945) (xy 81.466063 94.702865) (xy 81.459202 94.70862) (xy 81.458233 94.70888)
-				(xy 81.252547 94.754754) (xy 81.247453 94.754754) (xy 81.041468 94.708813) (xy 81.034139 94.703668)
-				(xy 81.032596 94.694847) (xy 81.032767 94.694172) (xy 81.060368 94.598573) (xy 81.06105 94.596783)
-				(xy 81.082918 94.551116) (xy 81.095636 94.52456) (xy 81.095646 94.524538) (xy 81.132866 94.440923)
-				(xy 81.145358 94.382618) (xy 81.149347 94.31533) (xy 81.153257 94.307275) (xy 81.161026 94.304323)
-				(xy 81.338952 94.304323)
+				(xy 81.3411 94.305212) (xy 81.342928 94.30597) (xy 81.349127 94.311994) (xy 81.349685 94.313238)
+				(xy 81.349753 94.313389) (xy 81.350756 94.317502) (xy 81.354378 94.380615) (xy 81.365963 94.436678)
+				(xy 81.365968 94.43673) (xy 81.366203 94.437849) (xy 81.366205 94.437853) (xy 81.404342 94.524511)
+				(xy 81.404358 94.524546) (xy 81.427999 94.571432) (xy 81.428386 94.572285) (xy 81.428749 94.573176)
+				(xy 81.429066 94.574059) (xy 81.466145 94.691725) (xy 81.466642 94.696259) (xy 81.466487 94.698033)
+				(xy 81.462353 94.705977) (xy 81.462348 94.70598) (xy 81.461314 94.706847) (xy 81.456344 94.709301)
+				(xy 81.253807 94.754473) (xy 81.25126 94.754754) (xy 81.24874 94.754754) (xy 81.246193 94.754473)
+				(xy 81.043739 94.709319) (xy 81.039566 94.707478) (xy 81.038667 94.706847) (xy 81.038107 94.706453)
+				(xy 81.033304 94.698899) (xy 81.033052 94.697455) (xy 81.033335 94.692201) (xy 81.06024 94.599014)
+				(xy 81.060535 94.598133) (xy 81.060881 94.597224) (xy 81.061256 94.596353) (xy 81.082916 94.551121)
+				(xy 81.082916 94.551118) (xy 81.082918 94.551116) (xy 81.095636 94.52456) (xy 81.095646 94.524538)
+				(xy 81.132866 94.440923) (xy 81.145358 94.382618) (xy 81.149209 94.317646) (xy 81.150359 94.313244)
+				(xy 81.151229 94.311451) (xy 81.157603 94.305623) (xy 81.158001 94.305472) (xy 81.159025 94.305084)
+				(xy 81.163174 94.304323) (xy 81.336625 94.304323)
 			)
 		)
 	)
@@ -35960,7 +35488,7 @@
 		(net "/Socket-RX")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30019)
+		(priority 30018)
 		(attr
 			(teardrop
 				(type padvia)
@@ -35984,13 +35512,17 @@
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 85.07281 96.131332) (xy 85.073676 96.131831) (xy 85.251562 96.244837) (xy 85.255163 96.248438)
-				(xy 85.36833 96.426577) (xy 85.369873 96.435398) (xy 85.364728 96.442727) (xy 85.364108 96.443094)
-				(xy 85.277029 96.491155) (xy 85.275264 96.491947) (xy 85.199727 96.518565) (xy 85.114276 96.551374)
-				(xy 85.064217 96.583768) (xy 85.064206 96.583777) (xy 85.013814 96.628528) (xy 85.005352 96.631459)
-				(xy 84.997772 96.628053) (xy 84.87196 96.502241) (xy 84.868533 96.493968) (xy 84.871498 96.486185)
-				(xy 84.914993 96.437394) (xy 84.947108 96.388554) (xy 84.98143 96.300281) (xy 84.998018 96.249948)
-				(xy 84.998752 96.248211) (xy 85.00051 96.244836) (xy 85.05703 96.136303) (xy 85.06389 96.13055)
+				(xy 85.070058 96.13109) (xy 85.075308 96.132868) (xy 85.250476 96.244147) (xy 85.252475 96.24575)
+				(xy 85.254249 96.247524) (xy 85.255852 96.249523) (xy 85.367082 96.424612) (xy 85.368731 96.42887)
+				(xy 85.369038 96.430625) (xy 85.36709 96.439361) (xy 85.366255 96.440551) (xy 85.362332 96.444074)
+				(xy 85.277458 96.490918) (xy 85.276595 96.491349) (xy 85.275706 96.491748) (xy 85.274804 96.492109)
+				(xy 85.199735 96.518562) (xy 85.114276 96.551373) (xy 85.064215 96.583768) (xy 85.015555 96.626981)
+				(xy 85.011616 96.629288) (xy 85.00974 96.629938) (xy 85.001114 96.629555) (xy 84.999729 96.628932)
+				(xy 84.996253 96.626534) (xy 84.873605 96.503886) (xy 84.871071 96.500095) (xy 84.870311 96.498262)
+				(xy 84.870189 96.48962) (xy 84.870734 96.488189) (xy 84.872927 96.484581) (xy 84.914993 96.437394)
+				(xy 84.947108 96.388554) (xy 84.98143 96.300281) (xy 84.997874 96.250382) (xy 84.998197 96.249522)
+				(xy 84.998573 96.248633) (xy 84.998966 96.2478) (xy 85.00051 96.244836) (xy 85.000869 96.244147)
+				(xy 85.055955 96.138365) (xy 85.05881 96.134809) (xy 85.060177 96.133663) (xy 85.068709 96.130972)
 			)
 		)
 	)
@@ -36081,7 +35613,7 @@
 		(net "/Socket-TX-Enable")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30006)
+		(priority 30009)
 		(attr
 			(teardrop
 				(type padvia)
@@ -36119,7 +35651,7 @@
 		(net "/USB-")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30002)
+		(priority 30010)
 		(attr
 			(teardrop
 				(type padvia)
@@ -36143,20 +35675,14 @@
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 80.8411 93.055212) (xy 80.842928 93.05597) (xy 80.849127 93.061994) (xy 80.849685 93.063238)
-				(xy 80.849753 93.063389) (xy 80.850756 93.067502) (xy 80.854378 93.130615) (xy 80.865963 93.186678)
-				(xy 80.865968 93.18673) (xy 80.866203 93.187849) (xy 80.866205 93.187853) (xy 80.904342 93.274511)
-				(xy 80.904358 93.274546) (xy 80.927999 93.321432) (xy 80.928386 93.322285) (xy 80.928749 93.323176)
-				(xy 80.929066 93.324059) (xy 80.966145 93.441725) (xy 80.966642 93.446259) (xy 80.966487 93.448033)
-				(xy 80.962353 93.455977) (xy 80.962348 93.45598) (xy 80.961314 93.456847) (xy 80.956344 93.459301)
-				(xy 80.753807 93.504473) (xy 80.75126 93.504754) (xy 80.74874 93.504754) (xy 80.746193 93.504473)
-				(xy 80.543739 93.459319) (xy 80.539566 93.457478) (xy 80.538667 93.456847) (xy 80.538107 93.456453)
-				(xy 80.533304 93.448899) (xy 80.533052 93.447455) (xy 80.533335 93.442201) (xy 80.56024 93.349014)
-				(xy 80.560535 93.348133) (xy 80.560881 93.347224) (xy 80.561256 93.346353) (xy 80.582916 93.301121)
-				(xy 80.582916 93.301118) (xy 80.582918 93.301116) (xy 80.595636 93.27456) (xy 80.595646 93.274538)
-				(xy 80.632866 93.190923) (xy 80.645358 93.132618) (xy 80.649209 93.067646) (xy 80.650359 93.063244)
-				(xy 80.651229 93.061451) (xy 80.657603 93.055623) (xy 80.658001 93.055472) (xy 80.659025 93.055084)
-				(xy 80.663174 93.054323) (xy 80.836625 93.054323)
+				(xy 80.847225 93.05775) (xy 80.850633 93.065353) (xy 80.854378 93.130611) (xy 80.866205 93.187851)
+				(xy 80.866205 93.187853) (xy 80.904356 93.274542) (xy 80.928212 93.321855) (xy 80.928924 93.323607)
+				(xy 80.966845 93.443945) (xy 80.966063 93.452865) (xy 80.959202 93.45862) (xy 80.958233 93.45888)
+				(xy 80.752547 93.504754) (xy 80.747453 93.504754) (xy 80.541468 93.458813) (xy 80.534139 93.453668)
+				(xy 80.532596 93.444847) (xy 80.532767 93.444172) (xy 80.560368 93.348573) (xy 80.56105 93.346783)
+				(xy 80.582918 93.301116) (xy 80.595636 93.27456) (xy 80.595646 93.274538) (xy 80.632866 93.190923)
+				(xy 80.645358 93.132618) (xy 80.649347 93.06533) (xy 80.653257 93.057275) (xy 80.661026 93.054323)
+				(xy 80.838952 93.054323)
 			)
 		)
 	)
@@ -36164,7 +35690,7 @@
 		(net "/Socket-TX")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30018)
+		(priority 30019)
 		(attr
 			(teardrop
 				(type padvia)
@@ -36188,17 +35714,13 @@
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 85.070058 95.38109) (xy 85.075308 95.382868) (xy 85.250476 95.494147) (xy 85.252475 95.49575)
-				(xy 85.254249 95.497524) (xy 85.255852 95.499523) (xy 85.367082 95.674612) (xy 85.368731 95.67887)
-				(xy 85.369038 95.680625) (xy 85.36709 95.689361) (xy 85.366255 95.690551) (xy 85.362332 95.694074)
-				(xy 85.277458 95.740918) (xy 85.276595 95.741349) (xy 85.275706 95.741748) (xy 85.274804 95.742109)
-				(xy 85.199735 95.768562) (xy 85.114276 95.801373) (xy 85.064215 95.833768) (xy 85.015555 95.876981)
-				(xy 85.011616 95.879288) (xy 85.00974 95.879938) (xy 85.001114 95.879555) (xy 84.999729 95.878932)
-				(xy 84.996253 95.876534) (xy 84.873605 95.753886) (xy 84.871071 95.750095) (xy 84.870311 95.748262)
-				(xy 84.870189 95.73962) (xy 84.870734 95.738189) (xy 84.872927 95.734581) (xy 84.914993 95.687394)
-				(xy 84.947108 95.638554) (xy 84.98143 95.550281) (xy 84.997874 95.500382) (xy 84.998197 95.499522)
-				(xy 84.998573 95.498633) (xy 84.998966 95.4978) (xy 85.00051 95.494836) (xy 85.000869 95.494147)
-				(xy 85.055955 95.388365) (xy 85.05881 95.384809) (xy 85.060177 95.383663) (xy 85.068709 95.380972)
+				(xy 85.07281 95.381332) (xy 85.073676 95.381831) (xy 85.251562 95.494837) (xy 85.255163 95.498438)
+				(xy 85.36833 95.676577) (xy 85.369873 95.685398) (xy 85.364728 95.692727) (xy 85.364108 95.693094)
+				(xy 85.277029 95.741155) (xy 85.275264 95.741947) (xy 85.199727 95.768565) (xy 85.114276 95.801374)
+				(xy 85.064217 95.833768) (xy 85.064206 95.833777) (xy 85.013814 95.878528) (xy 85.005352 95.881459)
+				(xy 84.997772 95.878053) (xy 84.87196 95.752241) (xy 84.868533 95.743968) (xy 84.871498 95.736185)
+				(xy 84.914993 95.687394) (xy 84.947108 95.638554) (xy 84.98143 95.550281) (xy 84.998018 95.499948)
+				(xy 84.998752 95.498211) (xy 85.00051 95.494836) (xy 85.05703 95.386303) (xy 85.06389 95.38055)
 			)
 		)
 	)

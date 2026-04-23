@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 3.0,
-          "height": 3.0,
-          "width": 3.0
+          "drill": 0.0,
+          "height": 0.85,
+          "width": 0.27
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -134,8 +134,8 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.175,
-        "min_connection": 0.2,
+        "min_clearance": 0.1,
+        "min_connection": 0.1,
         "min_copper_edge_clearance": 0.2,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.2,
@@ -147,7 +147,7 @@
         "min_text_height": 0.75,
         "min_text_thickness": 0.1,
         "min_through_hole_diameter": 0.2,
-        "min_track_width": 0.2,
+        "min_track_width": 0.1,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.4,
         "solder_mask_clearance": 0.0,
@@ -170,8 +170,8 @@
           "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
-          "td_maxheight": 1.0,
-          "td_maxlen": 1.0,
+          "td_maxheight": 0.5,
+          "td_maxlen": 0.5,
           "td_on_pad_in_zone": false,
           "td_target_name": "td_round_shape",
           "td_width_to_size_filter_ratio": 0.9
@@ -181,8 +181,8 @@
           "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
-          "td_maxheight": 1.0,
-          "td_maxlen": 1.0,
+          "td_maxheight": 0.5,
+          "td_maxlen": 0.5,
           "td_on_pad_in_zone": false,
           "td_target_name": "td_rect_shape",
           "td_width_to_size_filter_ratio": 0.9
@@ -192,8 +192,8 @@
           "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
-          "td_maxheight": 1.0,
-          "td_maxlen": 1.0,
+          "td_maxheight": 0.5,
+          "td_maxlen": 0.5,
           "td_on_pad_in_zone": false,
           "td_target_name": "td_track_end",
           "td_width_to_size_filter_ratio": 0.9
@@ -253,7 +253,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "2026-04-14"
+      "sch_revision": "2026-04-23"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -503,7 +503,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "connect.kicad_pro",
+    "filename": "plug.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -601,7 +601,7 @@
     "netclass_patterns": [
       {
         "netclass": "USB",
-        "pattern": "/USB*"
+        "pattern": "*/USB*"
       },
       {
         "netclass": "Ground",
@@ -642,10 +642,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "connect-gerber",
+      "plot": "sax-gerber",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../Desktop/connect.step",
+      "step": "../../../../../Desktop/sax.step",
       "svg": "",
       "vrml": ""
     },
@@ -670,14 +670,8 @@
     },
     "bom_presets": [],
     "bom_settings": {
-      "exclude_dnp": true,
+      "exclude_dnp": false,
       "fields_ordered": [
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": true
-        },
         {
           "group_by": false,
           "label": "Reference",
@@ -710,7 +704,7 @@
         },
         {
           "group_by": false,
-          "label": "Quantity",
+          "label": "Qty",
           "name": "${QUANTITY}",
           "show": true
         },
@@ -719,6 +713,18 @@
           "label": "Rating",
           "name": "Rating",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "DNP",
+          "name": "${DNP}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         },
         {
           "group_by": false,
@@ -740,6 +746,18 @@
         },
         {
           "group_by": false,
+          "label": "Sim.Enable",
+          "name": "Sim.Enable",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
           "label": "Description",
           "name": "Description",
           "show": false
@@ -749,6 +767,12 @@
           "label": "LCSC",
           "name": "LCSC",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Voltage",
+          "name": "Voltage",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -756,7 +780,7 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "${ITEM_NUMBER}"
+      "sort_field": "Voltage"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -812,8 +836,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "connect.kicad_sch",
-        "name": "connect",
+        "filename": "plug.kicad_sch",
+        "name": "plug",
         "uuid": "6c8448b4-b04d-47e1-934e-e40cbe27a7be"
       }
     ],
@@ -823,30 +847,28 @@
   "sheets": [
     [
       "6c8448b4-b04d-47e1-934e-e40cbe27a7be",
-      "connect"
+      "plug"
     ],
     [
-      "a64f4585-dd42-4120-8007-516d9ffa6e9b",
-      "Link Socket"
-    ],
-    [
-      "b3c42dce-2379-4efd-9d46-72d1b5ac9acb",
+      "62a78b59-e04b-4b32-8f87-746982088aa1",
       "MIDI In"
     ],
     [
-      "8f187542-ab0c-4216-b848-93c409b6d3f4",
+      "2737a175-b1a1-4dfd-b186-4741ca8995da",
       "MIDI Out"
     ],
     [
-      "12e95e62-017b-424d-95ef-a2368733f4e7",
-      "LEDs"
+      "be5efeaa-f0dd-4882-b2f8-53c61e0a33bd",
+      "Link Plug"
     ],
     [
       "095cddf1-6522-4d3b-885d-b21acd91d0c6",
       "Power +5V"
     ]
   ],
-  "text_variables": {},
+  "text_variables": {
+    "Order-Number": "JLCJLCJLCJLC"
+  },
   "tuning_profiles": {
     "meta": {
       "version": 0
