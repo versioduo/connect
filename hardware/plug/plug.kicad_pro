@@ -642,7 +642,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "sax-gerber",
+      "plot": "connect-plug",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "../../../../../Desktop/sax.step",
