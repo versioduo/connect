@@ -12,7 +12,7 @@
 		(comment 1 "V2 Link Connector")
 	)
 	(lib_symbols
-		(symbol "V2_Capacitor:0603_0u1"
+		(symbol "V2_Capacitor:1608_0u1"
 			(pin_numbers
 				(hide yes)
 			)
@@ -47,7 +47,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "V2_Capacitor_SMD:C_0603"
+			(property "Footprint" "V2_Capacitor_SMD:C_1608"
 				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -157,7 +157,7 @@
 					)
 				)
 			)
-			(symbol "0603_0u1_0_1"
+			(symbol "1608_0u1_0_1"
 				(polyline
 					(pts
 						(xy -1.524 0.508) (xy 1.524 0.508)
@@ -183,7 +183,7 @@
 					)
 				)
 			)
-			(symbol "0603_0u1_1_1"
+			(symbol "1608_0u1_1_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 2.032)
@@ -1152,7 +1152,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "V2_Resistor:0603_100R"
+		(symbol "V2_Resistor:1608_100R"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1187,7 +1187,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "V2_Resistor_SMD:R_0603"
+			(property "Footprint" "V2_Resistor_SMD:R_1608"
 				(at 0 -16.51 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1297,7 +1297,7 @@
 					)
 				)
 			)
-			(symbol "0603_100R_0_1"
+			(symbol "1608_100R_0_1"
 				(rectangle
 					(start -0.762 1.778)
 					(end 0.762 -1.778)
@@ -1310,7 +1310,7 @@
 					)
 				)
 			)
-			(symbol "0603_100R_1_1"
+			(symbol "1608_100R_1_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 0.762)
@@ -2195,6 +2195,39 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 148.59 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 148.59 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" ""
+			(at 148.59 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3b855b6e-0000-4a0a-becf-43c3198e156c")
 		)
@@ -2238,7 +2271,7 @@
 		)
 	)
 	(symbol
-		(lib_id "V2_Resistor:0603_100R")
+		(lib_id "V2_Resistor:1608_100R")
 		(at 161.29 87.63 0)
 		(unit 1)
 		(body_style 1)
@@ -2268,7 +2301,7 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Resistor_SMD:R_0603"
+		(property "Footprint" "V2_Resistor_SMD:R_1608"
 			(at 161.29 103.378 0)
 			(hide yes)
 			(show_name no)
@@ -2347,6 +2380,39 @@
 		)
 		(property "Id" "Resistor:${SYMBOL_NAME}"
 			(at 161.29 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 161.29 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 161.29 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" ""
+			(at 161.29 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2485,6 +2551,39 @@
 		)
 		(property "Rating" "CAT5e"
 			(at 148.59 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 148.59 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 148.59 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" ""
+			(at 148.59 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2687,7 +2786,7 @@
 		)
 	)
 	(symbol
-		(lib_id "V2_Capacitor:0603_0u1")
+		(lib_id "V2_Capacitor:1608_0u1")
 		(at 168.91 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -2719,7 +2818,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "V2_Capacitor_SMD:C_0603"
+		(property "Footprint" "V2_Capacitor_SMD:C_1608"
 			(at 168.91 89.408 0)
 			(hide yes)
 			(show_name no)
@@ -2798,6 +2897,39 @@
 		)
 		(property "Id" "Capacitor:${SYMBOL_NAME}"
 			(at 168.91 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 168.91 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 168.91 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" ""
+			(at 168.91 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

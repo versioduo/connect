@@ -12,7 +12,7 @@
 		(comment 1 "V2 Link Connector")
 	)
 	(lib_symbols
-		(symbol "V2_Capacitor:0603_0u1"
+		(symbol "V2_Capacitor:1608_0u1"
 			(pin_numbers
 				(hide yes)
 			)
@@ -47,7 +47,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "V2_Capacitor_SMD:C_0603"
+			(property "Footprint" "V2_Capacitor_SMD:C_1608"
 				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -157,7 +157,7 @@
 					)
 				)
 			)
-			(symbol "0603_0u1_0_1"
+			(symbol "1608_0u1_0_1"
 				(polyline
 					(pts
 						(xy -1.524 0.508) (xy 1.524 0.508)
@@ -183,7 +183,7 @@
 					)
 				)
 			)
-			(symbol "0603_0u1_1_1"
+			(symbol "1608_0u1_1_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 2.032)
@@ -223,7 +223,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "V2_Capacitor:0603_1u"
+		(symbol "V2_Capacitor:1608_1u"
 			(pin_numbers
 				(hide yes)
 			)
@@ -258,7 +258,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "V2_Capacitor_SMD:C_0603"
+			(property "Footprint" "V2_Capacitor_SMD:C_1608"
 				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -368,7 +368,7 @@
 					)
 				)
 			)
-			(symbol "0603_1u_0_1"
+			(symbol "1608_1u_0_1"
 				(polyline
 					(pts
 						(xy -1.524 0.508) (xy 1.524 0.508)
@@ -394,7 +394,7 @@
 					)
 				)
 			)
-			(symbol "0603_1u_1_1"
+			(symbol "1608_1u_1_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 2.032)
@@ -434,7 +434,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "V2_Capacitor:1210_10u"
+		(symbol "V2_Capacitor:3225_10u"
 			(pin_numbers
 				(hide yes)
 			)
@@ -469,7 +469,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "V2_Capacitor_SMD:C_1210"
+			(property "Footprint" "V2_Capacitor_SMD:C_3225"
 				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -579,7 +579,7 @@
 					)
 				)
 			)
-			(symbol "1210_10u_0_1"
+			(symbol "3225_10u_0_1"
 				(polyline
 					(pts
 						(xy -1.524 0.508) (xy 1.524 0.508)
@@ -605,7 +605,7 @@
 					)
 				)
 			)
-			(symbol "1210_10u_1_1"
+			(symbol "3225_10u_1_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 2.032)
@@ -645,7 +645,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "V2_Capacitor:1210_22u"
+		(symbol "V2_Capacitor:3225_22u"
 			(pin_numbers
 				(hide yes)
 			)
@@ -680,7 +680,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "V2_Capacitor_SMD:C_1210"
+			(property "Footprint" "V2_Capacitor_SMD:C_3225"
 				(at 0 -17.78 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -790,7 +790,7 @@
 					)
 				)
 			)
-			(symbol "1210_22u_0_1"
+			(symbol "3225_22u_0_1"
 				(polyline
 					(pts
 						(xy -1.524 0.508) (xy 1.524 0.508)
@@ -816,7 +816,7 @@
 					)
 				)
 			)
-			(symbol "1210_22u_1_1"
+			(symbol "3225_22u_1_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 2.032)
@@ -1635,6 +1635,39 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 148.59 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 148.59 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" ""
+			(at 148.59 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cdeb4c88-51c1-4ea5-9e94-8fdb2dd807ff")
 		)
@@ -1678,7 +1711,7 @@
 		)
 	)
 	(symbol
-		(lib_id "V2_Capacitor:0603_0u1")
+		(lib_id "V2_Capacitor:1608_0u1")
 		(at 109.22 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -1710,7 +1743,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "V2_Capacitor_SMD:C_0603"
+		(property "Footprint" "V2_Capacitor_SMD:C_1608"
 			(at 109.22 114.808 0)
 			(hide yes)
 			(show_name no)
@@ -1798,6 +1831,39 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 109.22 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 109.22 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" ""
+			(at 109.22 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "932f1e0e-fa6e-47a6-8c49-00af21359783")
 		)
@@ -1814,7 +1880,7 @@
 		)
 	)
 	(symbol
-		(lib_id "V2_Capacitor:1210_22u")
+		(lib_id "V2_Capacitor:3225_22u")
 		(at 195.58 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -1846,7 +1912,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "V2_Capacitor_SMD:C_1210"
+		(property "Footprint" "V2_Capacitor_SMD:C_3225"
 			(at 195.58 114.808 0)
 			(hide yes)
 			(show_name no)
@@ -1925,6 +1991,39 @@
 		)
 		(property "Id" "Capacitor:${SYMBOL_NAME}"
 			(at 195.58 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 195.58 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 195.58 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" ""
+			(at 195.58 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2262,7 +2361,7 @@
 		)
 	)
 	(symbol
-		(lib_id "V2_Capacitor:0603_1u")
+		(lib_id "V2_Capacitor:1608_1u")
 		(at 125.73 105.41 270)
 		(unit 1)
 		(body_style 1)
@@ -2294,7 +2393,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "V2_Capacitor_SMD:C_0603"
+		(property "Footprint" "V2_Capacitor_SMD:C_1608"
 			(at 108.712 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -2382,6 +2481,39 @@
 				)
 			)
 		)
+		(property "LCSC" ""
+			(at 125.73 105.41 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 125.73 105.41 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" ""
+			(at 125.73 105.41 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2610b0f9-5de1-439b-b57d-d80f6c448594")
 		)
@@ -2398,7 +2530,7 @@
 		)
 	)
 	(symbol
-		(lib_id "V2_Capacitor:1210_22u")
+		(lib_id "V2_Capacitor:3225_22u")
 		(at 185.42 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -2430,7 +2562,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "V2_Capacitor_SMD:C_1210"
+		(property "Footprint" "V2_Capacitor_SMD:C_3225"
 			(at 185.42 114.808 0)
 			(hide yes)
 			(show_name no)
@@ -2509,6 +2641,39 @@
 		)
 		(property "Id" "Capacitor:${SYMBOL_NAME}"
 			(at 185.42 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 185.42 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 185.42 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" ""
+			(at 185.42 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2768,7 +2933,7 @@
 		)
 	)
 	(symbol
-		(lib_id "V2_Capacitor:1210_10u")
+		(lib_id "V2_Capacitor:3225_10u")
 		(at 97.79 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -2800,7 +2965,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "V2_Capacitor_SMD:C_1210"
+		(property "Footprint" "V2_Capacitor_SMD:C_3225"
 			(at 97.79 114.808 0)
 			(hide yes)
 			(show_name no)
@@ -2879,6 +3044,39 @@
 		)
 		(property "Id" "Capacitor:${SYMBOL_NAME}"
 			(at 97.79 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 97.79 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 97.79 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage" ""
+			(at 97.79 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -51,7 +51,23 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.2
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.2,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -642,7 +658,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "connect-plug",
+      "plot": "connect-plug-gerber",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "../../../../../Desktop/sax.step",
@@ -841,7 +857,7 @@
         "uuid": "6c8448b4-b04d-47e1-934e-e40cbe27a7be"
       }
     ],
-    "used_designators": "",
+    "used_designators": "TVS101,TVS301,R101-104,R201,R301-302,R1101,J101-102,J201,J301,J1101,FID101-103,Y101,#PWR101-137,#PWR201-204,#PWR301-308,#PWR1101-1104,#PWR1201-1207,D101-104,D201,D301,U101-102,U201,U301,U1101,U1201,C101-111,C201-202,C301,C1101,C1201-1205,SW101,ICON101,ESD101,INFO101-102,#FLG101-106",
     "variants": []
   },
   "sheets": [
