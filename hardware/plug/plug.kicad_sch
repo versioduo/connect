@@ -6522,7 +6522,7 @@
 	)
 	(text "MIDI"
 		(exclude_from_sim no)
-		(at 131.318 139.192 0)
+		(at 141.224 139.446 0)
 		(effects
 			(font
 				(size 2 2)
@@ -6634,6 +6634,12 @@
 		(uuid "479411c8-c7f1-46ad-b802-3f4dee1c7f24")
 	)
 	(junction
+		(at 46.99 156.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b7e8e37-9527-4ee2-a2db-123f0d68cdb8")
+	)
+	(junction
 		(at 88.9 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6710,12 +6716,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d18297a1-9410-45ee-a790-87fdfe411436")
-	)
-	(junction
-		(at 46.99 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eb39a4c6-4c2a-41b1-8643-438a486c8083")
 	)
 	(junction
 		(at 247.65 91.44)
@@ -6899,7 +6899,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 156.21) (xy 106.68 156.21)
+			(xy 99.06 156.21) (xy 115.57 156.21)
 		)
 		(stroke
 			(width 0)
@@ -6949,7 +6949,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 172.72) (xy 144.78 172.72)
+			(xy 161.29 172.72) (xy 149.86 172.72)
 		)
 		(stroke
 			(width 0)
@@ -7019,6 +7019,16 @@
 	)
 	(wire
 		(pts
+			(xy 62.23 156.21) (xy 82.55 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b3471a3-5852-4017-9d44-643b31865bd0")
+	)
+	(wire
+		(pts
 			(xy 137.16 104.14) (xy 144.78 104.14)
 		)
 		(stroke
@@ -7039,7 +7049,7 @@
 	)
 	(polyline
 		(pts
-			(xy 127 133.35) (xy 127 198.12)
+			(xy 138.43 133.35) (xy 138.43 198.12)
 		)
 		(stroke
 			(width 0)
@@ -7269,7 +7279,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 162.56) (xy 184.15 162.56)
+			(xy 177.8 162.56) (xy 189.23 162.56)
 		)
 		(stroke
 			(width 0)
@@ -7519,17 +7529,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 156.21) (xy 76.2 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2a6c2b0-6f67-48a9-ad8a-adb3bb56f6e1")
-	)
-	(wire
-		(pts
-			(xy 46.99 156.21) (xy 54.61 156.21)
+			(xy 46.99 156.21) (xy 57.15 156.21)
 		)
 		(stroke
 			(width 0)
@@ -7608,7 +7608,7 @@
 		(uuid "000df8f9-85ff-4523-8f2b-1e06ae23a1d4")
 	)
 	(label "MIDI-In"
-		(at 184.15 162.56 180)
+		(at 189.23 162.56 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7708,7 +7708,7 @@
 		(uuid "4da61862-32ea-488c-be61-ab62d1915a4f")
 	)
 	(label "+VLINK-Supply"
-		(at 74.93 156.21 180)
+		(at 78.74 156.21 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7778,7 +7778,7 @@
 		(uuid "98a48a06-9e13-47ee-8795-c7bb15be18c6")
 	)
 	(label "+5V-Link"
-		(at 104.14 156.21 180)
+		(at 111.76 156.21 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7878,7 +7878,7 @@
 		(uuid "d9ddefd6-dc86-42af-a9bb-83460fb82a81")
 	)
 	(label "MIDI-Out"
-		(at 144.78 172.72 0)
+		(at 149.86 172.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8059,17 +8059,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 256.54 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 256.54 88.9 0)
 			(hide yes)
@@ -8230,17 +8219,6 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 46.99 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 46.99 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -8512,17 +8490,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 214.63 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 214.63 167.64 0)
 			(hide yes)
@@ -8624,7 +8591,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:+5V")
-		(at 111.76 156.21 270)
+		(at 120.65 156.21 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8634,7 +8601,7 @@
 		(dnp no)
 		(uuid "0808a77e-ab0f-414e-9e79-38170f3944e1")
 		(property "Reference" "#PWR0117"
-			(at 107.95 156.21 0)
+			(at 116.84 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8645,7 +8612,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 117.856 156.21 90)
+			(at 126.746 156.21 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8656,7 +8623,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 156.21 0)
+			(at 120.65 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8667,7 +8634,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 156.21 0)
+			(at 120.65 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8678,7 +8645,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 111.76 156.21 0)
+			(at 120.65 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8823,17 +8790,6 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 88.9 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 88.9 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -8990,17 +8946,6 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 186.69 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 186.69 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -9346,17 +9291,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 26.67 40.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 26.67 40.64 90)
 			(hide yes)
@@ -9515,17 +9449,6 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 132.08 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 132.08 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -9774,17 +9697,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 198.12 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 198.12 39.37 0)
 			(hide yes)
@@ -10011,17 +9923,6 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 24.13 43.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 24.13 43.18 90)
 			(hide yes)
 			(show_name no)
@@ -10269,17 +10170,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 207.01 88.9 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 207.01 88.9 90)
 			(hide yes)
@@ -10451,17 +10341,6 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 123.19 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 123.19 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -11112,17 +10991,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 69.85 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 69.85 78.74 0)
 			(hide yes)
@@ -11497,7 +11365,7 @@
 	)
 	(symbol
 		(lib_id "V2_Diode:PMEG6030AEXEX")
-		(at 57.15 156.21 180)
+		(at 59.69 156.21 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11507,7 +11375,7 @@
 		(dnp no)
 		(uuid "7ab0d2fa-e406-45db-9231-2fb7f69d9786")
 		(property "Reference" "D101"
-			(at 60.452 159.004 0)
+			(at 62.992 159.004 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11518,7 +11386,7 @@
 			)
 		)
 		(property "Value" "PMEG6030AEXEX"
-			(at 63.246 161.544 0)
+			(at 65.786 161.544 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11528,7 +11396,7 @@
 			)
 		)
 		(property "Footprint" "V2_Diode_SMD:D_SOD-123HP"
-			(at 57.15 147.828 0)
+			(at 59.69 147.828 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11539,7 +11407,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 156.21 0)
+			(at 59.69 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11550,7 +11418,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 57.15 156.21 0)
+			(at 59.69 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11561,7 +11429,7 @@
 			)
 		)
 		(property "Mouser" "771-PMEG6030AEXEX"
-			(at 57.15 145.034 0)
+			(at 59.69 145.034 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11572,7 +11440,7 @@
 			)
 		)
 		(property "Manufacturer" "Nexperia"
-			(at 57.15 146.05 0)
+			(at 59.69 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11583,7 +11451,7 @@
 			)
 		)
 		(property "Product" "PMEG6030AEXEX"
-			(at 57.15 143.51 0)
+			(at 59.69 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11594,7 +11462,7 @@
 			)
 		)
 		(property "Rating" "60V"
-			(at 57.15 138.43 0)
+			(at 59.69 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11605,7 +11473,7 @@
 			)
 		)
 		(property "Id" "Diode:${SYMBOL_NAME}"
-			(at 57.15 147.32 0)
+			(at 59.69 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11616,18 +11484,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 57.15 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 57.15 156.21 0)
+			(at 59.69 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11638,7 +11495,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 57.15 156.21 0)
+			(at 59.69 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11729,17 +11586,6 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 214.63 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 214.63 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -12138,17 +11984,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 173.99 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 173.99 39.37 0)
 			(hide yes)
@@ -12297,17 +12132,6 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 119.38 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 119.38 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -12553,17 +12377,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 207.01 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 207.01 91.44 90)
 			(hide yes)
@@ -12737,17 +12550,6 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 266.7 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 266.7 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -12939,7 +12741,7 @@
 	)
 	(symbol
 		(lib_id "V2_Diode:PMEG6030AEXEX")
-		(at 109.22 156.21 180)
+		(at 118.11 156.21 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12949,7 +12751,7 @@
 		(dnp no)
 		(uuid "a3ecec95-4e85-4e09-9e38-1f7d224a2702")
 		(property "Reference" "D102"
-			(at 112.268 149.606 0)
+			(at 121.412 159.512 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12960,7 +12762,7 @@
 			)
 		)
 		(property "Value" "PMEG6030AEXEX"
-			(at 109.982 152.4 0)
+			(at 124.46 162.052 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12970,7 +12772,7 @@
 			)
 		)
 		(property "Footprint" "V2_Diode_SMD:D_SOD-123HP"
-			(at 109.22 147.828 0)
+			(at 118.11 147.828 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12981,7 +12783,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 156.21 0)
+			(at 118.11 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12992,7 +12794,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 109.22 156.21 0)
+			(at 118.11 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13003,7 +12805,7 @@
 			)
 		)
 		(property "Mouser" "771-PMEG6030AEXEX"
-			(at 109.22 145.034 0)
+			(at 118.11 145.034 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13014,7 +12816,7 @@
 			)
 		)
 		(property "Manufacturer" "Nexperia"
-			(at 109.22 146.05 0)
+			(at 118.11 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13025,7 +12827,7 @@
 			)
 		)
 		(property "Product" "PMEG6030AEXEX"
-			(at 109.22 143.51 0)
+			(at 118.11 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13036,7 +12838,7 @@
 			)
 		)
 		(property "Rating" "60V"
-			(at 109.22 138.43 0)
+			(at 118.11 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13047,7 +12849,7 @@
 			)
 		)
 		(property "Id" "Diode:${SYMBOL_NAME}"
-			(at 109.22 147.32 0)
+			(at 118.11 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13058,18 +12860,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 109.22 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 109.22 156.21 0)
+			(at 118.11 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13080,7 +12871,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 109.22 156.21 0)
+			(at 118.11 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13627,17 +13418,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 50.8 120.65 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 50.8 120.65 90)
 			(hide yes)
@@ -13876,17 +13656,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 24.13 38.1 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 24.13 38.1 90)
 			(hide yes)
@@ -14112,17 +13881,6 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 139.7 58.42 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 139.7 58.42 90)
 			(hide yes)
 			(show_name no)
@@ -14372,17 +14130,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 99.06 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 99.06 26.67 0)
 			(hide yes)
@@ -14531,17 +14278,6 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 78.74 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 78.74 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -15202,17 +14938,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 266.7 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 266.7 157.48 0)
 			(hide yes)
@@ -15354,17 +15079,6 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 133.35 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 133.35 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -15533,17 +15247,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 109.22 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 109.22 26.67 0)
 			(hide yes)
@@ -15691,17 +15394,6 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 180.34 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 180.34 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -15896,17 +15588,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 31.75 160.02 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 31.75 160.02 90)
 			(hide yes)
@@ -16054,17 +15735,6 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 256.54 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 256.54 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -16417,17 +16087,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 266.7 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 266.7 163.83 0)
 			(hide yes)
@@ -16581,17 +16240,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 57.15 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 57.15 26.67 0)
 			(hide yes)
@@ -16696,17 +16344,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 213.36 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 213.36 152.4 0)
 			(hide yes)
@@ -16728,7 +16365,7 @@
 		)
 	)
 	(sheet
-		(at 76.2 153.67)
+		(at 82.55 153.67)
 		(size 16.51 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16744,7 +16381,7 @@
 		)
 		(uuid "095cddf1-6522-4d3b-885d-b21acd91d0c6")
 		(property "Sheetname" "Power +5V"
-			(at 76.2 152.9584 0)
+			(at 82.55 152.9584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16755,7 +16392,7 @@
 			)
 		)
 		(property "Sheetfile" "PowerSupply.kicad_sch"
-			(at 76.2 159.3346 0)
+			(at 82.55 159.3346 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16767,7 +16404,7 @@
 			)
 		)
 		(pin "Input" input
-			(at 76.2 156.21 180)
+			(at 82.55 156.21 180)
 			(uuid "bae3607d-ef44-4346-a2d2-1d23ef88421f")
 			(effects
 				(font
@@ -16777,7 +16414,7 @@
 			)
 		)
 		(pin "Output" output
-			(at 92.71 156.21 0)
+			(at 99.06 156.21 0)
 			(uuid "79d9af06-a7ca-43bc-9d18-a19c856914e3")
 			(effects
 				(font
@@ -16789,13 +16426,13 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(page "12")
+					(page "2")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 156.21 170.18)
+		(at 161.29 170.18)
 		(size 16.51 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16811,7 +16448,7 @@
 		)
 		(uuid "2737a175-b1a1-4dfd-b186-4741ca8995da")
 		(property "Sheetname" "MIDI Out"
-			(at 156.21 169.4684 0)
+			(at 161.29 169.4684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16822,7 +16459,7 @@
 			)
 		)
 		(property "Sheetfile" "MIDIOut.kicad_sch"
-			(at 156.21 175.8446 0)
+			(at 161.29 175.8446 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16834,7 +16471,7 @@
 			)
 		)
 		(pin "MIDI-Data" output
-			(at 156.21 172.72 180)
+			(at 161.29 172.72 180)
 			(uuid "7aba6a1d-ea91-4118-90ae-e2a14a9942c4")
 			(effects
 				(font
@@ -16846,13 +16483,13 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(page "3")
+					(page "5")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 156.21 160.02)
+		(at 161.29 160.02)
 		(size 16.51 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16868,7 +16505,7 @@
 		)
 		(uuid "62a78b59-e04b-4b32-8f87-746982088aa1")
 		(property "Sheetname" "MIDI In"
-			(at 156.21 159.3084 0)
+			(at 161.29 159.3084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16879,7 +16516,7 @@
 			)
 		)
 		(property "Sheetfile" "MIDIIn.kicad_sch"
-			(at 156.21 165.6846 0)
+			(at 161.29 165.6846 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16891,7 +16528,7 @@
 			)
 		)
 		(pin "MIDI-Data" output
-			(at 172.72 162.56 0)
+			(at 177.8 162.56 0)
 			(uuid "db68182d-f0af-4b45-a684-b3f8e61a0d1d")
 			(effects
 				(font
@@ -16903,7 +16540,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(page "2")
+					(page "4")
 				)
 			)
 		)
@@ -17009,7 +16646,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(page "11")
+					(page "3")
 				)
 			)
 		)

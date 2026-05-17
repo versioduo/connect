@@ -2074,7 +2074,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "26f11186-2aaa-4ffa-b21b-2ff740643d48")
-		(property "Reference" "J201"
+		(property "Reference" "J401"
 			(at 108.966 90.678 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2196,17 +2196,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 116.84 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 116.84 107.95 0)
 			(hide yes)
@@ -2236,7 +2225,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/62a78b59-e04b-4b32-8f87-746982088aa1"
-					(reference "J201")
+					(reference "J401")
 					(unit 1)
 				)
 			)
@@ -2253,7 +2242,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "59de0765-f7da-444e-b4e0-ed2ee7a891c8")
-		(property "Reference" "#PWR0201"
+		(property "Reference" "#PWR0401"
 			(at 149.86 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -2314,7 +2303,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/62a78b59-e04b-4b32-8f87-746982088aa1"
-					(reference "#PWR0201")
+					(reference "#PWR0401")
 					(unit 1)
 				)
 			)
@@ -2331,7 +2320,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "60509237-0c50-404e-9d94-da81e9d83bf3")
-		(property "Reference" "C201"
+		(property "Reference" "C401"
 			(at 145.034 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2452,17 +2441,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 140.97 97.79 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 140.97 97.79 90)
 			(hide yes)
@@ -2483,7 +2461,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/62a78b59-e04b-4b32-8f87-746982088aa1"
-					(reference "C201")
+					(reference "C401")
 					(unit 1)
 				)
 			)
@@ -2500,7 +2478,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b612171c-51c9-4d61-ae59-88034e9c0c4b")
-		(property "Reference" "U201"
+		(property "Reference" "U401"
 			(at 199.39 117.7036 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2622,17 +2600,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 187.96 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 187.96 113.03 0)
 			(hide yes)
@@ -2662,7 +2629,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/62a78b59-e04b-4b32-8f87-746982088aa1"
-					(reference "U201")
+					(reference "U401")
 					(unit 1)
 				)
 			)
@@ -2679,7 +2646,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "be905a13-54ce-4015-b726-7b49a1ec6f7e")
-		(property "Reference" "C202"
+		(property "Reference" "C402"
 			(at 196.088 94.742 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2800,17 +2767,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 193.04 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 193.04 95.25 0)
 			(hide yes)
@@ -2831,7 +2787,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/62a78b59-e04b-4b32-8f87-746982088aa1"
-					(reference "C202")
+					(reference "C402")
 					(unit 1)
 				)
 			)
@@ -2848,7 +2804,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d237257b-664e-4c23-997e-b95035870c4f")
-		(property "Reference" "D201"
+		(property "Reference" "D401"
 			(at 163.83 102.5524 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2969,17 +2925,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 167.64 113.03 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 167.64 113.03 90)
 			(hide yes)
@@ -3000,7 +2945,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/62a78b59-e04b-4b32-8f87-746982088aa1"
-					(reference "D201")
+					(reference "D401")
 					(unit 1)
 				)
 			)
@@ -3017,7 +2962,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e2011c25-d512-4702-8fbd-d3790f2141e4")
-		(property "Reference" "#PWR0203"
+		(property "Reference" "#PWR0403"
 			(at 187.96 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -3078,7 +3023,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/62a78b59-e04b-4b32-8f87-746982088aa1"
-					(reference "#PWR0203")
+					(reference "#PWR0403")
 					(unit 1)
 				)
 			)
@@ -3095,7 +3040,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f27dc3fb-3639-475a-a1f9-21b6aae30738")
-		(property "Reference" "R201"
+		(property "Reference" "R401"
 			(at 156.21 102.489 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3214,17 +3159,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 156.21 107.95 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 156.21 107.95 90)
 			(hide yes)
@@ -3245,7 +3179,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/62a78b59-e04b-4b32-8f87-746982088aa1"
-					(reference "R201")
+					(reference "R401")
 					(unit 1)
 				)
 			)
@@ -3262,7 +3196,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f9caf35a-0e4b-4d90-885e-46c9c749e0c2")
-		(property "Reference" "#PWR0202"
+		(property "Reference" "#PWR0402"
 			(at 187.96 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -3323,7 +3257,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/62a78b59-e04b-4b32-8f87-746982088aa1"
-					(reference "#PWR0202")
+					(reference "#PWR0402")
 					(unit 1)
 				)
 			)
@@ -3340,7 +3274,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fd2fa09d-e317-4510-a889-31de0e16c925")
-		(property "Reference" "#PWR0204"
+		(property "Reference" "#PWR0404"
 			(at 193.04 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -3401,7 +3335,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/62a78b59-e04b-4b32-8f87-746982088aa1"
-					(reference "#PWR0204")
+					(reference "#PWR0404")
 					(unit 1)
 				)
 			)

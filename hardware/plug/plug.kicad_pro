@@ -782,7 +782,7 @@
           "group_by": false,
           "label": "LCSC",
           "name": "LCSC",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -857,7 +857,7 @@
         "uuid": "6c8448b4-b04d-47e1-934e-e40cbe27a7be"
       }
     ],
-    "used_designators": "TVS101,TVS301,R101-104,R201,R301-302,R1101,J101-102,J201,J301,J1101,FID101-103,Y101,#PWR101-137,#PWR201-204,#PWR301-308,#PWR1101-1104,#PWR1201-1207,D101-104,D201,D301,U101-102,U201,U301,U1101,U1201,C101-111,C201-202,C301,C1101,C1201-1205,SW101,ICON101,ESD101,INFO101-102,#FLG101-106",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -866,20 +866,20 @@
       "plug"
     ],
     [
-      "62a78b59-e04b-4b32-8f87-746982088aa1",
-      "MIDI In"
-    ],
-    [
-      "2737a175-b1a1-4dfd-b186-4741ca8995da",
-      "MIDI Out"
+      "095cddf1-6522-4d3b-885d-b21acd91d0c6",
+      "Power +5V"
     ],
     [
       "be5efeaa-f0dd-4882-b2f8-53c61e0a33bd",
       "Link Plug"
     ],
     [
-      "095cddf1-6522-4d3b-885d-b21acd91d0c6",
-      "Power +5V"
+      "62a78b59-e04b-4b32-8f87-746982088aa1",
+      "MIDI In"
+    ],
+    [
+      "2737a175-b1a1-4dfd-b186-4741ca8995da",
+      "MIDI Out"
     ]
   ],
   "text_variables": {},

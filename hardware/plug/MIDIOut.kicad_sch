@@ -2003,7 +2003,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1bc076a5-b60a-4275-a98b-4e80705f873b")
-		(property "Reference" "C301"
+		(property "Reference" "C501"
 			(at 114.3 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2124,17 +2124,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 106.68 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 106.68 86.36 0)
 			(hide yes)
@@ -2155,7 +2144,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/2737a175-b1a1-4dfd-b186-4741ca8995da"
-					(reference "C301")
+					(reference "C501")
 					(unit 1)
 				)
 			)
@@ -2172,7 +2161,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1f61fc49-4b3c-47aa-ae6d-bd2672583d5c")
-		(property "Reference" "#PWR0301"
+		(property "Reference" "#PWR0501"
 			(at 97.79 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -2234,7 +2223,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/2737a175-b1a1-4dfd-b186-4741ca8995da"
-					(reference "#PWR0301")
+					(reference "#PWR0501")
 					(unit 1)
 				)
 			)
@@ -2252,7 +2241,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2efba93a-df14-45de-adbf-74d329f68815")
-		(property "Reference" "#PWR0303"
+		(property "Reference" "#PWR0503"
 			(at 106.68 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -2313,7 +2302,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/2737a175-b1a1-4dfd-b186-4741ca8995da"
-					(reference "#PWR0303")
+					(reference "#PWR0503")
 					(unit 1)
 				)
 			)
@@ -2330,7 +2319,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3a26de94-e8f9-48f1-81a5-311110084ba6")
-		(property "Reference" "#PWR0306"
+		(property "Reference" "#PWR0506"
 			(at 115.57 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -2392,7 +2381,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/2737a175-b1a1-4dfd-b186-4741ca8995da"
-					(reference "#PWR0306")
+					(reference "#PWR0506")
 					(unit 1)
 				)
 			)
@@ -2410,7 +2399,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3cac3752-d877-4000-9d8c-1b3684011d53")
-		(property "Reference" "#PWR0302"
+		(property "Reference" "#PWR0502"
 			(at 106.68 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2471,7 +2460,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/2737a175-b1a1-4dfd-b186-4741ca8995da"
-					(reference "#PWR0302")
+					(reference "#PWR0502")
 					(unit 1)
 				)
 			)
@@ -2488,7 +2477,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5032212f-d852-40b1-8b09-65abd10e79fd")
-		(property "Reference" "R301"
+		(property "Reference" "R501"
 			(at 142.24 113.03 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2607,17 +2596,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 142.24 109.22 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 142.24 109.22 90)
 			(hide yes)
@@ -2638,7 +2616,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/2737a175-b1a1-4dfd-b186-4741ca8995da"
-					(reference "R301")
+					(reference "R501")
 					(unit 1)
 				)
 			)
@@ -2656,7 +2634,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "57f5924a-ab5a-4945-ac3a-62c8254fd81a")
-		(property "Reference" "#PWR0304"
+		(property "Reference" "#PWR0504"
 			(at 106.68 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -2717,7 +2695,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/2737a175-b1a1-4dfd-b186-4741ca8995da"
-					(reference "#PWR0304")
+					(reference "#PWR0504")
 					(unit 1)
 				)
 			)
@@ -2734,7 +2712,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "596eda00-e3a4-45db-a1dd-18fd1f45f982")
-		(property "Reference" "R302"
+		(property "Reference" "R502"
 			(at 162.56 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2853,17 +2831,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 156.21 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 156.21 87.63 0)
 			(hide yes)
@@ -2884,7 +2851,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/2737a175-b1a1-4dfd-b186-4741ca8995da"
-					(reference "R302")
+					(reference "R502")
 					(unit 1)
 				)
 			)
@@ -2902,7 +2869,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6c4dd1f6-2dbc-46b1-96ac-19be2abeba71")
-		(property "Reference" "#PWR0308"
+		(property "Reference" "#PWR0508"
 			(at 180.34 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -2964,7 +2931,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/2737a175-b1a1-4dfd-b186-4741ca8995da"
-					(reference "#PWR0308")
+					(reference "#PWR0508")
 					(unit 1)
 				)
 			)
@@ -2981,7 +2948,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a875a484-5b0e-44d5-90ba-a73cc62106ef")
-		(property "Reference" "#PWR0305"
+		(property "Reference" "#PWR0505"
 			(at 106.68 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -3043,7 +3010,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/2737a175-b1a1-4dfd-b186-4741ca8995da"
-					(reference "#PWR0305")
+					(reference "#PWR0505")
 					(unit 1)
 				)
 			)
@@ -3060,7 +3027,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aaeda754-d611-45ae-83e4-da00f71803e8")
-		(property "Reference" "D301"
+		(property "Reference" "D501"
 			(at 165.1 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3181,17 +3148,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 156.21 92.71 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 156.21 92.71 90)
 			(hide yes)
@@ -3212,7 +3168,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/2737a175-b1a1-4dfd-b186-4741ca8995da"
-					(reference "D301")
+					(reference "D501")
 					(unit 1)
 				)
 			)
@@ -3229,7 +3185,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b5873c05-d0e1-4526-8a45-b0454bbb6e5a")
-		(property "Reference" "U301"
+		(property "Reference" "U501"
 			(at 111.76 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3348,17 +3304,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 105.41 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 105.41 109.22 0)
 			(hide yes)
@@ -3388,7 +3333,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/2737a175-b1a1-4dfd-b186-4741ca8995da"
-					(reference "U301")
+					(reference "U501")
 					(unit 1)
 				)
 			)
@@ -3406,7 +3351,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d50cacbe-2f64-4455-9c8e-2a931f1c8aad")
-		(property "Reference" "#PWR0307"
+		(property "Reference" "#PWR0507"
 			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -3467,7 +3412,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/2737a175-b1a1-4dfd-b186-4741ca8995da"
-					(reference "#PWR0307")
+					(reference "#PWR0507")
 					(unit 1)
 				)
 			)
@@ -3485,7 +3430,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "deb727d0-a593-442b-a15f-f69790ca13c0")
-		(property "Reference" "J301"
+		(property "Reference" "J501"
 			(at 207.264 81.788 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3607,17 +3552,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 199.39 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 199.39 99.06 0)
 			(hide yes)
@@ -3647,7 +3581,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/2737a175-b1a1-4dfd-b186-4741ca8995da"
-					(reference "J301")
+					(reference "J501")
 					(unit 1)
 				)
 			)
@@ -3664,7 +3598,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f5b0cd24-0f8c-4a33-8807-62f25fbfd459")
-		(property "Reference" "TVS301"
+		(property "Reference" "TVS501"
 			(at 118.11 113.03 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3785,17 +3719,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 115.57 113.03 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Voltage" ""
 			(at 115.57 113.03 90)
 			(hide yes)
@@ -3816,7 +3739,7 @@
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/2737a175-b1a1-4dfd-b186-4741ca8995da"
-					(reference "TVS301")
+					(reference "TVS501")
 					(unit 1)
 				)
 			)
