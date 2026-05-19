@@ -1,0 +1,6 @@
+{
+  "cpu": {
+    "fqbn": "versioduo:samd:connect-socket",
+    "name": "V2 connect-socket"
+  }
+}

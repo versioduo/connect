@@ -20,8 +20,7 @@ namespace {
       system.download  = "https://versioduo.com/download";
       system.configure = "https://versioduo.com/configure";
 
-      // https://github.com/versioduo/arduino-board-package/blob/main/boards.txt
-      usb.pid = 0xda90;
+      usb.ports.standard = 2;
     }
 
     auto handleSend(V2MIDI::Packet* midi) -> bool override {
@@ -75,8 +74,16 @@ namespace {
   public:
     auto loop() {
       if (Device.usb.midi.receive(&_midi)) {
-        if (_midi.getPort() == 0)
-          Device.dispatch(&Device.usb.midi, &_midi);
+        switch (_midi.getPort()) {
+          case 0:
+            Device.dispatch(&Device.usb.midi, &_midi);
+            break;
+
+          case 1:
+            _midi.setPort(0);
+            Plug.send(&_midi);
+            break;
+        }
       }
 
       if (MIDISerial.receive(&_midi))
@@ -94,6 +101,8 @@ auto setup() -> void {
   setSerialPriority(&SerialPlug, 2);
   MIDISerial.begin();
   Device.serial = &MIDISerial;
+  Device.usb.midi.setPortName(1, "Local");
+  Device.usb.midi.setPortName(2, "Remote");
   Device.begin();
   Device.reset();
 }
