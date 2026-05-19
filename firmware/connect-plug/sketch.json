@@ -1,0 +1,6 @@
+{
+  "cpu": {
+    "fqbn": "versioduo:samd:connect-plug",
+    "name": "V2 connect-plug"
+  }
+}
