@@ -91,8 +91,7 @@ namespace {
     }
 
     enum class CC {
-      BeatLength = V2MIDI::CC::Controller14,
-      Rainbow    = V2MIDI::CC::Controller90,
+      Rainbow = V2MIDI::CC::Controller90,
     };
 
     auto handleReset() -> void override {
@@ -155,7 +154,7 @@ namespace {
               break;
 
             case V2MIDI::Packet::Status::ControlChange:
-              LED.setHSV(channel[_midi.getChannel()], V2Colour::Cyan, 0.9, 0.8);
+              LED.splashHSV(0.005, channel[_midi.getChannel()], 1, V2Colour::Cyan, 0.9, 0.2);
               break;
           }
 
