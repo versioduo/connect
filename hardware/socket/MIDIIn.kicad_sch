@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "V2 connect-socket")
-		(date "2026-05-11")
+		(date "2026-06-07")
 		(rev "2026-04-23")
 		(company "Versio Duo")
 		(comment 1 "V2 Link Connector")

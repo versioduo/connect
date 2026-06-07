@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "V2 connect-plug")
-		(date "2026-04-23")
+		(date "2026-06-07")
 		(rev "2026-04-23")
 		(company "Versio Duo")
 		(comment 1 "V2 Link Connector")
@@ -2195,28 +2195,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 148.59 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 148.59 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "3b855b6e-0000-4a0a-becf-43c3198e156c")
 		)
@@ -2378,28 +2356,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 161.29 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 161.29 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "a8927ee0-49b6-4ea5-8953-9c8a7ebdc0bb")
 		)
@@ -2529,28 +2485,6 @@
 		)
 		(property "Rating" "CAT5e"
 			(at 148.59 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 148.59 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 148.59 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2864,28 +2798,6 @@
 		)
 		(property "Id" "Capacitor:${SYMBOL_NAME}"
 			(at 168.91 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 168.91 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 168.91 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

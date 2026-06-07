@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "V2 connect-plug")
-		(date "2026-04-23")
+		(date "2026-06-07")
 		(rev "2026-04-23")
 		(company "Versio Duo")
 		(comment 1 "V2 Link Connector")
@@ -2113,28 +2113,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 106.68 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 106.68 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "8f17c0cc-8fc7-497c-8325-7fffc919ab39")
 		)
@@ -2585,28 +2563,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 142.24 109.22 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 142.24 109.22 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "05423fd7-b2ea-4599-a141-1cd05dab6e48")
 		)
@@ -2811,28 +2767,6 @@
 		)
 		(property "Id" "Resistor:${SYMBOL_NAME}"
 			(at 156.21 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 156.21 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 156.21 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3137,28 +3071,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 156.21 92.71 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 156.21 92.71 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "40d62f0a-5666-431e-a4a3-791b395eaa5e")
 		)
@@ -3284,28 +3196,6 @@
 		)
 		(property "Rating" "8mA"
 			(at 105.41 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 105.41 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 105.41 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3541,28 +3431,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 199.39 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 199.39 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "a06e296a-1f3b-482b-a442-deb1e5872f86")
 		)
@@ -3699,28 +3567,6 @@
 		)
 		(property "Id" "Diode:${SYMBOL_NAME}"
 			(at 121.92 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 115.57 113.03 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 115.57 113.03 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

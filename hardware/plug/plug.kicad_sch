@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "V2 connect-plug")
-		(date "2026-04-23")
+		(date "2026-06-07")
 		(rev "2026-04-23")
 		(company "Versio Duo")
 		(comment 1 "V2 Link Connector")
@@ -4246,14 +4246,14 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "V2_Production:Layer_Numbers"
+		(symbol "V2_Production:Layer_Numbers-4"
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "INFO"
-				(at 0 3.81 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -4262,7 +4262,7 @@
 					)
 				)
 			)
-			(property "Value" "Layer_Numbers"
+			(property "Value" "Layer_Numbers-4"
 				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4273,7 +4273,7 @@
 					)
 				)
 			)
-			(property "Footprint" "V2_Production:Layer_Numbers"
+			(property "Footprint" "V2_Production:Layer_Numbers-4"
 				(at 0 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4306,26 +4306,26 @@
 					)
 				)
 			)
-			(symbol "Layer_Numbers_0_0"
-				(text "1 2 3 4"
-					(at 0 0 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(symbol "Layer_Numbers_0_1"
+			(symbol "Layer_Numbers-4_0_1"
 				(rectangle
-					(start -5.08 1.27)
-					(end 5.08 -1.27)
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(symbol "Layer_Numbers-4_1_1"
+				(text "1 2"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
 					)
 				)
 			)
@@ -8048,28 +8048,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 256.54 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 256.54 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "91274f81-199a-4820-ae10-5e4a5b281d04")
 		)
@@ -8209,28 +8187,6 @@
 		)
 		(property "Id" "Capacitor:${SYMBOL_NAME}"
 			(at 46.99 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 46.99 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 46.99 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8413,7 +8369,7 @@
 		)
 	)
 	(symbol
-		(lib_id "V2_Production:Layer_Numbers")
+		(lib_id "V2_Production:Layer_Numbers-4")
 		(at 214.63 167.64 0)
 		(unit 1)
 		(body_style 1)
@@ -8434,7 +8390,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Layer_Numbers"
+		(property "Value" "Layer_Numbers-4"
 			(at 209.55 163.8299 0)
 			(hide yes)
 			(show_name no)
@@ -8446,7 +8402,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "V2_Production:Layer_Numbers"
+		(property "Footprint" "V2_Production:Layer_Numbers-4"
 			(at 214.63 173.99 0)
 			(hide yes)
 			(show_name no)
@@ -8469,28 +8425,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 214.63 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 214.63 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
 			(at 214.63 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -8789,28 +8723,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 88.9 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 88.9 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "82099e68-6084-47ed-8284-43ff576e47d7")
 		)
@@ -8936,28 +8848,6 @@
 		)
 		(property "Rating" "300mA"
 			(at 186.69 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 186.69 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 186.69 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9280,28 +9170,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 26.67 40.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 26.67 40.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "e54dfbf2-577c-49d1-9397-079e48fb5489")
 		)
@@ -9439,28 +9307,6 @@
 		)
 		(property "Rating" "605nm"
 			(at 132.08 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 132.08 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 132.08 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9686,28 +9532,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 198.12 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 198.12 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "59aa16a2-7995-45ad-8a1e-3b3888e15031")
 		)
@@ -9913,28 +9737,6 @@
 		)
 		(property "Id" "Capacitor:${SYMBOL_NAME}"
 			(at 8.89 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 24.13 43.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 24.13 43.18 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10159,28 +9961,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 207.01 88.9 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 207.01 88.9 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "bc6383dc-074f-460c-b372-661063779d7a")
 		)
@@ -10330,28 +10110,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 123.19 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 123.19 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
 			(at 123.19 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -10980,28 +10738,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 69.85 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 69.85 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "64"
 			(uuid "c8058315-ed09-4db6-9497-3fe6149fa43a")
 		)
@@ -11483,28 +11219,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 59.69 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 59.69 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "2e448c57-1782-45ab-8dcc-4fc4a51625e9")
 		)
@@ -11575,28 +11289,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 214.63 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 214.63 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
 			(at 214.63 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -11973,28 +11665,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 173.99 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 173.99 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "c3ec50a0-04df-40be-aae7-9d7b417025de")
 		)
@@ -12122,28 +11792,6 @@
 		)
 		(property "Id" "Capacitor:${SYMBOL_NAME}"
 			(at 119.38 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 119.38 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 119.38 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12366,28 +12014,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 207.01 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 207.01 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "7c6a2cd1-bd05-4fa3-8f8f-68b26ff3ef1c")
 		)
@@ -12539,28 +12165,6 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 266.7 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 266.7 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
 			(at 266.7 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -12850,28 +12454,6 @@
 		)
 		(property "Id" "Diode:${SYMBOL_NAME}"
 			(at 118.11 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 118.11 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 118.11 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13407,28 +12989,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 50.8 120.65 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 50.8 120.65 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "e25c5ee1-01d1-40b2-9f64-7223acd72c7c")
 		)
@@ -13645,28 +13205,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 24.13 38.1 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 24.13 38.1 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "f7d314ad-4788-4537-99bd-df52f2542c69")
 		)
@@ -13871,28 +13409,6 @@
 		)
 		(property "Id" "Resistor:${SYMBOL_NAME}"
 			(at 153.67 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 139.7 58.42 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 139.7 58.42 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14119,28 +13635,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 99.06 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 99.06 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "e2095482-4860-4a7b-8087-174226d5dbf1")
 		)
@@ -14268,28 +13762,6 @@
 		)
 		(property "Id" "Capacitor:${SYMBOL_NAME}"
 			(at 78.74 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 78.74 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 78.74 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14927,28 +14399,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 266.7 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 266.7 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -15069,28 +14519,6 @@
 		)
 		(property "Id" "Button:${SYMBOL_NAME}"
 			(at 133.35 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 133.35 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 133.35 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15236,28 +14664,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 109.22 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 109.22 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "7c6049b5-a39e-436c-896e-b908db7bf69d")
 		)
@@ -15384,28 +14790,6 @@
 		)
 		(property "Rating" "USB2.0"
 			(at 180.34 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 180.34 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 180.34 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15577,28 +14961,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 31.75 160.02 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 31.75 160.02 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "15fcd29e-db2b-4a8e-8d1f-d190c6288e4a")
 		)
@@ -15725,28 +15087,6 @@
 		)
 		(property "Id" "Diode:${SYMBOL_NAME}"
 			(at 256.54 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 256.54 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 256.54 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16076,28 +15416,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 266.7 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 266.7 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(instances
 			(project "plug"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -16229,28 +15547,6 @@
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 57.15 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 57.15 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "bfdf5d6e-dd76-4f89-852b-628f77ab67a8")
 		)
@@ -16323,28 +15619,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 213.36 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 213.36 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
 			(at 213.36 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -16661,18 +15935,18 @@
 		(file
 			(name "V2_A4.kicad_wks")
 			(type worksheet)
-			(data |KLUv/WAdBoUQAFbZUSEAtxsWHGS5ac4JTjQX6sK4dtcYskivxdktDLf5//8FgAhIAEIASgAZe7Y3
-				dt+5opXVi/rnQ0y6GYtWdlW/J1x+6X4FAARI0d+SXrTObuLwdiI5fev39s3XYylqrZil1rPG5b6j
-				ChAoQ6Qu9EAcqgKm0gYzfu+Sd++btwZfdOp0hkAtfn7Fx+/38x5mkd6eT/98x1GD1q2H+SKqW4X/
-				9r6c0+/o5QfvHvW//kj9Hw/etHpeSGmcA9JpmW2ToAjuDEHVwaiGpyoWySbRaBgUYe9t2vfzBd3U
-				wV+KQJn16jDZzOn3fbRigMBn3ameWS81Oev0L93/PqNYZp1mAQHLWkovrPpCoVEcFU7TIhvNKlfR
-				KNNN2SNH/VhsKo4LxfI4XIlQ1J9j1alCm3ASbobY/97PthgYUgNLKb0yxxYXAktZkzM5VjU5AVSg
-				4UCjFDMzIzJhWkgHYETmENIxX2QilraO+omW6NkWy1WQl2fZmQSewN+WW8cjNPhwignrRbLARop4
-				xrxGIteTOQBQ/mZh+gO1QPXxE3ELSohM5tH7xtAJF8QyZ+pv4MmSUojhK9GbSKL4w3nHvie7YAJj
-				WcE3IwRAoOUSBYpjRLebWQjwkBDlPZx2I68VDNfPjBkZWnwNs1fi01H81n6iz467bBXfb7wG9KC6
-				gyNa86ouCSs0mtBu0NNNT8R/oA5IPWBVAQ==|
+			(data |KLUv/WABBs0PAPaWSyEA1TbWikhSlOA2eC2ekVMEUCwq7NEwtcLUrO9RVbWigglBAD0ARABjlVmr
+				uudFPLoZj1VmWb8lbD7pPgUABMrQX7Na1VKPYvF6Y0l96//2zbdTadZa7KqXZ43NfUUUIGCCRp74
+				hRhEBdnlpi6ppf6k++BnFcsur9lJ2mHGl/93yyvmu2/eOvyx+u/vTUr9kl/+8G5S/2uw1O/p4F2t
+				Z9zZH+k95wbVytxaGnaq6KaiClvXeHgbhuMi7guB082G4mATw0+USoSLZLaLibD3Pvf9fEM/OfjN
+				0Ce73DbOK/MKgmC1GCDwWXOsB4EKYf3StkmD0m0bhKu2o2wT6mf+SlI7NJSGZVJxKBw7WAlx1KAn
+				rMu6rVbVNkkX6aiI/e/1cNQ/X5LUoUKztIHhNNACV6ABRYOUmppZnDRrYGTm5lgHuKUBCqUheRmB
+				mtErmC2cYpdvw4QpAS+HW0x9ni3oxOjDIsfMJMoe1TEVRT9Vsuj5tcL6QokDa/DzUfliHjoPDuAp
+				yB0UltwFSGjQ8qh9YsiEAU6ZM/MH8LbEFFL4TXKm8ij9cNrJ7wlu2DKOnbAzzIEHWY4okcCT1GJg
+				bYhzrGivkMr2LxUEt7459HIzhg2rdlkB6u5W3N7YeuhB6m4vyMxrpWQtkChBv9Dfi56Y6YgbQOoB
+				pgo=|
 			)
-			(checksum "0D80419A5E3AE8FB45D0D606BF18E967")
+			(checksum "6080E9E16B39514519B8031C50AB7B2F")
 		)
 	)
 )
