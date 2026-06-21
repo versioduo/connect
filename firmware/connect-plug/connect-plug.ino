@@ -48,13 +48,12 @@ namespace {
     auto receivePlug(V2Link::Packet* packet) -> void override {
       switch (packet->getType()) {
         case V2Link::Packet::Type::MIDI: {
-          packet->receive(&_midi);
+          packet->copyTo(_midi);
           Device.dispatch(&Plug, &_midi);
 
           if (Device.usb.midi.connected())
             Device.usb.midi.send(&_midi);
 
-          packet->receive(&_midi);
           MIDISerial.send(&_midi);
         } break;
 

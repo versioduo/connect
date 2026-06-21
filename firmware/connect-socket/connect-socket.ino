@@ -140,7 +140,7 @@ namespace {
           if (address > 0)
             return;
 
-          packet->receive(&_midi);
+          packet->copyTo(_midi);
           MIDISerial.send(&_midi);
 
           static constexpr std::array<uint8_t, 16> channel{7, 11, 15, 19, 6, 10, 14, 18, 5, 9, 13, 17, 4, 8, 12, 16};
