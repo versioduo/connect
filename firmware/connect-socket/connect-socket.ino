@@ -3,7 +3,7 @@
 #include <V2Link.h>
 #include <V2MIDI.h>
 
-V2DEVICE_METADATA("com.versioduo.connect-socket", 1, "versioduo:samd:connect-socket");
+V2DEVICE_METADATA("com.versioduo.connect-socket", 2, "versioduo:samd:connect-socket");
 
 namespace {
   V2LED::WS2812        LED{20, PIN_LED_WS2812, &sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM};
@@ -28,8 +28,8 @@ namespace {
 
         case State::Init:
           _sequence += 2;
-          _packet.setNumber(_sequence);
-          Socket.send(0, &_packet);
+          _link.number(_sequence);
+          Socket.send(_link);
           _expect = _sequence + 1;
           break;
 
@@ -73,7 +73,7 @@ namespace {
     uint32_t       _usec{};
     uint32_t       _sequence{};
     uint32_t       _expect{};
-    V2Link::Packet _packet;
+    V2Link::Packet _link;
   } Ping;
 
   class Device : public V2Device {
@@ -101,7 +101,7 @@ namespace {
 
     auto handleSend(V2MIDI::Packet* midi) -> bool override {
       led.flash(0.03, 0.3);
-      usb.midi.send(midi);
+      usb.midi.send(*midi);
       return true;
     }
 
@@ -119,6 +119,29 @@ namespace {
     }
   } Device;
 
+  // Dispatch MIDI packets
+  class MIDI {
+  public:
+    auto loop() {
+      if (Device.usb.midi.receive(_midi)) {
+        if (_midi.port == 0) {
+          Device.dispatch(&Device.usb.midi, &_midi);
+
+        } else {
+          V2Link::Packet p(_midi.port - 1, _midi);
+          p.midi.port = 0;
+          Socket.send(p);
+        }
+      }
+
+      if (MIDISerial.receive(_midi))
+        Socket.send(_midi);
+    }
+
+  private:
+    V2MIDI::Packet _midi;
+  } MIDI;
+
   // Dispatch Link packets.
   class Link : public V2Link {
   public:
@@ -127,72 +150,39 @@ namespace {
     }
 
   private:
-    V2MIDI::Packet _midi{};
-
     // Forward children device events to the host.
-    auto receiveSocket(V2Link::Packet* packet) -> void override {
-      switch (packet->getType()) {
+    auto receiveSocket(V2Link::Packet& p) -> void override {
+      switch (p.type) {
         case V2Link::Packet::Type::MIDI: {
-          auto address{packet->getAddress()};
-          if (address == 0x0f)
-            return;
+          if (p.address == 1) {
+            MIDISerial.send(p.midi);
 
-          if (address > 0)
-            return;
+            static constexpr std::array<uint8_t, 16> channel{7, 11, 15, 19, 6, 10, 14, 18, 5, 9, 13, 17, 4, 8, 12, 16};
+            switch (p.midi.type()) {
+              case V2MIDI::Packet::Status::NoteOn:
+                LED.setHSV(channel[p.midi.channel()], V2Colour::Orange, 0.9, 0.8);
+                break;
 
-          packet->copyTo(_midi);
-          MIDISerial.send(&_midi);
+              case V2MIDI::Packet::Status::NoteOff:
+                LED.setBrightness(channel[p.midi.channel()], 0);
+                break;
 
-          static constexpr std::array<uint8_t, 16> channel{7, 11, 15, 19, 6, 10, 14, 18, 5, 9, 13, 17, 4, 8, 12, 16};
-          switch (_midi.getType()) {
-            case V2MIDI::Packet::Status::NoteOn:
-              LED.setHSV(channel[_midi.getChannel()], V2Colour::Orange, 0.9, 0.8);
-              break;
-
-            case V2MIDI::Packet::Status::NoteOff:
-              LED.setBrightness(channel[_midi.getChannel()], 0);
-              break;
-
-            case V2MIDI::Packet::Status::ControlChange:
-              LED.splashHSV(0.005, channel[_midi.getChannel()], 1, V2Colour::Cyan, 0.9, 0.2);
-              break;
+              case V2MIDI::Packet::Status::ControlChange:
+                LED.splashHSV(0.005, channel[p.midi.channel()], 1, V2Colour::Cyan, 0.9, 0.2);
+                break;
+            }
           }
 
-          if (!Device.usb.midi.connected())
-            return;
-
-          _midi.setPort(address + 1);
-          Device.usb.midi.send(&_midi);
+          p.midi.port = p.address;
+          Device.usb.midi.send(p.midi);
         } break;
 
         case V2Link::Packet::Type::Number:
-          Ping.receive(packet->getNumber());
+          Ping.receive(p.number());
           break;
       }
     }
   } Link;
-
-  // Dispatch MIDI packets
-  class MIDI {
-  public:
-    auto loop() {
-      if (Device.usb.midi.receive(&_midi)) {
-        if (_midi.getPort() == 0) {
-          Device.dispatch(&Device.usb.midi, &_midi);
-
-        } else {
-          _midi.setPort(_midi.getPort() - 1);
-          Socket.send(&_midi);
-        }
-      }
-
-      if (MIDISerial.receive(&_midi))
-        Socket.send(&_midi);
-    }
-
-  private:
-    V2MIDI::Packet _midi;
-  } MIDI;
 
   class Button : public V2Buttons::Button {
   public:
@@ -228,11 +218,11 @@ namespace {
           Device.reset();
           for (uint8_t i{}; i < 16; i++) {
             _midi.setControlChange(i, V2MIDI::CC::AllSoundOff, 0);
-            Device.usb.midi.send(&_midi);
-            MIDISerial.send(&_midi);
+            Device.usb.midi.send(_midi);
+            MIDISerial.send(_midi);
             _midi.setControlChange(i, V2MIDI::CC::AllNotesOff, 0);
-            Device.usb.midi.send(&_midi);
-            MIDISerial.send(&_midi);
+            Device.usb.midi.send(_midi);
+            MIDISerial.send(_midi);
           }
           break;
       }

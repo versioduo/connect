@@ -3,7 +3,7 @@
 #include <V2Link.h>
 #include <V2MIDI.h>
 
-V2DEVICE_METADATA("com.versioduo.connect-plug", 1, "versioduo:samd:connect-plug");
+V2DEVICE_METADATA("com.versioduo.connect-plug", 2, "versioduo:samd:connect-plug");
 
 namespace {
   V2Link::Port         Plug{&SerialPlug, PIN_SERIAL_PLUG_TX_ENABLE};
@@ -25,8 +25,8 @@ namespace {
 
     auto handleSend(V2MIDI::Packet* midi) -> bool override {
       led.flash(0.03, 0.3);
-      usb.midi.send(midi);
-      Plug.send(midi);
+      usb.midi.send(*midi);
+      Plug.send(*midi);
       return true;
     }
 
@@ -34,6 +34,31 @@ namespace {
       reset();
     }
   } Device;
+
+  // Dispatch MIDI packets
+  class MIDI {
+  public:
+    auto loop() {
+      if (Device.usb.midi.receive(_midi)) {
+        switch (_midi.port) {
+          case 0:
+            Device.dispatch(&Device.usb.midi, &_midi);
+            break;
+
+          case 1:
+            _midi.port = 0;
+            Plug.send(_midi);
+            break;
+        }
+      }
+
+      if (MIDISerial.receive(_midi))
+        Device.send(&_midi);
+    }
+
+  private:
+    V2MIDI::Packet _midi;
+  } MIDI;
 
   // Dispatch Link packets.
   class Link : public V2Link {
@@ -43,55 +68,23 @@ namespace {
     }
 
   private:
-    V2MIDI::Packet _midi{};
-
-    auto receivePlug(V2Link::Packet* packet) -> void override {
-      switch (packet->getType()) {
-        case V2Link::Packet::Type::MIDI: {
-          packet->copyTo(_midi);
-          Device.dispatch(&Plug, &_midi);
-
-          if (Device.usb.midi.connected())
-            Device.usb.midi.send(&_midi);
-
-          MIDISerial.send(&_midi);
-        } break;
+    auto receivePlug(V2Link::Packet& p) -> void override {
+      switch (p.type) {
+        case V2Link::Packet::Type::MIDI:
+          Device.dispatch(&Plug, &p.midi);
+          Device.usb.midi.send(p.midi);
+          MIDISerial.send(p.midi);
+          break;
 
         case V2Link::Packet::Type::Number: {
           // The sender pings with even numbers, we reply with an odd number.
-          uint32_t number{packet->getNumber()};
-          packet->setNumber(number + 1);
-          Plug.send(0, packet);
+          p.number(p.number() + 1);
+          Plug.send(p);
           break;
         }
       }
     }
   } Link;
-
-  // Dispatch MIDI packets
-  class MIDI {
-  public:
-    auto loop() {
-      if (Device.usb.midi.receive(&_midi)) {
-        switch (_midi.getPort()) {
-          case 0:
-            Device.dispatch(&Device.usb.midi, &_midi);
-            break;
-
-          case 1:
-            _midi.setPort(0);
-            Plug.send(&_midi);
-            break;
-        }
-      }
-
-      if (MIDISerial.receive(&_midi))
-        Plug.send(&_midi);
-    }
-
-  private:
-    V2MIDI::Packet _midi;
-  } MIDI;
 }
 
 auto setup() -> void {
