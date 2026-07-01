@@ -3,7 +3,7 @@
 #include <V2Link.h>
 #include <V2MIDI.h>
 
-V2DEVICE_METADATA("com.versioduo.connect-plug", 2, "versioduo:samd:connect-plug");
+V2DEVICE_METADATA("com.versioduo.connect-plug", 3, "versioduo:samd:connect-plug");
 
 namespace {
   V2Link::Port         Plug{&SerialPlug, PIN_SERIAL_PLUG_TX_ENABLE};
@@ -15,7 +15,7 @@ namespace {
       metadata.vendor      = "Versio Duo";
       metadata.product     = "V2 connect-plug";
       metadata.description = "MIDI Connector";
-      metadata.home        = "https://versioduo.com/#connect";
+      metadata.home        = "https://versioduo.com/#connect-plug";
 
       system.download  = "https://versioduo.com/download";
       system.configure = "https://versioduo.com/configure";
@@ -89,8 +89,12 @@ namespace {
 
 auto setup() -> void {
   Serial.begin(9600);
+
+  // Set the SERCOM interrupt priority, it requires a stable ~300 kHz interrupt
+  // frequency. The call needs to be after begin().
   Link.begin();
   setSerialPriority(&SerialPlug, 2);
+
   MIDISerial.begin();
   Device.serial = &MIDISerial;
   Device.usb.midi.setPortName(1, "Local");

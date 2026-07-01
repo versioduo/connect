@@ -3,7 +3,7 @@
 #include <V2Link.h>
 #include <V2MIDI.h>
 
-V2DEVICE_METADATA("com.versioduo.connect-socket", 2, "versioduo:samd:connect-socket");
+V2DEVICE_METADATA("com.versioduo.connect-socket", 3, "versioduo:samd:connect-socket");
 
 namespace {
   V2LED::WS2812        LED{20, PIN_LED_WS2812, &sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM};
@@ -82,7 +82,7 @@ namespace {
       metadata.vendor      = "Versio Duo";
       metadata.product     = "V2 connect-socket";
       metadata.description = "MIDI Connector";
-      metadata.home        = "https://versioduo.com/#connect";
+      metadata.home        = "https://versioduo.com/#connect-socket";
 
       system.download  = "https://versioduo.com/download";
       system.configure = "https://versioduo.com/configure";
@@ -239,8 +239,12 @@ auto setup() -> void {
   Serial.begin(9600);
   LED.begin();
   LED.setMaxBrightness(0.2);
+
+  // Set the SERCOM interrupt priority, it requires a stable ~300 kHz interrupt
+  // frequency. The call needs to be after begin().
   Link.begin();
   setSerialPriority(&SerialSocket, 2);
+
   MIDISerial.begin();
   Device.serial = &MIDISerial;
   for (auto& b : Buttons)

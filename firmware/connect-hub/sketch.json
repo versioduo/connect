@@ -1,0 +1,6 @@
+{
+  "cpu": {
+    "fqbn": "versioduo:samd:connect-hub",
+    "name": "V2 connect-hub"
+  }
+}
