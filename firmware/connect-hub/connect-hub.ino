@@ -14,7 +14,7 @@ namespace {
 
   struct USBPort {
     enum Type : uint8_t {
-      Hub,
+      Main,
       Socket,
       Socket2,
       Serial,
@@ -127,9 +127,8 @@ namespace {
       system.download  = "https://versioduo.com/download";
       system.configure = "https://versioduo.com/configure";
 
-      help.device = "MIDI message router with two V2 Link Sockets and two MIDI Serial ports. The USB Power Delivery "
-                    "port supplies the V2 Link Sockets with 9 V power.";
-
+      help.device        = "MIDI message router with two V2 Link Sockets and two MIDI Serial ports. The USB Power Delivery "
+                           "port supplies the V2 Link Sockets with 9 V power.";
       help.configuration = "MIDI messages can be routed between all four MIDI ports. Every port specifies "
                            "from which port it wants to receive messages. Notes and Control Messages are "
                            "enabled seperately.\n"
@@ -141,12 +140,58 @@ namespace {
       configuration      = {.size{sizeof(config)}, .data{&config}};
     }
 
+    auto light(USBPort::Type from, const V2MIDI::Packet& m) {
+      auto filter{[&m](const Config::Filter& f) {
+        static constexpr std::array<uint8_t, 16> channel{7, 11, 15, 19, 6, 10, 14, 18, 5, 9, 13, 17, 4, 8, 12, 16};
+        switch (m.type()) {
+          case V2MIDI::Packet::Status::NoteOn:
+            if (f.notes)
+              LED.setHSV(channel[m.channel()], V2Colour::Orange, 0.9, 0.8);
+            break;
+
+          case V2MIDI::Packet::Status::NoteOff:
+            if (f.notes)
+              LED.setBrightness(channel[m.channel()], 0);
+            break;
+
+          case V2MIDI::Packet::Status::ControlChange:
+            if (f.controller)
+              LED.splashHSV(0.005, channel[m.channel()], 1, V2Colour::Cyan, 0.9, 0.2);
+            break;
+        }
+      }};
+
+      switch (from) {
+        case USBPort::Main:
+          filter(config.led.hub);
+          break;
+
+        case USBPort::Socket:
+          filter(config.led.socket);
+          break;
+
+        case USBPort::Socket2:
+          filter(config.led.socket2);
+          break;
+
+        case USBPort::Serial:
+          filter(config.led.serial);
+          break;
+
+        case USBPort::Serial2:
+          filter(config.led.serial2);
+          break;
+      }
+    }
+
     auto route(USBPort::Type from, V2MIDI::Packet& m) {
       m.port = from;
       usb.midi.send(m);
       m.port = 0;
 
-      auto filter{[&m](const Route::Filter& f, V2MIDI::Transport& port) {
+      light(from, m);
+
+      auto filter{[&m](const Config::Filter& f, V2MIDI::Transport& port) {
         if (f.notes) {
           switch (m.type()) {
             case V2MIDI::Packet::Status::NoteOff:
@@ -166,61 +211,71 @@ namespace {
 
       switch (from) {
         case USBPort::Socket:
-          filter(config.socket.socket2, Socket2);
-          filter(config.socket.serial, MIDISerial);
-          filter(config.socket.serial2, MIDISerial2);
+          filter(config.route.socket.socket2, Socket2);
+          filter(config.route.socket.serial, MIDISerial);
+          filter(config.route.socket.serial2, MIDISerial2);
           break;
 
         case USBPort::Socket2:
-          filter(config.socket2.socket, Socket2);
-          filter(config.socket2.serial, MIDISerial);
-          filter(config.socket2.serial2, MIDISerial2);
+          filter(config.route.socket2.socket, Socket2);
+          filter(config.route.socket2.serial, MIDISerial);
+          filter(config.route.socket2.serial2, MIDISerial2);
           break;
 
         case USBPort::Serial:
-          filter(config.serial.socket, Socket);
-          filter(config.serial.socket2, Socket2);
-          filter(config.serial.serial2, MIDISerial2);
+          filter(config.route.serial.socket, Socket);
+          filter(config.route.serial.socket2, Socket2);
+          filter(config.route.serial.serial2, MIDISerial2);
           break;
 
         case USBPort::Serial2:
-          filter(config.serial2.socket, Socket);
-          filter(config.serial2.socket2, Socket2);
-          filter(config.serial2.serial, MIDISerial);
+          filter(config.route.serial2.socket, Socket);
+          filter(config.route.serial2.socket2, Socket2);
+          filter(config.route.serial2.serial, MIDISerial);
           break;
       }
     }
 
   private:
-    struct Route {
+    struct Config {
       struct Filter {
         bool notes{};
         bool controller{};
       };
 
-      struct {
-        Filter socket2;
-        Filter serial;
-        Filter serial2;
-      } socket;
-
-      struct {
-        Filter socket;
-        Filter serial;
-        Filter serial2;
-      } socket2;
-
-      struct {
-        Filter socket;
-        Filter socket2;
-        Filter serial2;
-      } serial;
-
-      struct {
+      struct LED {
+        Filter hub;
         Filter socket;
         Filter socket2;
         Filter serial;
-      } serial2;
+        Filter serial2;
+      } led;
+
+      struct Route {
+        struct {
+          Filter socket2;
+          Filter serial;
+          Filter serial2;
+        } socket;
+
+        struct {
+          Filter socket;
+          Filter serial;
+          Filter serial2;
+        } socket2;
+
+        struct {
+          Filter socket;
+          Filter socket2;
+          Filter serial2;
+        } serial;
+
+        struct {
+          Filter socket;
+          Filter socket2;
+          Filter serial;
+        } serial2;
+      } route;
     } config;
 
     enum class CC {
@@ -266,192 +321,265 @@ namespace {
     }
 
     void importConfiguration(JsonObject json) override {
-      auto route{json["route"]};
-      if (!route)
-        return;
-
-      if (auto port{route["Socket"]}; port) {
-        if (auto j{port["Socket-2"]}; j) {
+      if (auto route{json["led"]}; route) {
+        if (auto j{route["USB"]}; j) {
           if (!j["notes"].isNull())
-            config.socket.socket2.notes = j["notes"];
+            config.led.hub.notes = j["notes"];
 
           if (!j["controller"].isNull())
-            config.socket.socket2.controller = j["controller"];
+            config.led.hub.controller = j["controller"];
         }
 
-        if (auto j{port["Serial"]}; j) {
+        if (auto j{route["Socket"]}; j) {
           if (!j["notes"].isNull())
-            config.socket.serial.notes = j["notes"];
+            config.led.socket.notes = j["notes"];
 
           if (!j["controller"].isNull())
-            config.socket.serial.controller = j["controller"];
+            config.led.socket.controller = j["controller"];
         }
 
-        if (auto j{port["Serial-2"]}; j) {
+        if (auto j{route["Socket-2"]}; j) {
           if (!j["notes"].isNull())
-            config.socket.serial2.notes = j["notes"];
+            config.led.socket2.notes = j["notes"];
 
           if (!j["controller"].isNull())
-            config.socket.serial2.controller = j["controller"];
-        }
-      }
-
-      if (auto port{route["Socket-2"]}; port) {
-        if (auto j{port["Socket"]}; j) {
-          if (!j["notes"].isNull())
-            config.socket2.socket.notes = j["notes"];
-
-          if (!j["controller"].isNull())
-            config.socket2.socket.controller = j["controller"];
+            config.led.socket2.controller = j["controller"];
         }
 
-        if (auto j{port["Serial"]}; j) {
+        if (auto j{route["Serial"]}; j) {
           if (!j["notes"].isNull())
-            config.socket2.serial.notes = j["notes"];
+            config.led.serial.notes = j["notes"];
 
           if (!j["controller"].isNull())
-            config.socket2.serial.controller = j["controller"];
+            config.led.serial.controller = j["controller"];
         }
 
-        if (auto j{port["Serial-2"]}; j) {
+        if (auto j{route["Serial-2"]}; j) {
           if (!j["notes"].isNull())
-            config.socket2.serial2.notes = j["notes"];
+            config.led.serial2.notes = j["notes"];
 
           if (!j["controller"].isNull())
-            config.socket2.serial2.controller = j["controller"];
+            config.led.serial2.controller = j["controller"];
         }
       }
 
-      if (auto port{route["Serial"]}; port) {
-        if (auto j{port["Socket"]}; j) {
-          if (!j["notes"].isNull())
-            config.serial.socket.notes = j["notes"];
+      if (auto route{json["route"]}; route) {
+        if (auto port{route["Socket"]}; port) {
+          if (auto j{port["Socket-2"]}; j) {
+            if (!j["notes"].isNull())
+              config.route.socket.socket2.notes = j["notes"];
 
-          if (!j["controller"].isNull())
-            config.serial.socket.controller = j["controller"];
+            if (!j["controller"].isNull())
+              config.route.socket.socket2.controller = j["controller"];
+          }
+
+          if (auto j{port["Serial"]}; j) {
+            if (!j["notes"].isNull())
+              config.route.socket.serial.notes = j["notes"];
+
+            if (!j["controller"].isNull())
+              config.route.socket.serial.controller = j["controller"];
+          }
+
+          if (auto j{port["Serial-2"]}; j) {
+            if (!j["notes"].isNull())
+              config.route.socket.serial2.notes = j["notes"];
+
+            if (!j["controller"].isNull())
+              config.route.socket.serial2.controller = j["controller"];
+          }
         }
 
-        if (auto j{port["Socket-2"]}; j) {
-          if (!j["notes"].isNull())
-            config.serial.socket2.notes = j["notes"];
+        if (auto port{route["Socket-2"]}; port) {
+          if (auto j{port["Socket"]}; j) {
+            if (!j["notes"].isNull())
+              config.route.socket2.socket.notes = j["notes"];
 
-          if (!j["controller"].isNull())
-            config.serial.socket2.controller = j["controller"];
+            if (!j["controller"].isNull())
+              config.route.socket2.socket.controller = j["controller"];
+          }
+
+          if (auto j{port["Serial"]}; j) {
+            if (!j["notes"].isNull())
+              config.route.socket2.serial.notes = j["notes"];
+
+            if (!j["controller"].isNull())
+              config.route.socket2.serial.controller = j["controller"];
+          }
+
+          if (auto j{port["Serial-2"]}; j) {
+            if (!j["notes"].isNull())
+              config.route.socket2.serial2.notes = j["notes"];
+
+            if (!j["controller"].isNull())
+              config.route.socket2.serial2.controller = j["controller"];
+          }
         }
 
-        if (auto j{port["Serial-2"]}; j) {
-          if (!j["notes"].isNull())
-            config.serial.serial2.notes = j["notes"];
+        if (auto port{route["Serial"]}; port) {
+          if (auto j{port["Socket"]}; j) {
+            if (!j["notes"].isNull())
+              config.route.serial.socket.notes = j["notes"];
 
-          if (!j["controller"].isNull())
-            config.serial.serial2.controller = j["controller"];
+            if (!j["controller"].isNull())
+              config.route.serial.socket.controller = j["controller"];
+          }
+
+          if (auto j{port["Socket-2"]}; j) {
+            if (!j["notes"].isNull())
+              config.route.serial.socket2.notes = j["notes"];
+
+            if (!j["controller"].isNull())
+              config.route.serial.socket2.controller = j["controller"];
+          }
+
+          if (auto j{port["Serial-2"]}; j) {
+            if (!j["notes"].isNull())
+              config.route.serial.serial2.notes = j["notes"];
+
+            if (!j["controller"].isNull())
+              config.route.serial.serial2.controller = j["controller"];
+          }
         }
-      }
 
-      if (auto port{route["Serial-2"]}; port) {
-        if (auto j{port["Socket"]}; j) {
-          if (!j["notes"].isNull())
-            config.serial2.socket.notes = j["notes"];
+        if (auto port{route["Serial-2"]}; port) {
+          if (auto j{port["Socket"]}; j) {
+            if (!j["notes"].isNull())
+              config.route.serial2.socket.notes = j["notes"];
 
-          if (!j["controller"].isNull())
-            config.serial2.socket.controller = j["controller"];
-        }
+            if (!j["controller"].isNull())
+              config.route.serial2.socket.controller = j["controller"];
+          }
 
-        if (auto j{port["Socket-2"]}; j) {
-          if (!j["notes"].isNull())
-            config.serial2.socket2.notes = j["notes"];
+          if (auto j{port["Socket-2"]}; j) {
+            if (!j["notes"].isNull())
+              config.route.serial2.socket2.notes = j["notes"];
 
-          if (!j["controller"].isNull())
-            config.serial2.socket2.controller = j["controller"];
-        }
+            if (!j["controller"].isNull())
+              config.route.serial2.socket2.controller = j["controller"];
+          }
 
-        if (auto j{port["Serial"]}; j) {
-          if (!j["notes"].isNull())
-            config.serial2.serial.notes = j["notes"];
+          if (auto j{port["Serial"]}; j) {
+            if (!j["notes"].isNull())
+              config.route.serial2.serial.notes = j["notes"];
 
-          if (!j["controller"].isNull())
-            config.serial2.serial.controller = j["controller"];
+            if (!j["controller"].isNull())
+              config.route.serial2.serial.controller = j["controller"];
+          }
         }
       }
     }
 
     void exportConfiguration(JsonObject json) override {
-      json["#route"] = "Route Notes and Control Messages";
-      auto route{json["route"].to<JsonObject>()};
-
       {
-        auto port{route["Socket"].to<JsonObject>()};
+        json["#led"] = "LED Activity Display";
+        auto led{json["led"].to<JsonObject>()};
+
         {
-          auto j{port["Socket-2"].to<JsonObject>()};
-          j["notes"]      = config.socket.socket2.notes;
-          j["controller"] = config.socket.socket2.controller;
+          auto j{led["USB"].to<JsonObject>()};
+          j["notes"]      = config.led.hub.notes;
+          j["controller"] = config.led.hub.controller;
         }
         {
-          auto j{port["Serial"].to<JsonObject>()};
-          j["notes"]      = config.socket.serial.notes;
-          j["controller"] = config.socket.serial.controller;
+          auto j{led["Socket"].to<JsonObject>()};
+          j["notes"]      = config.led.socket.notes;
+          j["controller"] = config.led.socket.controller;
         }
         {
-          auto j{port["Serial-2"].to<JsonObject>()};
-          j["notes"]      = config.socket.serial2.notes;
-          j["controller"] = config.socket.serial2.controller;
+          auto j{led["Socket-2"].to<JsonObject>()};
+          j["notes"]      = config.led.socket2.notes;
+          j["controller"] = config.led.socket2.controller;
+        }
+        {
+          auto j{led["Serial"].to<JsonObject>()};
+          j["notes"]      = config.led.serial.notes;
+          j["controller"] = config.led.serial.controller;
+        }
+        {
+          auto j{led["Serial-2"].to<JsonObject>()};
+          j["notes"]      = config.led.serial2.notes;
+          j["controller"] = config.led.serial2.controller;
         }
       }
 
       {
-        auto port{route["Socket-2"].to<JsonObject>()};
-        {
-          auto j{port["Socket"].to<JsonObject>()};
-          j["notes"]      = config.socket2.socket.notes;
-          j["controller"] = config.socket2.socket.controller;
-        }
-        {
-          auto j{port["Serial"].to<JsonObject>()};
-          j["notes"]      = config.socket2.serial.notes;
-          j["controller"] = config.socket2.serial.controller;
-        }
-        {
-          auto j{port["Serial-2"].to<JsonObject>()};
-          j["notes"]      = config.socket2.serial2.notes;
-          j["controller"] = config.socket2.serial2.controller;
-        }
-      }
+        json["#route"] = "Route Notes and Control Messages";
+        auto route{json["route"].to<JsonObject>()};
 
-      {
-        auto port{route["Serial"].to<JsonObject>()};
         {
-          auto j{port["Socket"].to<JsonObject>()};
-          j["notes"]      = config.serial.socket.notes;
-          j["controller"] = config.serial.socket.controller;
+          auto port{route["Socket"].to<JsonObject>()};
+          {
+            auto j{port["Socket-2"].to<JsonObject>()};
+            j["notes"]      = config.route.socket.socket2.notes;
+            j["controller"] = config.route.socket.socket2.controller;
+          }
+          {
+            auto j{port["Serial"].to<JsonObject>()};
+            j["notes"]      = config.route.socket.serial.notes;
+            j["controller"] = config.route.socket.serial.controller;
+          }
+          {
+            auto j{port["Serial-2"].to<JsonObject>()};
+            j["notes"]      = config.route.socket.serial2.notes;
+            j["controller"] = config.route.socket.serial2.controller;
+          }
         }
-        {
-          auto j{port["Socket-2"].to<JsonObject>()};
-          j["notes"]      = config.serial.socket2.notes;
-          j["controller"] = config.serial.socket2.controller;
-        }
-        {
-          auto j{port["Serial-2"].to<JsonObject>()};
-          j["notes"]      = config.serial.serial2.notes;
-          j["controller"] = config.serial.serial2.controller;
-        }
-      }
 
-      {
-        auto port{route["Serial-2"].to<JsonObject>()};
         {
-          auto j{port["Socket"].to<JsonObject>()};
-          j["notes"]      = config.serial2.socket.notes;
-          j["controller"] = config.serial2.socket.controller;
+          auto port{route["Socket-2"].to<JsonObject>()};
+          {
+            auto j{port["Socket"].to<JsonObject>()};
+            j["notes"]      = config.route.socket2.socket.notes;
+            j["controller"] = config.route.socket2.socket.controller;
+          }
+          {
+            auto j{port["Serial"].to<JsonObject>()};
+            j["notes"]      = config.route.socket2.serial.notes;
+            j["controller"] = config.route.socket2.serial.controller;
+          }
+          {
+            auto j{port["Serial-2"].to<JsonObject>()};
+            j["notes"]      = config.route.socket2.serial2.notes;
+            j["controller"] = config.route.socket2.serial2.controller;
+          }
         }
+
         {
-          auto j{port["Socket-2"].to<JsonObject>()};
-          j["notes"]      = config.serial2.socket2.notes;
-          j["controller"] = config.serial2.socket2.controller;
+          auto port{route["Serial"].to<JsonObject>()};
+          {
+            auto j{port["Socket"].to<JsonObject>()};
+            j["notes"]      = config.route.serial.socket.notes;
+            j["controller"] = config.route.serial.socket.controller;
+          }
+          {
+            auto j{port["Socket-2"].to<JsonObject>()};
+            j["notes"]      = config.route.serial.socket2.notes;
+            j["controller"] = config.route.serial.socket2.controller;
+          }
+          {
+            auto j{port["Serial-2"].to<JsonObject>()};
+            j["notes"]      = config.route.serial.serial2.notes;
+            j["controller"] = config.route.serial.serial2.controller;
+          }
         }
+
         {
-          auto j{port["Serial"].to<JsonObject>()};
-          j["notes"]      = config.serial2.serial.notes;
-          j["controller"] = config.serial2.serial.controller;
+          auto port{route["Serial-2"].to<JsonObject>()};
+          {
+            auto j{port["Socket"].to<JsonObject>()};
+            j["notes"]      = config.route.serial2.socket.notes;
+            j["controller"] = config.route.serial2.socket.controller;
+          }
+          {
+            auto j{port["Socket-2"].to<JsonObject>()};
+            j["notes"]      = config.route.serial2.socket2.notes;
+            j["controller"] = config.route.serial2.socket2.controller;
+          }
+          {
+            auto j{port["Serial"].to<JsonObject>()};
+            j["notes"]      = config.route.serial2.serial.notes;
+            j["controller"] = config.route.serial2.serial.controller;
+          }
         }
       }
     }
@@ -459,15 +587,53 @@ namespace {
     auto exportSettings(JsonArray json) -> void override {
       {
         auto j{json.add<JsonObject>()};
-        j["type"]  = "title";
-        j["title"] = "Socket";
-        j["subtitle"] = "Forward Incoming MIDI";
+        j["type"]     = "title";
+        j["title"]    = "LED";
+        j["subtitle"] = "Activity Display";
+      }
+      {
+        auto j{json.add<JsonObject>()};
+        j["type"] = "filter";
+        j["text"] = "USB";
+        j["path"] = "led/USB";
+      }
+      {
+        auto j{json.add<JsonObject>()};
+        j["type"] = "filter";
+        j["text"] = "Socket";
+        j["path"] = "led/Socket";
       }
       {
         auto j{json.add<JsonObject>()};
         j["type"] = "filter";
         j["text"] = "Socket-2";
-        j["path"] = "route/Socket/Socket-2";
+        j["path"] = "led/Socket-2";
+      }
+      {
+        auto j{json.add<JsonObject>()};
+        j["type"] = "filter";
+        j["text"] = "Serial";
+        j["path"] = "led/Serial";
+      }
+      {
+        auto j{json.add<JsonObject>()};
+        j["type"] = "filter";
+        j["text"] = "Serial-2";
+        j["path"] = "led/Serial-2";
+      }
+
+      {
+        auto j{json.add<JsonObject>()};
+        j["type"]     = "title";
+        j["title"]    = "Router";
+        j["subtitle"] = "Forward Incoming MIDI Messages";
+      }
+      {
+        auto j{json.add<JsonObject>()};
+        j["type"]  = "filter";
+        j["title"] = "Socket";
+        j["text"]  = "Socket-2";
+        j["path"]  = "route/Socket/Socket-2";
       }
       {
         auto j{json.add<JsonObject>()};
@@ -481,18 +647,12 @@ namespace {
         j["text"] = "Serial-2";
         j["path"] = "route/Socket/Serial-2";
       }
-
       {
         auto j{json.add<JsonObject>()};
-        j["type"]  = "title";
+        j["type"]  = "filter";
         j["title"] = "Socket-2";
-        j["subtitle"] = "Forward Incoming MIDI";
-      }
-      {
-        auto j{json.add<JsonObject>()};
-        j["type"] = "filter";
-        j["text"] = "Socket";
-        j["path"] = "route/Socket-2/Socket";
+        j["text"]  = "Socket";
+        j["path"]  = "route/Socket-2/Socket";
       }
       {
         auto j{json.add<JsonObject>()};
@@ -506,18 +666,12 @@ namespace {
         j["text"] = "Serial-2";
         j["path"] = "route/Socket-2/Serial-2";
       }
-
       {
         auto j{json.add<JsonObject>()};
-        j["type"]  = "title";
+        j["type"]  = "filter";
         j["title"] = "Serial";
-        j["subtitle"] = "Forward Incoming MIDI";
-      }
-      {
-        auto j{json.add<JsonObject>()};
-        j["type"] = "filter";
-        j["text"] = "Socket";
-        j["path"] = "route/Serial/Socket";
+        j["text"]  = "Socket";
+        j["path"]  = "route/Serial/Socket";
       }
       {
         auto j{json.add<JsonObject>()};
@@ -531,18 +685,12 @@ namespace {
         j["text"] = "Serial-2";
         j["path"] = "route/Serial/Serial-2";
       }
-
       {
         auto j{json.add<JsonObject>()};
-        j["type"]  = "title";
+        j["type"]  = "filter";
         j["title"] = "Serial-2";
-        j["subtitle"] = "Forward Incoming MIDI";
-      }
-      {
-        auto j{json.add<JsonObject>()};
-        j["type"] = "filter";
-        j["text"] = "Socket";
-        j["path"] = "route/Serial-2/Socket";
+        j["text"]  = "Socket";
+        j["path"]  = "route/Serial-2/Socket";
       }
       {
         auto j{json.add<JsonObject>()};
@@ -565,7 +713,8 @@ namespace {
     auto loop() {
       if (Device.usb.midi.receive(_midi)) {
         switch (_midi.port) {
-          case USBPort::Hub:
+          case USBPort::Main:
+            Device.light(USBPort::Main, _midi);
             Device.dispatch(&Device.usb.midi, &_midi);
             break;
 
@@ -610,25 +759,9 @@ namespace {
         return;
 
       switch (p.type) {
-        case V2Link::Packet::Type::MIDI: {
-          static constexpr std::array<uint8_t, 16> channel{7, 11, 15, 19, 6, 10, 14, 18, 5, 9, 13, 17, 4, 8, 12, 16};
-          switch (p.midi.type()) {
-            case V2MIDI::Packet::Status::NoteOn:
-              LED.setHSV(channel[p.midi.channel()], V2Colour::Orange, 0.9, 0.8);
-              break;
-
-            case V2MIDI::Packet::Status::NoteOff:
-              LED.setBrightness(channel[p.midi.channel()], 0);
-              break;
-
-            case V2MIDI::Packet::Status::ControlChange:
-              LED.splashHSV(0.005, channel[p.midi.channel()], 1, V2Colour::Cyan, 0.9, 0.2);
-              break;
-          }
-
+        case V2Link::Packet::Type::MIDI:
           Device.route(USBPort::Socket, p.midi);
           break;
-        }
 
         case V2Link::Packet::Type::Number:
           PingSocket.receive(p.number());
