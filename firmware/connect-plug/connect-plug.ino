@@ -21,6 +21,7 @@ namespace {
       system.configure = "https://versioduo.com/configure";
 
       usb.ports.standard = 2;
+      usb.ports.fixed    = true;
     }
 
     auto handleSend(V2MIDI::Packet* midi) -> bool override {
@@ -97,7 +98,6 @@ auto setup() -> void {
 
   MIDISerial.begin();
   Device.serial = &MIDISerial;
-  Device.usb.midi.setPortName(1, "Local");
   Device.usb.midi.setPortName(2, "Remote");
   Device.begin();
   Device.reset();

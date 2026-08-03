@@ -137,51 +137,8 @@ namespace {
                            "getting applied.";
 
       usb.ports.standard = 5;
+      usb.ports.fixed    = true;
       configuration      = {.size{sizeof(config)}, .data{&config}};
-    }
-
-    auto light(USBPort::Type from, const V2MIDI::Packet& m) {
-      auto filter{[&m](const Config::Filter& f) {
-        static constexpr std::array<uint8_t, 16> channel{7, 11, 15, 19, 6, 10, 14, 18, 5, 9, 13, 17, 4, 8, 12, 16};
-        switch (m.type()) {
-          case V2MIDI::Packet::Status::NoteOn:
-            if (f.notes)
-              LED.setHSV(channel[m.channel()], V2Colour::Orange, 0.9, 0.8);
-            break;
-
-          case V2MIDI::Packet::Status::NoteOff:
-            if (f.notes)
-              LED.setBrightness(channel[m.channel()], 0);
-            break;
-
-          case V2MIDI::Packet::Status::ControlChange:
-            if (f.controller)
-              LED.splashHSV(0.005, channel[m.channel()], 1, V2Colour::Cyan, 0.9, 0.2);
-            break;
-        }
-      }};
-
-      switch (from) {
-        case USBPort::Main:
-          filter(config.led.hub);
-          break;
-
-        case USBPort::Socket:
-          filter(config.led.socket);
-          break;
-
-        case USBPort::Socket2:
-          filter(config.led.socket2);
-          break;
-
-        case USBPort::Serial:
-          filter(config.led.serial);
-          break;
-
-        case USBPort::Serial2:
-          filter(config.led.serial2);
-          break;
-      }
     }
 
     auto route(USBPort::Type from, V2MIDI::Packet& m) {
@@ -244,7 +201,6 @@ namespace {
       };
 
       struct LED {
-        Filter hub;
         Filter socket;
         Filter socket2;
         Filter serial;
@@ -289,18 +245,14 @@ namespace {
       PingSocket2.reset();
     }
 
+    auto handleSystemReset() -> void override {
+      reset();
+    }
+
     auto handleSend(V2MIDI::Packet* midi) -> bool override {
       led.flash(0.03, 0.3);
       usb.midi.send(*midi);
       return true;
-    }
-
-    auto handleControlChange(uint8_t channel, uint8_t controller, uint8_t value) -> void override {
-      LED.splashHSV(0.5, V2Colour::Orange, 1, 0.25);
-    }
-
-    auto handleSystemReset() -> void override {
-      reset();
     }
 
     auto exportSystem(JsonObject json) -> void override {
@@ -322,14 +274,6 @@ namespace {
 
     void importConfiguration(JsonObject json) override {
       if (auto route{json["led"]}; route) {
-        if (auto j{route["USB"]}; j) {
-          if (!j["notes"].isNull())
-            config.led.hub.notes = j["notes"];
-
-          if (!j["controller"].isNull())
-            config.led.hub.controller = j["controller"];
-        }
-
         if (auto j{route["Socket"]}; j) {
           if (!j["notes"].isNull())
             config.led.socket.notes = j["notes"];
@@ -474,12 +418,6 @@ namespace {
       {
         json["#led"] = "LED Activity Display";
         auto led{json["led"].to<JsonObject>()};
-
-        {
-          auto j{led["USB"].to<JsonObject>()};
-          j["notes"]      = config.led.hub.notes;
-          j["controller"] = config.led.hub.controller;
-        }
         {
           auto j{led["Socket"].to<JsonObject>()};
           j["notes"]      = config.led.socket.notes;
@@ -594,12 +532,6 @@ namespace {
       {
         auto j{json.add<JsonObject>()};
         j["type"] = "filter";
-        j["text"] = "USB";
-        j["path"] = "led/USB";
-      }
-      {
-        auto j{json.add<JsonObject>()};
-        j["type"] = "filter";
         j["text"] = "Socket";
         j["path"] = "led/Socket";
       }
@@ -705,6 +637,46 @@ namespace {
         j["path"] = "route/Serial-2/Serial";
       }
     }
+
+    auto light(USBPort::Type from, const V2MIDI::Packet& m) -> void {
+      auto filter{[&m](const Config::Filter& f) {
+        static constexpr std::array<uint8_t, 16> channel{7, 11, 15, 19, 6, 10, 14, 18, 5, 9, 13, 17, 4, 8, 12, 16};
+        switch (m.type()) {
+          case V2MIDI::Packet::Status::NoteOn:
+            if (f.notes)
+              LED.setHSV(channel[m.channel()], V2Colour::Orange, 0.9, 0.8);
+            break;
+
+          case V2MIDI::Packet::Status::NoteOff:
+            if (f.notes)
+              LED.setBrightness(channel[m.channel()], 0);
+            break;
+
+          case V2MIDI::Packet::Status::ControlChange:
+            if (f.controller)
+              LED.splashHSV(0.005, channel[m.channel()], 1, V2Colour::Cyan, 0.9, 0.2);
+            break;
+        }
+      }};
+
+      switch (from) {
+        case USBPort::Socket:
+          filter(config.led.socket);
+          break;
+
+        case USBPort::Socket2:
+          filter(config.led.socket2);
+          break;
+
+        case USBPort::Serial:
+          filter(config.led.serial);
+          break;
+
+        case USBPort::Serial2:
+          filter(config.led.serial2);
+          break;
+      }
+    }
   } Device;
 
   // Dispatch MIDI packets
@@ -714,7 +686,6 @@ namespace {
       if (Device.usb.midi.receive(_midi)) {
         switch (_midi.port) {
           case USBPort::Main:
-            Device.light(USBPort::Main, _midi);
             Device.dispatch(&Device.usb.midi, &_midi);
             break;
 
