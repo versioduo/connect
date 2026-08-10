@@ -3,10 +3,10 @@
 #include <V2Link.h>
 #include <V2MIDI.h>
 
-V2DEVICE_METADATA("com.versioduo.connect-socket", 3, "versioduo:samd:connect-socket");
+V2DEVICE_METADATA("com.versioduo.connect-socket", 4, "versioduo:samd:connect-socket");
 
 namespace {
-  V2LED::WS2812        LED{20, PIN_LED_WS2812, &sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM};
+  V2LED::WS2812<20>    LED{PIN_LED_WS2812, sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM};
   V2Link::Port         Socket{&SerialSocket, PIN_SERIAL_SOCKET_TX_ENABLE};
   V2MIDI::SerialDevice MIDISerial{&SerialMIDI};
 
@@ -34,7 +34,7 @@ namespace {
           break;
 
         case State::Failed:
-          LED.splashHSV(0.01, V2Colour::Red, 0.9, 0.5);
+          LED.flash({V2Colour::Red, 0.9, 0.5}, 0.01);
           break;
       }
     }
@@ -43,7 +43,7 @@ namespace {
       switch (_state) {
         case State::Init:
           _state = State::Running;
-          LED.setHSV(0, V2Colour::Cyan, 0.9, 0.6);
+          LED.hsv({V2Colour::Cyan, 0.9, 0.6}, 0);
           [[fallthrough]];
 
         case State::Running:
@@ -107,7 +107,7 @@ namespace {
     }
 
     auto handleControlChange(uint8_t channel, uint8_t controller, uint8_t value) -> void override {
-      LED.splashHSV(0.5, V2Colour::Orange, 1, 0.25);
+      LED.flash({V2Colour::Orange, 1, 0.25}, 0.5);
     }
 
     auto handleSystemReset() -> void override {
@@ -161,15 +161,15 @@ namespace {
             static constexpr std::array<uint8_t, 16> channel{7, 11, 15, 19, 6, 10, 14, 18, 5, 9, 13, 17, 4, 8, 12, 16};
             switch (p.midi.type()) {
               case V2MIDI::Packet::Status::NoteOn:
-                LED.setHSV(channel[p.midi.channel()], V2Colour::Orange, 0.9, 0.8);
+                LED.hsv({V2Colour::Orange, 0.9, 0.8}, channel[p.midi.channel()]);
                 break;
 
               case V2MIDI::Packet::Status::NoteOff:
-                LED.setBrightness(channel[p.midi.channel()], 0);
+                LED.brightness(0, channel[p.midi.channel()]);
                 break;
 
               case V2MIDI::Packet::Status::ControlChange:
-                LED.splashHSV(0.005, channel[p.midi.channel()], 1, V2Colour::Cyan, 0.9, 0.2);
+                LED.flash({V2Colour::Cyan, 0.9, 0.2}, 0.005, channel[p.midi.channel()]);
                 break;
             }
           }
@@ -239,7 +239,7 @@ namespace {
 auto setup() -> void {
   Serial.begin(9600);
   LED.begin();
-  LED.setMaxBrightness(0.2);
+  LED.brightnessMax(0.2);
 
   // Set the SERCOM interrupt priority, it requires a stable ~300 kHz interrupt
   // frequency. The call needs to be after begin().

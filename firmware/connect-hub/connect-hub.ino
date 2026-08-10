@@ -3,10 +3,10 @@
 #include <V2Link.h>
 #include <V2MIDI.h>
 
-V2DEVICE_METADATA("com.versioduo.connect-hub", 2, "versioduo:samd:connect-hub");
+V2DEVICE_METADATA("com.versioduo.connect-hub", 3, "versioduo:samd:connect-hub");
 
 namespace {
-  V2LED::WS2812        LED{20, PIN_LED_WS2812, &sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM};
+  V2LED::WS2812<20>    LED{PIN_LED_WS2812, sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM};
   V2Link::Port         Socket{&SerialSocket, PIN_SERIAL_SOCKET_TX_ENABLE};
   V2Link::Port         Socket2{&SerialSocket2, PIN_SERIAL_SOCKET2_TX_ENABLE};
   V2MIDI::SerialDevice MIDISerial{&SerialMIDI};
@@ -25,7 +25,7 @@ namespace {
   class Ping {
   public:
     Ping() = delete;
-    Ping(V2Link::Port& s, V2Colour::Hue c) : _socket{s}, _color(c) {}
+    Ping(V2Link::Port& s, float c) : _socket{s}, _colour(c) {}
 
     auto loop() {
       if (V2Base::getUsecSince(_usec) < 1000 * 1000)
@@ -50,7 +50,7 @@ namespace {
           break;
 
         case State::Failed:
-          LED.splashHSV(0.01, _color, 0.9, 0.5);
+          LED.flash({_colour, 0.9, 0.5}, 0.1);
           break;
       }
     }
@@ -61,7 +61,7 @@ namespace {
           _state     = State::Running;
           _startMsec = millis();
           _start     = _sequence;
-          LED.setHSV(0, V2Colour::Cyan, 0.9, 0.6);
+          LED.hsv({V2Colour::Cyan, 0.9, 0.6}, 0);
           [[fallthrough]];
 
         case State::Running:
@@ -102,7 +102,7 @@ namespace {
 
   private:
     V2Link::Port& _socket;
-    V2Colour::Hue _color{};
+    const float   _colour{};
     enum class State { Init, Running, Failed } _state{};
     uint32_t       _usec{};
     uint32_t       _sequence{};
@@ -240,7 +240,7 @@ namespace {
 
     auto handleReset() -> void override {
       LED.reset();
-      LED.setHSV(0, V2Colour::Orange, 0.9, 0.6);
+      LED.hsv({V2Colour::Orange, 0.9, 0.6}, 0);
       PingSocket.reset();
       PingSocket2.reset();
     }
@@ -644,17 +644,17 @@ namespace {
         switch (m.type()) {
           case V2MIDI::Packet::Status::NoteOn:
             if (f.notes)
-              LED.setHSV(channel[m.channel()], V2Colour::Orange, 0.9, 0.8);
+              LED.hsv({V2Colour::Orange, 0.9, 0.8}, channel[m.channel()]);
             break;
 
           case V2MIDI::Packet::Status::NoteOff:
             if (f.notes)
-              LED.setBrightness(channel[m.channel()], 0);
+              LED.brightness(0, channel[m.channel()]);
             break;
 
           case V2MIDI::Packet::Status::ControlChange:
             if (f.controller)
-              LED.splashHSV(0.005, channel[m.channel()], 1, V2Colour::Cyan, 0.9, 0.2);
+              LED.flash({V2Colour::Cyan, 0.9, 0.2}, 0.1, channel[m.channel()]);
             break;
         }
       }};
@@ -817,7 +817,7 @@ namespace {
 auto setup() -> void {
   Serial.begin(9600);
   LED.begin();
-  LED.setMaxBrightness(0.2);
+  LED.brightnessMax(0.2);
 
   Device.usb.midi.setPortName(USBPort::Socket + 1, "Socket");
   Device.usb.midi.setPortName(USBPort::Socket2 + 1, "Socket-2");
