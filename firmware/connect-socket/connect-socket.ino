@@ -3,12 +3,12 @@
 #include <V2Link.h>
 #include <V2MIDI.h>
 
-V2DEVICE_METADATA("com.versioduo.connect-socket", 4, "versioduo:samd:connect-socket");
+V2DEVICE_METADATA("com.versioduo.connect-socket", 5, "versioduo:samd:connect-socket");
 
 namespace {
   V2LED::WS2812<20>    LED{PIN_LED_WS2812, sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM};
-  V2Link::Port         Socket{&SerialSocket, PIN_SERIAL_SOCKET_TX_ENABLE};
-  V2MIDI::SerialDevice MIDISerial{&SerialMIDI};
+  V2Link::Port         Socket{&SerialSocket, PIN_SERIAL_SOCKET_TX_ENABLE, "socket"};
+  V2MIDI::SerialDevice MIDISerial{&SerialMIDI, "serial"};
 
   class {
   public:
@@ -247,9 +247,11 @@ auto setup() -> void {
   setSerialPriority(&SerialSocket, 2);
 
   MIDISerial.begin();
-  Device.serial = &MIDISerial;
+  Device.ports.push_back(&MIDISerial);
+
   for (auto& b : Buttons)
     b.begin();
+
   Device.usb.midi.setPortName(2, "Remote");
   Device.begin();
   Device.reset();

@@ -3,14 +3,14 @@
 #include <V2Link.h>
 #include <V2MIDI.h>
 
-V2DEVICE_METADATA("com.versioduo.connect-hub", 3, "versioduo:samd:connect-hub");
+V2DEVICE_METADATA("com.versioduo.connect-hub", 4, "versioduo:samd:connect-hub");
 
 namespace {
   V2LED::WS2812<20>    LED{PIN_LED_WS2812, sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM};
-  V2Link::Port         Socket{&SerialSocket, PIN_SERIAL_SOCKET_TX_ENABLE};
-  V2Link::Port         Socket2{&SerialSocket2, PIN_SERIAL_SOCKET2_TX_ENABLE};
-  V2MIDI::SerialDevice MIDISerial{&SerialMIDI};
-  V2MIDI::SerialDevice MIDISerial2{&SerialMIDI2};
+  V2Link::Port         Socket{&SerialSocket, PIN_SERIAL_SOCKET_TX_ENABLE, "socket"};
+  V2Link::Port         Socket2{&SerialSocket2, PIN_SERIAL_SOCKET2_TX_ENABLE, "socket-2"};
+  V2MIDI::SerialDevice MIDISerial{&SerialMIDI, "serial"};
+  V2MIDI::SerialDevice MIDISerial2{&SerialMIDI2, "serial-2"};
 
   struct USBPort {
     enum Type : uint8_t {
@@ -148,7 +148,7 @@ namespace {
 
       light(from, m);
 
-      auto filter{[&m](const Config::Filter& f, V2MIDI::Transport& port) {
+      auto filter{[&m](const Config::Filter& f, V2MIDI::Port& port) {
         if (f.notes) {
           switch (m.type()) {
             case V2MIDI::Packet::Status::NoteOff:
@@ -789,7 +789,7 @@ namespace {
         case Function::Main:
           Device.reset();
 
-          auto sendReset{[this](V2MIDI::Transport& port) {
+          auto sendReset{[this](V2MIDI::Port& port) {
             for (uint8_t i{}; i < 16; i++) {
               _midi.setControlChange(i, V2MIDI::CC::AllSoundOff, 0);
               port.send(_midi);
@@ -831,8 +831,10 @@ auto setup() -> void {
   setSerialPriority(&SerialSocket2, 2);
 
   MIDISerial.begin();
+  Device.ports.push_back(&MIDISerial);
   MIDISerial2.begin();
-  Device.serial = &MIDISerial;
+  Device.ports.push_back(&MIDISerial2);
+
   for (auto& b : Buttons)
     b.begin();
 

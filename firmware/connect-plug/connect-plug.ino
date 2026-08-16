@@ -3,11 +3,11 @@
 #include <V2Link.h>
 #include <V2MIDI.h>
 
-V2DEVICE_METADATA("com.versioduo.connect-plug", 3, "versioduo:samd:connect-plug");
+V2DEVICE_METADATA("com.versioduo.connect-plug", 4, "versioduo:samd:connect-plug");
 
 namespace {
-  V2Link::Port         Plug{&SerialPlug, PIN_SERIAL_PLUG_TX_ENABLE};
-  V2MIDI::SerialDevice MIDISerial{&SerialMIDI};
+  V2Link::Port         Plug{&SerialPlug, PIN_SERIAL_PLUG_TX_ENABLE, "plug"};
+  V2MIDI::SerialDevice MIDISerial{&SerialMIDI, "serial"};
 
   class Device : public V2Device {
   public:
@@ -97,7 +97,8 @@ auto setup() -> void {
   setSerialPriority(&SerialPlug, 2);
 
   MIDISerial.begin();
-  Device.serial = &MIDISerial;
+  Device.ports.push_back(&MIDISerial);
+
   Device.usb.midi.setPortName(2, "Remote");
   Device.begin();
   Device.reset();
