@@ -3,9 +3,8 @@
 #include <V2Link.h>
 #include <V2MIDI.h>
 
-V2DEVICE_METADATA("com.versioduo.connect-plug", 4, "versioduo:samd:connect-plug");
-
 namespace {
+  V2Device::Info       Info{V2DeviceInfo("com.versioduo.connect-plug", 4, "versioduo:samd:connect-plug")};
   V2Link::Port         Plug{&SerialPlug, PIN_SERIAL_PLUG_TX_ENABLE, "plug"};
   V2MIDI::SerialDevice MIDISerial{&SerialMIDI, "serial"};
 
@@ -16,12 +15,10 @@ namespace {
       metadata.product     = "V2 connect-plug";
       metadata.description = "MIDI Connector";
       metadata.home        = "https://versioduo.com/#connect-plug";
-
-      system.download  = "https://versioduo.com/download";
-      system.configure = "https://versioduo.com/configure";
-
-      usb.ports.standard = 2;
-      usb.ports.fixed    = true;
+      system.download      = "https://versioduo.com/download";
+      system.configure     = "https://versioduo.com/configure";
+      usb.ports.standard   = 2;
+      usb.ports.fixed      = true;
     }
 
     auto handleSend(V2MIDI::Packet* midi) -> bool override {

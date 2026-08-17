@@ -3,9 +3,8 @@
 #include <V2Link.h>
 #include <V2MIDI.h>
 
-V2DEVICE_METADATA("com.versioduo.connect-socket", 5, "versioduo:samd:connect-socket");
-
 namespace {
+  V2Device::Info       Info{V2DeviceInfo("com.versioduo.connect-socket", 5, "versioduo:samd:connect-socket")};
   V2LED::WS2812<20>    LED{PIN_LED_WS2812, sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM};
   V2Link::Port         Socket{&SerialSocket, PIN_SERIAL_SOCKET_TX_ENABLE, "socket"};
   V2MIDI::SerialDevice MIDISerial{&SerialMIDI, "serial"};
@@ -83,12 +82,10 @@ namespace {
       metadata.product     = "V2 connect-socket";
       metadata.description = "MIDI Connector";
       metadata.home        = "https://versioduo.com/#connect-socket";
-
-      system.download  = "https://versioduo.com/download";
-      system.configure = "https://versioduo.com/configure";
-
-      usb.ports.standard = 2;
-      usb.ports.fixed    = true;
+      system.download      = "https://versioduo.com/download";
+      system.configure     = "https://versioduo.com/configure";
+      usb.ports.standard   = 2;
+      usb.ports.fixed      = true;
     }
 
     enum class CC {

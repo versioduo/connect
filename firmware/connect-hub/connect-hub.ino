@@ -3,9 +3,8 @@
 #include <V2Link.h>
 #include <V2MIDI.h>
 
-V2DEVICE_METADATA("com.versioduo.connect-hub", 4, "versioduo:samd:connect-hub");
-
 namespace {
+  V2Device::Info       Info{V2DeviceInfo("com.versioduo.connect-hub", 5, "versioduo:samd:connect-hub")};
   V2LED::WS2812<20>    LED{PIN_LED_WS2812, sercom2, SPI_PAD_0_SCK_1, PIO_SERCOM};
   V2Link::Port         Socket{&SerialSocket, PIN_SERIAL_SOCKET_TX_ENABLE, "socket"};
   V2Link::Port         Socket2{&SerialSocket2, PIN_SERIAL_SOCKET2_TX_ENABLE, "socket-2"};
@@ -123,22 +122,19 @@ namespace {
       metadata.product     = "V2 connect-hub";
       metadata.description = "MIDI Hub";
       metadata.home        = "https://versioduo.com/#connect-hub";
-
-      system.download  = "https://versioduo.com/download";
-      system.configure = "https://versioduo.com/configure";
-
-      help.device        = "MIDI message router with two V2 Link Sockets and two MIDI Serial ports. The USB Power Delivery "
-                           "port supplies the V2 Link Sockets with 9 V power.";
-      help.configuration = "MIDI messages can be routed between all four MIDI ports. Every port specifies "
-                           "from which port it wants to receive messages. Notes and Control Messages are "
-                           "enabled seperately.\n"
-                           "The USB MIDI connection exposes all four MIDI ports separately. USB always "
-                           "receives all messages from all ports, and can send to any port without any filter "
-                           "getting applied.";
-
-      usb.ports.standard = 5;
-      usb.ports.fixed    = true;
-      configuration      = {.size{sizeof(config)}, .data{&config}};
+      system.download      = "https://versioduo.com/download";
+      system.configure     = "https://versioduo.com/configure";
+      help.device          = "MIDI message router with two V2 Link Sockets and two MIDI Serial ports. The USB Power Delivery "
+                             "port supplies the V2 Link Sockets with 9 V power.";
+      help.configuration   = "MIDI messages can be routed between all four MIDI ports. Every port specifies "
+                             "from which port it wants to receive messages. Notes and Control Messages are "
+                             "enabled seperately.\n"
+                             "The USB MIDI connection exposes all four MIDI ports separately. USB always "
+                             "receives all messages from all ports, and can send to any port without any filter "
+                             "getting applied.";
+      usb.ports.standard   = 5;
+      usb.ports.fixed      = true;
+      configuration        = {.size{sizeof(config)}, .data{&config}};
     }
 
     auto route(USBPort::Type from, V2MIDI::Packet& m) {
